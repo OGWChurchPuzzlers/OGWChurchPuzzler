@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class SimpleCharacterControl : MonoBehaviour {
+public class CharacterControl : MonoBehaviour {
 
     private enum ControlMode
     {
@@ -37,9 +37,11 @@ public class SimpleCharacterControl : MonoBehaviour {
     private List<Collider> m_collisions = new List<Collider>();
 
     private bool isCarryingItem;
+    private GameObject availableItem;
 
     private void OnCollisionEnter(Collision collision)
     {
+        availableItem = collision.gameObject;
         ContactPoint[] contactPoints = collision.contacts;
         for(int i = 0; i < contactPoints.Length; i++)
         {
@@ -84,7 +86,7 @@ public class SimpleCharacterControl : MonoBehaviour {
 
     private void OnCollisionExit(Collision collision)
     {
-        if(m_collisions.Contains(collision.collider))
+        if (m_collisions.Contains(collision.collider))
         {
             m_collisions.Remove(collision.collider);
         }
@@ -200,7 +202,7 @@ public class SimpleCharacterControl : MonoBehaviour {
 
     private void GrabOrDrop()
     {
-        if (isCarryingItem == false)
+        if (isCarryingItem == false && availableItem != null)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -220,23 +222,27 @@ public class SimpleCharacterControl : MonoBehaviour {
 
     void Grab()
     {
-        // Check items in range and dock at anchor
-        m_item.GetComponent<Rigidbody>().useGravity = false;
-        m_item.GetComponent<Rigidbody>().isKinematic = true;
-        Transform item_anchor = m_item.transform.GetChild(0).transform;
-        Transform calf = GameObject.FindGameObjectWithTag("anchor").transform;
-        m_item.transform.position = m_itemAnchor.transform.position;
-        m_item.transform.rotation = m_itemAnchor.transform.rotation;
-        m_item.transform.parent = m_itemAnchor.transform.transform;
+        availableItem.GetComponent<Rigidbody>().useGravity = false;
+        availableItem.GetComponent<Rigidbody>().isKinematic = true;
+        Collider itemCollider = availableItem.GetComponent<Collider>();
+        float offsetZ = itemCollider.bounds.size.z / 2.0f + 0.01f;
+        float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
+        m_itemAnchor.transform.Translate(new Vector3(0, offsetY, offsetZ));
+        availableItem.transform.position = m_itemAnchor.transform.position;
+        availableItem.transform.rotation = m_itemAnchor.transform.rotation;
+        availableItem.transform.parent = m_itemAnchor.transform.transform;
     }
 
     void Drop()
     {
-        Transform calf = GameObject.FindGameObjectWithTag("anchor").transform;
-        Transform item_anchor = m_item.transform.GetChild(0).transform;
-        m_item.GetComponent<Rigidbody>().useGravity = true;
-        m_item.GetComponent<Rigidbody>().isKinematic = false;
-        m_item.transform.parent = null;
-        m_item.transform.position = m_itemAnchor.transform.position;
+        Collider itemCollider = availableItem.GetComponent<Collider>();
+        float offsetZ = itemCollider.bounds.size.z / 2.0f + 0.01f;
+        float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
+        availableItem.GetComponent<Rigidbody>().useGravity = true;
+        availableItem.GetComponent<Rigidbody>().isKinematic = false;
+        availableItem.transform.parent = null;
+        availableItem.transform.position = m_itemAnchor.transform.position;
+        m_itemAnchor.transform.Translate(new Vector3(0, -offsetY, -offsetZ));
+        availableItem = null;
     }
 }
