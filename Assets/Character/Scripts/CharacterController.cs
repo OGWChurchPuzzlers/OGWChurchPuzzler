@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class CharacterControl : MonoBehaviour {
+public class CharacterController : MonoBehaviour {
 
     private enum ControlMode
     {
@@ -39,9 +39,28 @@ public class CharacterControl : MonoBehaviour {
     private bool isCarryingItem;
     private GameObject availableItem;
 
+    private List<GameObject> ObjectsInRange = new List<GameObject>();
+
+    public void OnTriggerEnter(Collider col)
+    {
+        ObjectsInRange.Add(col.gameObject);
+        Debug.Log("Objects in Range: " + ObjectsInRange.Count);
+    }
+
+    public void OnTriggerExit(Collider col)
+    {
+        ObjectsInRange.Remove(col.gameObject);
+        Debug.Log("Objects in Range: " + ObjectsInRange.Count);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        availableItem = collision.gameObject;
+        Rigidbody colRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+        if(colRigidbody != null)
+        {
+            availableItem = collision.gameObject;
+        }
+
         ContactPoint[] contactPoints = collision.contacts;
         for(int i = 0; i < contactPoints.Length; i++)
         {
