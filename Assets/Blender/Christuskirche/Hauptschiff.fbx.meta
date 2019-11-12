@@ -4,12 +4,23 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Kirche_Hauptschiff_Dach
+    100004: Kirche_Hauptschiff_Detail
     400000: //RootNode
+    400002: Kirche_Hauptschiff_Dach
+    400004: Kirche_Hauptschiff_Detail
     2100000: mat_wall_white.001
     2100002: mat_roof.001
+    2100004: paint
+    2100006: mat_roof_green
     2300000: //RootNode
+    2300002: Kirche_Hauptschiff_Dach
+    2300004: Kirche_Hauptschiff_Detail
     3300000: //RootNode
+    3300002: Kirche_Hauptschiff_Dach
+    3300004: Kirche_Hauptschiff_Detail
     4300000: Kirche_Hauptschiff_Detail
+    4300002: Kirche_Hauptschiff_Dach
   externalObjects: {}
   materials:
     importMaterials: 1

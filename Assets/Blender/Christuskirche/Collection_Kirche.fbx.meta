@@ -14,6 +14,10 @@ ModelImporter:
     100016: Kreuz_Variante_2
     100018: Tribuehne
     100020: Turm_Detail
+    100022: Empore
+    100024: Kirche_Hauptschiff_Dach
+    100026: Kirchenanbau
+    100028: Kirchenanbau_Dach
     400000: Altarraum
     400002: //RootNode
     400004: Eingang_Front_Detail
@@ -25,6 +29,10 @@ ModelImporter:
     400016: Kreuz_Variante_2
     400018: Tribuehne
     400020: Turm_Detail
+    400022: Empore
+    400024: Kirche_Hauptschiff_Dach
+    400026: Kirchenanbau
+    400028: Kirchenanbau_Dach
     2100000: mat_wall_white.001
     2100002: mat_roof.001
     2100004: mat_wall_white.002
@@ -48,6 +56,10 @@ ModelImporter:
     2300014: Kreuz_Variante_2
     2300016: Tribuehne
     2300018: Turm_Detail
+    2300020: Empore
+    2300022: Kirche_Hauptschiff_Dach
+    2300024: Kirchenanbau
+    2300026: Kirchenanbau_Dach
     3300000: Altarraum
     3300002: Eingang_Front_Detail
     3300004: Gelaender
@@ -58,6 +70,10 @@ ModelImporter:
     3300014: Kreuz_Variante_2
     3300016: Tribuehne
     3300018: Turm_Detail
+    3300020: Empore
+    3300022: Kirche_Hauptschiff_Dach
+    3300024: Kirchenanbau
+    3300026: Kirchenanbau_Dach
     4300000: Kirche_Hauptschiff_Detail
     4300002: Eingang_Front_Detail
     4300004: Turm_Detail
@@ -68,6 +84,10 @@ ModelImporter:
     4300014: Kreuz_Variante_1
     4300016: Kreuz_Variante_2
     4300018: Kirchenanbau.001
+    4300020: Empore
+    4300022: Kirchenanbau
+    4300024: Kirchenanbau_Dach
+    4300026: Kirche_Hauptschiff_Dach
     9500000: //RootNode
   externalObjects: {}
   materials:
