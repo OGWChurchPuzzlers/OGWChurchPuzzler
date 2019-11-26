@@ -1,0 +1,5193 @@
+fileFormatVersion: 2
+guid: df652c62458f998409914e3b6e4d12ea
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: AdvertisingColumn44
+    100002: Bench10
+    100004: Bench11
+    100006: Bench12
+    100008: Bench14
+    100010: Bench15
+    100012: Bench150
+    100014: Bench151
+    100016: Bench152
+    100018: Bench153
+    100020: Bench154
+    100022: Bench155
+    100024: Bench156
+    100026: Bench157
+    100028: Bench158
+    100030: Bench160
+    100032: Bench163
+    100034: Bench164
+    100036: Bench165
+    100038: Bench166
+    100040: Bench167
+    100042: Bench168
+    100044: Bench17
+    100046: Bench170
+    100048: Bench171
+    100050: Bench172
+    100052: Bench173
+    100054: Bench177
+    100056: Bench179
+    100058: Bench180
+    100060: Bench182
+    100062: Bench183
+    100064: Bench184
+    100066: Bench185
+    100068: Bench186
+    100070: Bench187
+    100072: Bench189
+    100074: Bench19
+    100076: Bench190
+    100078: Bench191
+    100080: Bench192
+    100082: Bench193
+    100084: Bench194
+    100086: Bench195
+    100088: Bench196
+    100090: Bench211
+    100092: Bench212
+    100094: Bench213
+    100096: Bench218
+    100098: Bench219
+    100100: Bench22
+    100102: Bench221
+    100104: Bench226
+    100106: Bench227
+    100108: Bench228
+    100110: Bench23
+    100112: Bench230
+    100114: Bench232
+    100116: Bench236
+    100118: Bench237
+    100120: Bench238
+    100122: Bench240
+    100124: Bench241
+    100126: Bench243
+    100128: Bench246
+    100130: Bench25
+    100132: Bench253
+    100134: Bench254
+    100136: Bench255
+    100138: Bench262
+    100140: Bench34
+    100142: Bench49
+    100144: Bench50
+    100146: Bench52
+    100148: Bench53
+    100150: Bench54
+    100152: Bench55
+    100154: Bench57
+    100156: Bench65
+    100158: Bench67
+    100160: Bench68
+    100162: Bench69
+    100164: Bench7
+    100166: Bench70
+    100168: Bench71
+    100170: Bench73
+    100172: Bench74
+    100174: Bench75
+    100176: Bench76
+    100178: Bench77
+    100180: Bench78
+    100182: Bench79
+    100184: Bench8
+    100186: Bench81
+    100188: Bench83
+    100190: Bench84
+    100192: Bench9
+    100194: Bench95
+    100196: Bench96
+    100198: Board 16 Feuerspritzen
+    100200: Board Brunnen mit Widder und Deichel
+    100202: Board Evangelische Christus-Kirche
+    100204: Board Friedenslinde
+    100206: Board Kreuzwegstation am Weg nach Loretto
+    100208: Board Pr___zisions-Sonnenuhr
+    100210: Board Prinzregenten-Denkmal
+    100212: Board Pumptrack Oberstdorf
+    100214: Board58
+    100216: Board59
+    100218: Board60
+    100220: Board61
+    100222: Board62
+    100224: Bridge438
+    100226: Building Adler
+    100228: Building Alpine Dreams
+    100230: Building Altes Rathaus
+    100232: Building Bacchus-Stuben
+    100234: Building Haus Fichtel
+    100236: Building Haus im Gr___nen
+    100238: Building Haus Nandl
+    100240: Building Johannisheim
+    100242: Building Kath. Kindergarten St. Martin
+    100244: Building Konzertmuschel
+    100246: Building LOFT Oberstdorf
+    100248: Building Maxheim
+    100250: Building Oberstdorf Haus
+    100252: Building Pfarrhof
+    100254: Building Rathaus
+    100256: Building Rosenhof
+    100258: Building Seelenkapelle
+    100260: Building St. Johannes Baptist
+    100262: Building Villa Jauss
+    100264: Building466
+    100266: Building467
+    100268: Building468
+    100270: Building469
+    100272: Building470
+    100274: Building472
+    100276: Building473
+    100278: Building475
+    100280: Building476
+    100282: Building477
+    100284: Building478
+    100286: Building479
+    100288: Building480
+    100290: Building481
+    100292: Building482
+    100294: Building483
+    100296: Building484
+    100298: Building485
+    100300: Building486
+    100302: Building487
+    100304: Building488
+    100306: Building489
+    100308: Building490
+    100310: Building491
+    100312: Building492
+    100314: Building493
+    100316: Building494
+    100318: Building495
+    100320: Building496
+    100322: Building497
+    100324: Building498
+    100326: Building499
+    100328: Building500
+    100330: Building501
+    100332: Building502
+    100334: Building504
+    100336: Building506
+    100338: Building507
+    100340: Building508
+    100342: Building509
+    100344: Building510
+    100346: Building511
+    100348: Building512
+    100350: Building513
+    100352: Building514
+    100354: Building515
+    100356: Building516
+    100358: Building517
+    100360: Building518
+    100362: Building519
+    100364: Building520
+    100366: Building521
+    100368: Building522
+    100370: Building523
+    100372: Building524
+    100374: Building525
+    100376: Building526
+    100378: Building527
+    100380: Building528
+    100382: Building529
+    100384: Building530
+    100386: Building531
+    100388: Building532
+    100390: Building534
+    100392: Building535
+    100394: Building536
+    100396: Building537
+    100398: Building538
+    100400: Building539
+    100402: Building540
+    100404: Building541
+    100406: Building542
+    100408: Building543
+    100410: Building544
+    100412: Building545
+    100414: Building546
+    100416: Building547
+    100418: Building548
+    100420: Building549
+    100422: Building552
+    100424: Building553
+    100426: Building554
+    100428: Building555
+    100430: Building556
+    100432: Building557
+    100434: Building559
+    100436: Building560
+    100438: Building561
+    100440: Building562
+    100442: Building563
+    100444: Building564
+    100446: Building565
+    100448: Building566
+    100450: Building567
+    100452: Building568
+    100454: Building569
+    100456: Building570
+    100458: Building571
+    100460: Building572
+    100462: Building575
+    100464: Building576
+    100466: Building577
+    100468: Building579
+    100470: Building580
+    100472: Building581
+    100474: Building582
+    100476: Building583
+    100478: Building584
+    100480: Building585
+    100482: Building586
+    100484: Building587
+    100486: Building588
+    100488: Building589
+    100490: Building590
+    100492: Building591
+    100494: Building592
+    100496: Building593
+    100498: Building594
+    100500: Building595
+    100502: Building596
+    100504: Building597
+    100506: Building598
+    100508: Building599
+    100510: Building600
+    100512: Building601
+    100514: Building602
+    100516: Building603
+    100518: Building604
+    100520: Building605
+    100522: Building606
+    100524: Building607
+    100526: Building608
+    100528: Building609
+    100530: Building610
+    100532: Building611
+    100534: Building612
+    100536: Building613
+    100538: Building614
+    100540: Building615
+    100542: Building616
+    100544: Building617
+    100546: Building618
+    100548: Building619
+    100550: Building620
+    100552: Building621
+    100554: Building622
+    100556: Building623
+    100558: Building624
+    100560: Building625
+    100562: Building626
+    100564: Building627
+    100566: Building628
+    100568: Building629
+    100570: Building630
+    100572: Building631
+    100574: Building632
+    100576: Building633
+    100578: Building634
+    100580: Building635
+    100582: Building636
+    100584: Building637
+    100586: Building638
+    100588: Building639
+    100590: Building640
+    100592: Building641
+    100594: Building642
+    100596: Building643
+    100598: Building644
+    100600: Building645
+    100602: Building646
+    100604: Building647
+    100606: Building648
+    100608: Building649
+    100610: Building650
+    100612: Building651
+    100614: Building652
+    100616: Building653
+    100618: Building654
+    100620: Building655
+    100622: Building657
+    100624: Building659
+    100626: Building660
+    100628: Building661
+    100630: Building662
+    100632: Building663
+    100634: Building664
+    100636: Building665
+    100638: Building666
+    100640: Building667
+    100642: BuildingEntrance103
+    100644: BuildingEntrance136
+    100646: BuildingEntrance36
+    100648: BusStop Oberstdorfer Marktb___hnle
+    100650: Camera
+    100652: Cube
+    100654: FireHydrant161
+    100656: FireHydrant162
+    100658: FireHydrant197
+    100660: FireHydrant201
+    100662: FireHydrant46
+    100664: Flagpole176
+    100666: Flagpole178
+    100668: Flagpole231
+    100670: Flagpole239
+    100672: Flagpole242
+    100674: Flagpole247
+    100676: Flagpole66
+    100678: Flagpole80
+    100680: Flagpole85
+    100682: Hedge276
+    100684: Hedge277
+    100686: Hedge278
+    100688: Hedge279
+    100690: Hedge280
+    100692: Light
+    100694: //RootNode
+    100696: Phone 08322/80822
+    100698: Phone 832209875939
+    100700: PostBox Ludwigstra___e 4, 87561 Oberstdorf
+    100702: RecyclingContainer244
+    100704: RecyclingContainer97
+    100706: Road Bachstra___e
+    100708: Road Bachstra___e.000
+    100710: Road Bachstra___e.001
+    100712: Road Bachstra___e.002
+    100714: Road Bachstra___e.003
+    100716: Road Bachstra___e.004
+    100718: Road Clemens-Wenzeslaus-Stra___e
+    100720: Road F___rsterstra___e
+    100722: Road F___rsterstra___e.000
+    100724: Road F___rsterstra___e.001
+    100726: Road Finkenstra___e
+    100728: Road Finkenstra___e.000
+    100730: Road Finkenstra___e.001
+    100732: Road Finkenstra___e.002
+    100734: Road Finkenstra___e.003
+    100736: Road Finkenstra___e.004
+    100738: Road Finkenstra___e.005
+    100740: Road Finkenstra___e.006
+    100742: Road Finkenstra___e.007
+    100744: Road Finkenstra___e.008
+    100746: Road Finkenstra___e.009
+    100748: Road Finkenstra___e.010
+    100750: Road Fischerstra___e
+    100752: Road Fischerstra___e.000
+    100754: Road Freibergstra___e
+    100756: Road Freibergstra___e.000
+    100758: Road Freibergstra___e.001
+    100760: Road Freibergstra___e.002
+    100762: Road Freibergstra___e.003
+    100764: Road Freibergstra___e.004
+    100766: Road Freibergstra___e.005
+    100768: Road Freibergstra___e.006
+    100770: Road Freibergstra___e.007
+    100772: Road Freibergstra___e.008
+    100774: Road Freibergstra___e.009
+    100776: Road Freibergstra___e.010
+    100778: Road Freibergstra___e.011
+    100780: Road Freibergstra___e.012
+    100782: Road Freibergstra___e.013
+    100784: Road Freibergstra___e.014
+    100786: Road Freibergstra___e.015
+    100788: Road Freibergstra___e.016
+    100790: Road Freibergstra___e.018
+    100792: Road Freibergstra___e.019
+    100794: Road Freibergstra___e.020
+    100796: Road Freibergstra___e.021
+    100798: Road Freibergstra___e.022
+    100800: Road Freiherr-von-Brutscher-Stra___e
+    100802: Road Freiherr-von-Brutscher-Stra___e.001
+    100804: Road Freiherr-von-Brutscher-Stra___e.003
+    100806: Road Freiherr-von-Brutscher-Stra___e.004
+    100808: Road Freiherr-von-Brutscher-Stra___e.005
+    100810: Road Freiherr-von-Brutscher-Stra___e.006
+    100812: Road Freiherr-von-Brutscher-Stra___e.007
+    100814: Road Frohmarkt
+    100816: Road Frohmarkt.000
+    100818: Road Frohmarkt.001
+    100820: Road Frohmarkt.002
+    100822: Road Frohmarkt.003
+    100824: Road Fuggerstra___e
+    100826: Road Fuggerstra___e.000
+    100828: Road Fuggerstra___e.001
+    100830: Road Fuggerstra___e.002
+    100832: Road Fuggerstra___e.003
+    100834: Road Fuggerstra___e.004
+    100836: Road Fuggerstra___e.005
+    100838: Road Fuggerstra___e.006
+    100840: Road Fuggerstra___e.007
+    100842: Road Fuggerstra___e.008
+    100844: Road Fuggerstra___e.009
+    100846: Road Fuggerstra___e.010
+    100848: Road Fuggerstra___e.011
+    100850: Road Fuggerstra___e.012
+    100852: Road Fuggerstra___e.013
+    100854: Road Fuggerstra___e.014
+    100856: Road Fuggerstra___e.015
+    100858: Road Fuggerstra___e.016
+    100860: Road Fuggerstra___e.017
+    100862: Road Fuggerstra___e.018
+    100864: Road Hauptstra___e
+    100866: Road Hauptstra___e.000
+    100868: Road Hauptstra___e.001
+    100870: Road Kirchstra___e
+    100872: Road Kirchstra___e.000
+    100874: Road Kirchstra___e.001
+    100876: Road Kirchstra___e.002
+    100878: Road Ludwigstra___e
+    100880: Road Ludwigstra___e.000
+    100882: Road Ludwigstra___e.001
+    100884: Road Ludwigstra___e.002
+    100886: Road Ludwigstra___e.003
+    100888: Road Ludwigstra___e.004
+    100890: Road Ludwigstra___e.005
+    100892: Road Ludwigstra___e.006
+    100894: Road Ludwigstra___e.007
+    100896: Road Ludwigstra___e.008
+    100898: Road Ludwigstra___e.009
+    100900: Road Ludwigstra___e.010
+    100902: Road Luitpoldstra___e
+    100904: Road Luitpoldstra___e.000
+    100906: Road Luitpoldstra___e.001
+    100908: Road Luitpoldstra___e.002
+    100910: Road M___hlenweg
+    100912: Road M___hlenweg.000
+    100914: Road M___hlenweg.001
+    100916: Road M___hlenweg.002
+    100918: Road M___hlenweg.003
+    100920: Road M___hlenweg.004
+    100922: Road M___hlenweg.005
+    100924: Road M___hlenweg.006
+    100926: Road M___hlenweg.007
+    100928: Road M___hlenweg.008
+    100930: Road M___hlenweg.009
+    100932: Road M___hlenweg.010
+    100934: Road M___hlenweg.011
+    100936: Road Marktplatz
+    100938: Road Marktplatz.000
+    100940: Road Marktplatz.001
+    100942: Road Marktplatz.002
+    100944: Road Marktplatz.003
+    100946: Road Marktplatz.004
+    100948: Road Marktplatz.005
+    100950: Road Marktplatz.006
+    100952: Road Marktplatz.008
+    100954: Road Marktplatz.009
+    100956: Road Marktplatz.010
+    100958: Road Marktplatz.011
+    100960: Road Metzgerstra___e
+    100962: Road Metzgerstra___e.000
+    100964: Road Metzgerstra___e.001
+    100966: Road Metzgerstra___e.002
+    100968: Road Metzgerstra___e.003
+    100970: Road Metzgerstra___e.004
+    100972: Road Metzgerstra___e.005
+    100974: Road Metzgerstra___e.006
+    100976: Road Metzgerstra___e.007
+    100978: Road Metzgerstra___e.008
+    100980: Road Metzgerstra___e.009
+    100982: Road Metzgerstra___e.010
+    100984: Road Metzgerstra___e.011
+    100986: Road Metzgerstra___e.012
+    100988: Road Metzgerstra___e.013
+    100990: Road Metzgerstra___e.014
+    100992: Road Oststra___e
+    100994: Road Oststra___e.000
+    100996: Road Oststra___e.001
+    100998: Road Oststra___e.002
+    101000: Road Oststra___e.003
+    101002: Road Oststra___e.004
+    101004: Road Oststra___e.005
+    101006: Road Oststra___e.006
+    101008: Road Oststra___e.007
+    101010: Road Oststra___e.008
+    101012: Road Oststra___e.009
+    101014: Road Oststra___e.010
+    101016: Road Oststra___e.011
+    101018: Road Oststra___e.012
+    101020: Road Oststra___e.013
+    101022: Road Oststra___e.014
+    101024: Road Oststra___e.015
+    101026: Road Oststra___e.016
+    101028: Road Oststra___e.017
+    101030: Road Oststra___e.018
+    101032: Road Oststra___e.019
+    101034: Road Oststra___e.020
+    101036: Road Oststra___e.021
+    101038: Road Oststra___e.022
+    101040: Road Oststra___e.023
+    101042: Road Oststra___e.024
+    101044: Road Oststra___e.025
+    101046: Road Oststra___e.026
+    101048: Road Oststra___e.027
+    101050: Road Paul-Gerhardt-Stra___e
+    101052: Road Paul-Gerhardt-Stra___e.000
+    101054: Road Paul-Gerhardt-Stra___e.001
+    101056: Road Paul-Gerhardt-Stra___e.002
+    101058: Road Paul-Gerhardt-Stra___e.003
+    101060: Road Paul-Gerhardt-Stra___e.004
+    101062: Road Paul-Gerhardt-Stra___e.005
+    101064: Road Paul-Gerhardt-Stra___e.006
+    101066: Road Paul-Gerhardt-Stra___e.007
+    101068: Road Paul-Gerhardt-Stra___e.008
+    101070: Road Paul-Gerhardt-Stra___e.009
+    101072: Road Paul-Gerhardt-Stra___e.010
+    101074: Road Paul-Gerhardt-Stra___e.011
+    101076: Road Paul-Gerhardt-Stra___e.012
+    101078: Road Paul-Gerhardt-Stra___e.013
+    101080: Road Pfarrstra___e
+    101082: Road Pfarrstra___e.000
+    101084: Road Pfarrstra___e.001
+    101086: Road Pfarrstra___e.002
+    101088: Road Prinzenstra___e
+    101090: Road Prinzenstra___e.000
+    101092: Road Prinzenstra___e.001
+    101094: Road Prinzenstra___e.002
+    101096: Road Prinzenstra___e.003
+    101098: Road Prinzenstra___e.004
+    101100: Road Prinzenstra___e.005
+    101102: Road Prinzenstra___e.006
+    101104: Road Prinzenstra___e.007
+    101106: Road Prinzenstra___e.008
+    101108: Road Prinzenstra___e.009
+    101110: Road Prinzenstra___e.010
+    101112: Road Prinzenstra___e.011
+    101114: Road Prinzenstra___e.012
+    101116: Road Prinzenstra___e.013
+    101118: Road Prinzenstra___e.014
+    101120: Road Prinzenstra___e.015
+    101122: Road Prinzenstra___e.016
+    101124: Road Prinzenstra___e.017
+    101126: Road Prinzregenten-Platz
+    101128: Road Prinzregenten-Platz.000
+    101130: Road Prinzregenten-Platz.001
+    101132: Road Prinzregenten-Platz.002
+    101134: Road Prinzregenten-Platz.003
+    101136: Road Prinzregenten-Platz.004
+    101138: Road Prinzregenten-Platz.005
+    101140: Road Prinzregenten-Platz.006
+    101142: Road Pumptrack Oberstdorf
+    101144: Road Pumptrack Oberstdorf.000
+    101146: Road Pumptrack Oberstdorf.001
+    101148: Road Pumptrack Oberstdorf.002
+    101150: Road Pumptrack Oberstdorf.003
+    101152: Road Pumptrack Oberstdorf.004
+    101154: Road Pumptrack Oberstdorf.005
+    101156: Road Pumptrack Oberstdorf.006
+    101158: Road Pumptrack Oberstdorf.007
+    101160: Road Pumptrack Oberstdorf.008
+    101162: Road Pumptrack Oberstdorf.009
+    101164: Road Pumptrack Oberstdorf.010
+    101166: Road Pumptrack Oberstdorf.011
+    101168: Road Pumptrack Oberstdorf.012
+    101170: Road Pumptrack Oberstdorf.013
+    101172: Road Pumptrack Oberstdorf.014
+    101174: Road Pumptrack Oberstdorf.016
+    101176: Road Pumptrack Oberstdorf.017
+    101178: Road Pumptrack Oberstdorf.018
+    101180: Road Pumptrack Oberstdorf.019
+    101182: Road Rankgasse
+    101184: Road Rankgasse.000
+    101186: Road Rankgasse.001
+    101188: Road Rankgasse.002
+    101190: Road Rankgasse.003
+    101192: Road Rankgasse.004
+    101194: Road Rankgasse.005
+    101196: Road Rankgasse.006
+    101198: Road Reithallenweg
+    101200: Road Reithallenweg.000
+    101202: Road Sachsenweg
+    101204: Road Sachsenweg.000
+    101206: Road Schustergasse
+    101208: Road Sebastian-Kneipp-Weg
+    101210: Road Sebastian-Kneipp-Weg.000
+    101212: Road Sebastian-Kneipp-Weg.001
+    101214: Road Sebastian-Kneipp-Weg.002
+    101216: Road Sebastian-Kneipp-Weg.003
+    101218: Road Sebastian-Kneipp-Weg.004
+    101220: Road Sebastian-Kneipp-Weg.005
+    101222: Road Sebastian-Kneipp-Weg.006
+    101224: Road Sebastian-Kneipp-Weg.007
+    101226: Road Sebastian-Kneipp-Weg.008
+    101228: Road Sebastian-Kneipp-Weg.009
+    101230: Road Sebastian-Kneipp-Weg.010
+    101232: Road Sebastian-Kneipp-Weg.011
+    101234: Road Sebastian-Kneipp-Weg.012
+    101236: Road Sebastian-Kneipp-Weg.013
+    101238: Road Sebastian-Kneipp-Weg.014
+    101240: Road Sebastian-Kneipp-Weg.015
+    101242: Road Sebastian-Kneipp-Weg.016
+    101244: Road Sebastian-Kneipp-Weg.017
+    101246: Road Sebastian-Kneipp-Weg.018
+    101248: Road Sigismundstra___e
+    101250: Road Sonnenstra___e
+    101252: Road Sonnenstra___e.000
+    101254: Road Sonnenstra___e.002
+    101256: Road Sonnenstra___e.003
+    101258: Road Sonnenstra___e.004
+    101260: Road Sonnenstra___e.005
+    101262: Road Sonnenstra___e.006
+    101264: Road Sonnenstra___e.007
+    101266: Road Weststra___e
+    101268: Road Weststra___e.000
+    101270: Road Weststra___e.001
+    101272: Road Weststra___e.002
+    101274: Road Weststra___e.003
+    101276: Road Weststra___e.004
+    101278: Road Weststra___e.005
+    101280: Road Weststra___e.006
+    101282: Road Weststra___e.007
+    101284: Road Weststra___e.008
+    101286: Road Weststra___e.009
+    101288: Road Weststra___e.010
+    101290: Road Weststra___e.011
+    101292: Road Weststra___e.012
+    101294: Road Weststra___e.013
+    101296: Road Weststra___e.014
+    101298: Road Weststra___e.015
+    101300: Road Weststra___e.016
+    101302: Road Weststra___e.017
+    101304: Road Weststra___e.018
+    101306: Road Weststra___e.019
+    101308: Road Weststra___e.020
+    101310: Road Weststra___e.021
+    101312: Road Weststra___e.022
+    101314: Road Weststra___e.023
+    101316: Road Weststra___e.024
+    101318: Road Weststra___e.025
+    101320: Road Weststra___e.026
+    101322: Road Weststra___e.027
+    101324: Road264
+    101326: Road265
+    101328: Road266
+    101330: Road267
+    101332: Road268
+    101334: Road269
+    101336: Road270
+    101338: Road271
+    101340: Road272
+    101342: Road273
+    101344: Road274
+    101346: Road275
+    101348: Road281
+    101350: Road282
+    101352: Road283
+    101354: Road284
+    101356: Road285
+    101358: Road286
+    101360: Road287
+    101362: Road288
+    101364: Road289
+    101366: Road290
+    101368: Road291
+    101370: Road292
+    101372: Road293
+    101374: Road294
+    101376: Road295
+    101378: Road296
+    101380: Road297
+    101382: Road298
+    101384: Road299
+    101386: Road300
+    101388: Road301
+    101390: Road302
+    101392: Road303
+    101394: Road304
+    101396: Road305
+    101398: Road306
+    101400: Road307
+    101402: Road308
+    101404: Road309
+    101406: Road310
+    101408: Road311
+    101410: Road312
+    101412: Road313
+    101414: Road314
+    101416: Road315
+    101418: Road316
+    101420: Road317
+    101422: Road318
+    101424: Road319
+    101426: Road320
+    101428: Road321
+    101430: Road322
+    101432: Road323
+    101434: Road324
+    101436: Road325
+    101438: Road326
+    101440: Road327
+    101442: Road332
+    101444: Road333
+    101446: Road334
+    101448: Road335
+    101450: Road336
+    101452: Road337
+    101454: Road338
+    101456: Road339
+    101458: Road340
+    101460: Road341
+    101462: Road342
+    101464: Road343
+    101466: Road344
+    101468: Road345
+    101470: Road346
+    101472: Road347
+    101474: Road348
+    101476: Road354
+    101478: Road355
+    101480: Road356
+    101482: Road357
+    101484: Road358
+    101486: Road359
+    101488: Road360
+    101490: Road361
+    101492: Road362
+    101494: Road363
+    101496: Road364
+    101498: Road365
+    101500: Road366
+    101502: Road367
+    101504: Road368
+    101506: Road369
+    101508: Road370
+    101510: Road371
+    101512: Road372
+    101514: Road373
+    101516: Road374
+    101518: Road375
+    101520: Road376
+    101522: Road377
+    101524: Road378
+    101526: Road379
+    101528: Road380
+    101530: Road381
+    101532: Road382
+    101534: Road383
+    101536: Road384
+    101538: Road385
+    101540: Road386
+    101542: Road387
+    101544: Road388
+    101546: Road389
+    101548: Road390
+    101550: Road391
+    101552: Road392
+    101554: Road393
+    101556: Road394
+    101558: Road395
+    101560: Road396
+    101562: Road397
+    101564: Road398
+    101566: Road399
+    101568: Road400
+    101570: Road401
+    101572: Road402
+    101574: Road403
+    101576: Road404
+    101578: Road405
+    101580: Road406
+    101582: Road407
+    101584: Road408
+    101586: Road409
+    101588: Road410
+    101590: Road411
+    101592: Road413
+    101594: Road414
+    101596: Road415
+    101598: Road416
+    101600: Road417
+    101602: Road418
+    101604: Road419
+    101606: Road420
+    101608: Road421
+    101610: Road422
+    101612: Road423
+    101614: Road424
+    101616: Road425
+    101618: Road426
+    101620: Road427
+    101622: Road428
+    101624: Road429
+    101626: Road430
+    101628: Road431
+    101630: Road432
+    101632: Road433
+    101634: Road434
+    101636: Road435
+    101638: Road436
+    101640: Road437
+    101642: Road439
+    101644: Road440
+    101646: Road441
+    101648: Road442
+    101650: Road443
+    101652: Road444
+    101654: Road445
+    101656: Road446
+    101658: Road447
+    101660: Road448
+    101662: Road449
+    101664: Road450
+    101666: Road451
+    101668: Road452
+    101670: Road453
+    101672: Road454
+    101674: Road459
+    101676: Road460
+    101678: Road461
+    101680: Road462
+    101682: Road463
+    101684: Road464
+    101686: Road465
+    101688: RoadArea Marktplatz
+    101690: RoadConnector133
+    101692: RoadConnector139
+    101694: RoadConnector199
+    101696: RoadConnector31
+    101698: RoadConnector91
+    101700: RoadConnector92
+    101702: RoadConnector98
+    101704: RoadConnector99
+    101706: RoadJunction0
+    101708: RoadJunction1
+    101710: RoadJunction100
+    101712: RoadJunction101
+    101714: RoadJunction102
+    101716: RoadJunction104
+    101718: RoadJunction105
+    101720: RoadJunction106
+    101722: RoadJunction107
+    101724: RoadJunction108
+    101726: RoadJunction109
+    101728: RoadJunction110
+    101730: RoadJunction111
+    101732: RoadJunction112
+    101734: RoadJunction113
+    101736: RoadJunction114
+    101738: RoadJunction115
+    101740: RoadJunction116
+    101742: RoadJunction117
+    101744: RoadJunction118
+    101746: RoadJunction119
+    101748: RoadJunction120
+    101750: RoadJunction121
+    101752: RoadJunction122
+    101754: RoadJunction123
+    101756: RoadJunction124
+    101758: RoadJunction125
+    101760: RoadJunction126
+    101762: RoadJunction127
+    101764: RoadJunction128
+    101766: RoadJunction129
+    101768: RoadJunction130
+    101770: RoadJunction131
+    101772: RoadJunction132
+    101774: RoadJunction134
+    101776: RoadJunction135
+    101778: RoadJunction137
+    101780: RoadJunction138
+    101782: RoadJunction140
+    101784: RoadJunction141
+    101786: RoadJunction144
+    101788: RoadJunction145
+    101790: RoadJunction146
+    101792: RoadJunction147
+    101794: RoadJunction149
+    101796: RoadJunction159
+    101798: RoadJunction16
+    101800: RoadJunction169
+    101802: RoadJunction174
+    101804: RoadJunction175
+    101806: RoadJunction181
+    101808: RoadJunction188
+    101810: RoadJunction198
+    101812: RoadJunction2
+    101814: RoadJunction20
+    101816: RoadJunction200
+    101818: RoadJunction202
+    101820: RoadJunction203
+    101822: RoadJunction204
+    101824: RoadJunction205
+    101826: RoadJunction206
+    101828: RoadJunction207
+    101830: RoadJunction208
+    101832: RoadJunction209
+    101834: RoadJunction210
+    101836: RoadJunction215
+    101838: RoadJunction217
+    101840: RoadJunction220
+    101842: RoadJunction222
+    101844: RoadJunction223
+    101846: RoadJunction229
+    101848: RoadJunction234
+    101850: RoadJunction235
+    101852: RoadJunction248
+    101854: RoadJunction249
+    101856: RoadJunction250
+    101858: RoadJunction251
+    101860: RoadJunction252
+    101862: RoadJunction256
+    101864: RoadJunction257
+    101866: RoadJunction258
+    101868: RoadJunction259
+    101870: RoadJunction260
+    101872: RoadJunction261
+    101874: RoadJunction263
+    101876: RoadJunction29
+    101878: RoadJunction3
+    101880: RoadJunction32
+    101882: RoadJunction33
+    101884: RoadJunction35
+    101886: RoadJunction4
+    101888: RoadJunction40
+    101890: RoadJunction41
+    101892: RoadJunction43
+    101894: RoadJunction45
+    101896: RoadJunction48
+    101898: RoadJunction5
+    101900: RoadJunction56
+    101902: RoadJunction6
+    101904: RoadJunction63
+    101906: RoadJunction64
+    101908: RoadJunction72
+    101910: RoadJunction82
+    101912: RoadJunction86
+    101914: RoadJunction88
+    101916: RoadJunction93
+    101918: RoadJunction94
+    101920: StreetLamp225
+    101922: StreetLamp28
+    101924: StreetLamp47
+    101926: SurfaceArea558
+    101928: SurfaceArea656
+    101930: SurfaceArea658
+    101932: SurfaceParking Freiherr-von-Brutscherstra___e
+    101934: SurfaceParking Sachsenweg
+    101936: SurfaceParking474
+    101938: SurfaceParking505
+    101940: SurfaceParking573
+    101942: SurfaceParking574
+    101944: SurfaceParking578
+    101946: TennisPitch550
+    101948: TennisPitch551
+    101950: Tree Einigkeitseiche
+    101952: Tree Friedenslinde
+    101954: Tree13
+    101956: Tree18
+    101958: Tree21
+    101960: Tree216
+    101962: Tree224
+    101964: Tree24
+    101966: Tree26
+    101968: Tree27
+    101970: Tree38
+    101972: Tree39
+    101974: Tree87
+    101976: Tree89
+    101978: Tree90
+    101980: Tunnel458
+    101982: VendingMachineVice148
+    101984: VendingMachineVice42
+    101986: WasteBasket142
+    101988: WasteBasket143
+    101990: WasteBasket214
+    101992: WasteBasket233
+    101994: WasteBasket245
+    101996: WasteBasket30
+    101998: WasteBasket37
+    102000: WasteBasket51
+    102002: Water533
+    102004: Waterway328
+    102006: Waterway329
+    102008: Waterway330
+    102010: Waterway331
+    102012: Waterway349
+    102014: Waterway350
+    102016: Waterway351
+    102018: Waterway352
+    102020: Waterway353
+    102022: Waterway455
+    102024: Waterway456
+    102026: Waterway457
+    400000: AdvertisingColumn44
+    400002: Bench10
+    400004: Bench11
+    400006: Bench12
+    400008: Bench14
+    400010: Bench15
+    400012: Bench150
+    400014: Bench151
+    400016: Bench152
+    400018: Bench153
+    400020: Bench154
+    400022: Bench155
+    400024: Bench156
+    400026: Bench157
+    400028: Bench158
+    400030: Bench160
+    400032: Bench163
+    400034: Bench164
+    400036: Bench165
+    400038: Bench166
+    400040: Bench167
+    400042: Bench168
+    400044: Bench17
+    400046: Bench170
+    400048: Bench171
+    400050: Bench172
+    400052: Bench173
+    400054: Bench177
+    400056: Bench179
+    400058: Bench180
+    400060: Bench182
+    400062: Bench183
+    400064: Bench184
+    400066: Bench185
+    400068: Bench186
+    400070: Bench187
+    400072: Bench189
+    400074: Bench19
+    400076: Bench190
+    400078: Bench191
+    400080: Bench192
+    400082: Bench193
+    400084: Bench194
+    400086: Bench195
+    400088: Bench196
+    400090: Bench211
+    400092: Bench212
+    400094: Bench213
+    400096: Bench218
+    400098: Bench219
+    400100: Bench22
+    400102: Bench221
+    400104: Bench226
+    400106: Bench227
+    400108: Bench228
+    400110: Bench23
+    400112: Bench230
+    400114: Bench232
+    400116: Bench236
+    400118: Bench237
+    400120: Bench238
+    400122: Bench240
+    400124: Bench241
+    400126: Bench243
+    400128: Bench246
+    400130: Bench25
+    400132: Bench253
+    400134: Bench254
+    400136: Bench255
+    400138: Bench262
+    400140: Bench34
+    400142: Bench49
+    400144: Bench50
+    400146: Bench52
+    400148: Bench53
+    400150: Bench54
+    400152: Bench55
+    400154: Bench57
+    400156: Bench65
+    400158: Bench67
+    400160: Bench68
+    400162: Bench69
+    400164: Bench7
+    400166: Bench70
+    400168: Bench71
+    400170: Bench73
+    400172: Bench74
+    400174: Bench75
+    400176: Bench76
+    400178: Bench77
+    400180: Bench78
+    400182: Bench79
+    400184: Bench8
+    400186: Bench81
+    400188: Bench83
+    400190: Bench84
+    400192: Bench9
+    400194: Bench95
+    400196: Bench96
+    400198: Board 16 Feuerspritzen
+    400200: Board Brunnen mit Widder und Deichel
+    400202: Board Evangelische Christus-Kirche
+    400204: Board Friedenslinde
+    400206: Board Kreuzwegstation am Weg nach Loretto
+    400208: Board Pr___zisions-Sonnenuhr
+    400210: Board Prinzregenten-Denkmal
+    400212: Board Pumptrack Oberstdorf
+    400214: Board58
+    400216: Board59
+    400218: Board60
+    400220: Board61
+    400222: Board62
+    400224: Bridge438
+    400226: Building Adler
+    400228: Building Alpine Dreams
+    400230: Building Altes Rathaus
+    400232: Building Bacchus-Stuben
+    400234: Building Haus Fichtel
+    400236: Building Haus im Gr___nen
+    400238: Building Haus Nandl
+    400240: Building Johannisheim
+    400242: Building Kath. Kindergarten St. Martin
+    400244: Building Konzertmuschel
+    400246: Building LOFT Oberstdorf
+    400248: Building Maxheim
+    400250: Building Oberstdorf Haus
+    400252: Building Pfarrhof
+    400254: Building Rathaus
+    400256: Building Rosenhof
+    400258: Building Seelenkapelle
+    400260: Building St. Johannes Baptist
+    400262: Building Villa Jauss
+    400264: Building466
+    400266: Building467
+    400268: Building468
+    400270: Building469
+    400272: Building470
+    400274: Building472
+    400276: Building473
+    400278: Building475
+    400280: Building476
+    400282: Building477
+    400284: Building478
+    400286: Building479
+    400288: Building480
+    400290: Building481
+    400292: Building482
+    400294: Building483
+    400296: Building484
+    400298: Building485
+    400300: Building486
+    400302: Building487
+    400304: Building488
+    400306: Building489
+    400308: Building490
+    400310: Building491
+    400312: Building492
+    400314: Building493
+    400316: Building494
+    400318: Building495
+    400320: Building496
+    400322: Building497
+    400324: Building498
+    400326: Building499
+    400328: Building500
+    400330: Building501
+    400332: Building502
+    400334: Building504
+    400336: Building506
+    400338: Building507
+    400340: Building508
+    400342: Building509
+    400344: Building510
+    400346: Building511
+    400348: Building512
+    400350: Building513
+    400352: Building514
+    400354: Building515
+    400356: Building516
+    400358: Building517
+    400360: Building518
+    400362: Building519
+    400364: Building520
+    400366: Building521
+    400368: Building522
+    400370: Building523
+    400372: Building524
+    400374: Building525
+    400376: Building526
+    400378: Building527
+    400380: Building528
+    400382: Building529
+    400384: Building530
+    400386: Building531
+    400388: Building532
+    400390: Building534
+    400392: Building535
+    400394: Building536
+    400396: Building537
+    400398: Building538
+    400400: Building539
+    400402: Building540
+    400404: Building541
+    400406: Building542
+    400408: Building543
+    400410: Building544
+    400412: Building545
+    400414: Building546
+    400416: Building547
+    400418: Building548
+    400420: Building549
+    400422: Building552
+    400424: Building553
+    400426: Building554
+    400428: Building555
+    400430: Building556
+    400432: Building557
+    400434: Building559
+    400436: Building560
+    400438: Building561
+    400440: Building562
+    400442: Building563
+    400444: Building564
+    400446: Building565
+    400448: Building566
+    400450: Building567
+    400452: Building568
+    400454: Building569
+    400456: Building570
+    400458: Building571
+    400460: Building572
+    400462: Building575
+    400464: Building576
+    400466: Building577
+    400468: Building579
+    400470: Building580
+    400472: Building581
+    400474: Building582
+    400476: Building583
+    400478: Building584
+    400480: Building585
+    400482: Building586
+    400484: Building587
+    400486: Building588
+    400488: Building589
+    400490: Building590
+    400492: Building591
+    400494: Building592
+    400496: Building593
+    400498: Building594
+    400500: Building595
+    400502: Building596
+    400504: Building597
+    400506: Building598
+    400508: Building599
+    400510: Building600
+    400512: Building601
+    400514: Building602
+    400516: Building603
+    400518: Building604
+    400520: Building605
+    400522: Building606
+    400524: Building607
+    400526: Building608
+    400528: Building609
+    400530: Building610
+    400532: Building611
+    400534: Building612
+    400536: Building613
+    400538: Building614
+    400540: Building615
+    400542: Building616
+    400544: Building617
+    400546: Building618
+    400548: Building619
+    400550: Building620
+    400552: Building621
+    400554: Building622
+    400556: Building623
+    400558: Building624
+    400560: Building625
+    400562: Building626
+    400564: Building627
+    400566: Building628
+    400568: Building629
+    400570: Building630
+    400572: Building631
+    400574: Building632
+    400576: Building633
+    400578: Building634
+    400580: Building635
+    400582: Building636
+    400584: Building637
+    400586: Building638
+    400588: Building639
+    400590: Building640
+    400592: Building641
+    400594: Building642
+    400596: Building643
+    400598: Building644
+    400600: Building645
+    400602: Building646
+    400604: Building647
+    400606: Building648
+    400608: Building649
+    400610: Building650
+    400612: Building651
+    400614: Building652
+    400616: Building653
+    400618: Building654
+    400620: Building655
+    400622: Building657
+    400624: Building659
+    400626: Building660
+    400628: Building661
+    400630: Building662
+    400632: Building663
+    400634: Building664
+    400636: Building665
+    400638: Building666
+    400640: Building667
+    400642: BuildingEntrance103
+    400644: BuildingEntrance136
+    400646: BuildingEntrance36
+    400648: BusStop Oberstdorfer Marktb___hnle
+    400650: Camera
+    400652: Cube
+    400654: FireHydrant161
+    400656: FireHydrant162
+    400658: FireHydrant197
+    400660: FireHydrant201
+    400662: FireHydrant46
+    400664: Flagpole176
+    400666: Flagpole178
+    400668: Flagpole231
+    400670: Flagpole239
+    400672: Flagpole242
+    400674: Flagpole247
+    400676: Flagpole66
+    400678: Flagpole80
+    400680: Flagpole85
+    400682: Hedge276
+    400684: Hedge277
+    400686: Hedge278
+    400688: Hedge279
+    400690: Hedge280
+    400692: Light
+    400694: //RootNode
+    400696: Phone 08322/80822
+    400698: Phone 832209875939
+    400700: PostBox Ludwigstra___e 4, 87561 Oberstdorf
+    400702: RecyclingContainer244
+    400704: RecyclingContainer97
+    400706: Road Bachstra___e
+    400708: Road Bachstra___e.000
+    400710: Road Bachstra___e.001
+    400712: Road Bachstra___e.002
+    400714: Road Bachstra___e.003
+    400716: Road Bachstra___e.004
+    400718: Road Clemens-Wenzeslaus-Stra___e
+    400720: Road F___rsterstra___e
+    400722: Road F___rsterstra___e.000
+    400724: Road F___rsterstra___e.001
+    400726: Road Finkenstra___e
+    400728: Road Finkenstra___e.000
+    400730: Road Finkenstra___e.001
+    400732: Road Finkenstra___e.002
+    400734: Road Finkenstra___e.003
+    400736: Road Finkenstra___e.004
+    400738: Road Finkenstra___e.005
+    400740: Road Finkenstra___e.006
+    400742: Road Finkenstra___e.007
+    400744: Road Finkenstra___e.008
+    400746: Road Finkenstra___e.009
+    400748: Road Finkenstra___e.010
+    400750: Road Fischerstra___e
+    400752: Road Fischerstra___e.000
+    400754: Road Freibergstra___e
+    400756: Road Freibergstra___e.000
+    400758: Road Freibergstra___e.001
+    400760: Road Freibergstra___e.002
+    400762: Road Freibergstra___e.003
+    400764: Road Freibergstra___e.004
+    400766: Road Freibergstra___e.005
+    400768: Road Freibergstra___e.006
+    400770: Road Freibergstra___e.007
+    400772: Road Freibergstra___e.008
+    400774: Road Freibergstra___e.009
+    400776: Road Freibergstra___e.010
+    400778: Road Freibergstra___e.011
+    400780: Road Freibergstra___e.012
+    400782: Road Freibergstra___e.013
+    400784: Road Freibergstra___e.014
+    400786: Road Freibergstra___e.015
+    400788: Road Freibergstra___e.016
+    400790: Road Freibergstra___e.018
+    400792: Road Freibergstra___e.019
+    400794: Road Freibergstra___e.020
+    400796: Road Freibergstra___e.021
+    400798: Road Freibergstra___e.022
+    400800: Road Freiherr-von-Brutscher-Stra___e
+    400802: Road Freiherr-von-Brutscher-Stra___e.001
+    400804: Road Freiherr-von-Brutscher-Stra___e.003
+    400806: Road Freiherr-von-Brutscher-Stra___e.004
+    400808: Road Freiherr-von-Brutscher-Stra___e.005
+    400810: Road Freiherr-von-Brutscher-Stra___e.006
+    400812: Road Freiherr-von-Brutscher-Stra___e.007
+    400814: Road Frohmarkt
+    400816: Road Frohmarkt.000
+    400818: Road Frohmarkt.001
+    400820: Road Frohmarkt.002
+    400822: Road Frohmarkt.003
+    400824: Road Fuggerstra___e
+    400826: Road Fuggerstra___e.000
+    400828: Road Fuggerstra___e.001
+    400830: Road Fuggerstra___e.002
+    400832: Road Fuggerstra___e.003
+    400834: Road Fuggerstra___e.004
+    400836: Road Fuggerstra___e.005
+    400838: Road Fuggerstra___e.006
+    400840: Road Fuggerstra___e.007
+    400842: Road Fuggerstra___e.008
+    400844: Road Fuggerstra___e.009
+    400846: Road Fuggerstra___e.010
+    400848: Road Fuggerstra___e.011
+    400850: Road Fuggerstra___e.012
+    400852: Road Fuggerstra___e.013
+    400854: Road Fuggerstra___e.014
+    400856: Road Fuggerstra___e.015
+    400858: Road Fuggerstra___e.016
+    400860: Road Fuggerstra___e.017
+    400862: Road Fuggerstra___e.018
+    400864: Road Hauptstra___e
+    400866: Road Hauptstra___e.000
+    400868: Road Hauptstra___e.001
+    400870: Road Kirchstra___e
+    400872: Road Kirchstra___e.000
+    400874: Road Kirchstra___e.001
+    400876: Road Kirchstra___e.002
+    400878: Road Ludwigstra___e
+    400880: Road Ludwigstra___e.000
+    400882: Road Ludwigstra___e.001
+    400884: Road Ludwigstra___e.002
+    400886: Road Ludwigstra___e.003
+    400888: Road Ludwigstra___e.004
+    400890: Road Ludwigstra___e.005
+    400892: Road Ludwigstra___e.006
+    400894: Road Ludwigstra___e.007
+    400896: Road Ludwigstra___e.008
+    400898: Road Ludwigstra___e.009
+    400900: Road Ludwigstra___e.010
+    400902: Road Luitpoldstra___e
+    400904: Road Luitpoldstra___e.000
+    400906: Road Luitpoldstra___e.001
+    400908: Road Luitpoldstra___e.002
+    400910: Road M___hlenweg
+    400912: Road M___hlenweg.000
+    400914: Road M___hlenweg.001
+    400916: Road M___hlenweg.002
+    400918: Road M___hlenweg.003
+    400920: Road M___hlenweg.004
+    400922: Road M___hlenweg.005
+    400924: Road M___hlenweg.006
+    400926: Road M___hlenweg.007
+    400928: Road M___hlenweg.008
+    400930: Road M___hlenweg.009
+    400932: Road M___hlenweg.010
+    400934: Road M___hlenweg.011
+    400936: Road Marktplatz
+    400938: Road Marktplatz.000
+    400940: Road Marktplatz.001
+    400942: Road Marktplatz.002
+    400944: Road Marktplatz.003
+    400946: Road Marktplatz.004
+    400948: Road Marktplatz.005
+    400950: Road Marktplatz.006
+    400952: Road Marktplatz.008
+    400954: Road Marktplatz.009
+    400956: Road Marktplatz.010
+    400958: Road Marktplatz.011
+    400960: Road Metzgerstra___e
+    400962: Road Metzgerstra___e.000
+    400964: Road Metzgerstra___e.001
+    400966: Road Metzgerstra___e.002
+    400968: Road Metzgerstra___e.003
+    400970: Road Metzgerstra___e.004
+    400972: Road Metzgerstra___e.005
+    400974: Road Metzgerstra___e.006
+    400976: Road Metzgerstra___e.007
+    400978: Road Metzgerstra___e.008
+    400980: Road Metzgerstra___e.009
+    400982: Road Metzgerstra___e.010
+    400984: Road Metzgerstra___e.011
+    400986: Road Metzgerstra___e.012
+    400988: Road Metzgerstra___e.013
+    400990: Road Metzgerstra___e.014
+    400992: Road Oststra___e
+    400994: Road Oststra___e.000
+    400996: Road Oststra___e.001
+    400998: Road Oststra___e.002
+    401000: Road Oststra___e.003
+    401002: Road Oststra___e.004
+    401004: Road Oststra___e.005
+    401006: Road Oststra___e.006
+    401008: Road Oststra___e.007
+    401010: Road Oststra___e.008
+    401012: Road Oststra___e.009
+    401014: Road Oststra___e.010
+    401016: Road Oststra___e.011
+    401018: Road Oststra___e.012
+    401020: Road Oststra___e.013
+    401022: Road Oststra___e.014
+    401024: Road Oststra___e.015
+    401026: Road Oststra___e.016
+    401028: Road Oststra___e.017
+    401030: Road Oststra___e.018
+    401032: Road Oststra___e.019
+    401034: Road Oststra___e.020
+    401036: Road Oststra___e.021
+    401038: Road Oststra___e.022
+    401040: Road Oststra___e.023
+    401042: Road Oststra___e.024
+    401044: Road Oststra___e.025
+    401046: Road Oststra___e.026
+    401048: Road Oststra___e.027
+    401050: Road Paul-Gerhardt-Stra___e
+    401052: Road Paul-Gerhardt-Stra___e.000
+    401054: Road Paul-Gerhardt-Stra___e.001
+    401056: Road Paul-Gerhardt-Stra___e.002
+    401058: Road Paul-Gerhardt-Stra___e.003
+    401060: Road Paul-Gerhardt-Stra___e.004
+    401062: Road Paul-Gerhardt-Stra___e.005
+    401064: Road Paul-Gerhardt-Stra___e.006
+    401066: Road Paul-Gerhardt-Stra___e.007
+    401068: Road Paul-Gerhardt-Stra___e.008
+    401070: Road Paul-Gerhardt-Stra___e.009
+    401072: Road Paul-Gerhardt-Stra___e.010
+    401074: Road Paul-Gerhardt-Stra___e.011
+    401076: Road Paul-Gerhardt-Stra___e.012
+    401078: Road Paul-Gerhardt-Stra___e.013
+    401080: Road Pfarrstra___e
+    401082: Road Pfarrstra___e.000
+    401084: Road Pfarrstra___e.001
+    401086: Road Pfarrstra___e.002
+    401088: Road Prinzenstra___e
+    401090: Road Prinzenstra___e.000
+    401092: Road Prinzenstra___e.001
+    401094: Road Prinzenstra___e.002
+    401096: Road Prinzenstra___e.003
+    401098: Road Prinzenstra___e.004
+    401100: Road Prinzenstra___e.005
+    401102: Road Prinzenstra___e.006
+    401104: Road Prinzenstra___e.007
+    401106: Road Prinzenstra___e.008
+    401108: Road Prinzenstra___e.009
+    401110: Road Prinzenstra___e.010
+    401112: Road Prinzenstra___e.011
+    401114: Road Prinzenstra___e.012
+    401116: Road Prinzenstra___e.013
+    401118: Road Prinzenstra___e.014
+    401120: Road Prinzenstra___e.015
+    401122: Road Prinzenstra___e.016
+    401124: Road Prinzenstra___e.017
+    401126: Road Prinzregenten-Platz
+    401128: Road Prinzregenten-Platz.000
+    401130: Road Prinzregenten-Platz.001
+    401132: Road Prinzregenten-Platz.002
+    401134: Road Prinzregenten-Platz.003
+    401136: Road Prinzregenten-Platz.004
+    401138: Road Prinzregenten-Platz.005
+    401140: Road Prinzregenten-Platz.006
+    401142: Road Pumptrack Oberstdorf
+    401144: Road Pumptrack Oberstdorf.000
+    401146: Road Pumptrack Oberstdorf.001
+    401148: Road Pumptrack Oberstdorf.002
+    401150: Road Pumptrack Oberstdorf.003
+    401152: Road Pumptrack Oberstdorf.004
+    401154: Road Pumptrack Oberstdorf.005
+    401156: Road Pumptrack Oberstdorf.006
+    401158: Road Pumptrack Oberstdorf.007
+    401160: Road Pumptrack Oberstdorf.008
+    401162: Road Pumptrack Oberstdorf.009
+    401164: Road Pumptrack Oberstdorf.010
+    401166: Road Pumptrack Oberstdorf.011
+    401168: Road Pumptrack Oberstdorf.012
+    401170: Road Pumptrack Oberstdorf.013
+    401172: Road Pumptrack Oberstdorf.014
+    401174: Road Pumptrack Oberstdorf.016
+    401176: Road Pumptrack Oberstdorf.017
+    401178: Road Pumptrack Oberstdorf.018
+    401180: Road Pumptrack Oberstdorf.019
+    401182: Road Rankgasse
+    401184: Road Rankgasse.000
+    401186: Road Rankgasse.001
+    401188: Road Rankgasse.002
+    401190: Road Rankgasse.003
+    401192: Road Rankgasse.004
+    401194: Road Rankgasse.005
+    401196: Road Rankgasse.006
+    401198: Road Reithallenweg
+    401200: Road Reithallenweg.000
+    401202: Road Sachsenweg
+    401204: Road Sachsenweg.000
+    401206: Road Schustergasse
+    401208: Road Sebastian-Kneipp-Weg
+    401210: Road Sebastian-Kneipp-Weg.000
+    401212: Road Sebastian-Kneipp-Weg.001
+    401214: Road Sebastian-Kneipp-Weg.002
+    401216: Road Sebastian-Kneipp-Weg.003
+    401218: Road Sebastian-Kneipp-Weg.004
+    401220: Road Sebastian-Kneipp-Weg.005
+    401222: Road Sebastian-Kneipp-Weg.006
+    401224: Road Sebastian-Kneipp-Weg.007
+    401226: Road Sebastian-Kneipp-Weg.008
+    401228: Road Sebastian-Kneipp-Weg.009
+    401230: Road Sebastian-Kneipp-Weg.010
+    401232: Road Sebastian-Kneipp-Weg.011
+    401234: Road Sebastian-Kneipp-Weg.012
+    401236: Road Sebastian-Kneipp-Weg.013
+    401238: Road Sebastian-Kneipp-Weg.014
+    401240: Road Sebastian-Kneipp-Weg.015
+    401242: Road Sebastian-Kneipp-Weg.016
+    401244: Road Sebastian-Kneipp-Weg.017
+    401246: Road Sebastian-Kneipp-Weg.018
+    401248: Road Sigismundstra___e
+    401250: Road Sonnenstra___e
+    401252: Road Sonnenstra___e.000
+    401254: Road Sonnenstra___e.002
+    401256: Road Sonnenstra___e.003
+    401258: Road Sonnenstra___e.004
+    401260: Road Sonnenstra___e.005
+    401262: Road Sonnenstra___e.006
+    401264: Road Sonnenstra___e.007
+    401266: Road Weststra___e
+    401268: Road Weststra___e.000
+    401270: Road Weststra___e.001
+    401272: Road Weststra___e.002
+    401274: Road Weststra___e.003
+    401276: Road Weststra___e.004
+    401278: Road Weststra___e.005
+    401280: Road Weststra___e.006
+    401282: Road Weststra___e.007
+    401284: Road Weststra___e.008
+    401286: Road Weststra___e.009
+    401288: Road Weststra___e.010
+    401290: Road Weststra___e.011
+    401292: Road Weststra___e.012
+    401294: Road Weststra___e.013
+    401296: Road Weststra___e.014
+    401298: Road Weststra___e.015
+    401300: Road Weststra___e.016
+    401302: Road Weststra___e.017
+    401304: Road Weststra___e.018
+    401306: Road Weststra___e.019
+    401308: Road Weststra___e.020
+    401310: Road Weststra___e.021
+    401312: Road Weststra___e.022
+    401314: Road Weststra___e.023
+    401316: Road Weststra___e.024
+    401318: Road Weststra___e.025
+    401320: Road Weststra___e.026
+    401322: Road Weststra___e.027
+    401324: Road264
+    401326: Road265
+    401328: Road266
+    401330: Road267
+    401332: Road268
+    401334: Road269
+    401336: Road270
+    401338: Road271
+    401340: Road272
+    401342: Road273
+    401344: Road274
+    401346: Road275
+    401348: Road281
+    401350: Road282
+    401352: Road283
+    401354: Road284
+    401356: Road285
+    401358: Road286
+    401360: Road287
+    401362: Road288
+    401364: Road289
+    401366: Road290
+    401368: Road291
+    401370: Road292
+    401372: Road293
+    401374: Road294
+    401376: Road295
+    401378: Road296
+    401380: Road297
+    401382: Road298
+    401384: Road299
+    401386: Road300
+    401388: Road301
+    401390: Road302
+    401392: Road303
+    401394: Road304
+    401396: Road305
+    401398: Road306
+    401400: Road307
+    401402: Road308
+    401404: Road309
+    401406: Road310
+    401408: Road311
+    401410: Road312
+    401412: Road313
+    401414: Road314
+    401416: Road315
+    401418: Road316
+    401420: Road317
+    401422: Road318
+    401424: Road319
+    401426: Road320
+    401428: Road321
+    401430: Road322
+    401432: Road323
+    401434: Road324
+    401436: Road325
+    401438: Road326
+    401440: Road327
+    401442: Road332
+    401444: Road333
+    401446: Road334
+    401448: Road335
+    401450: Road336
+    401452: Road337
+    401454: Road338
+    401456: Road339
+    401458: Road340
+    401460: Road341
+    401462: Road342
+    401464: Road343
+    401466: Road344
+    401468: Road345
+    401470: Road346
+    401472: Road347
+    401474: Road348
+    401476: Road354
+    401478: Road355
+    401480: Road356
+    401482: Road357
+    401484: Road358
+    401486: Road359
+    401488: Road360
+    401490: Road361
+    401492: Road362
+    401494: Road363
+    401496: Road364
+    401498: Road365
+    401500: Road366
+    401502: Road367
+    401504: Road368
+    401506: Road369
+    401508: Road370
+    401510: Road371
+    401512: Road372
+    401514: Road373
+    401516: Road374
+    401518: Road375
+    401520: Road376
+    401522: Road377
+    401524: Road378
+    401526: Road379
+    401528: Road380
+    401530: Road381
+    401532: Road382
+    401534: Road383
+    401536: Road384
+    401538: Road385
+    401540: Road386
+    401542: Road387
+    401544: Road388
+    401546: Road389
+    401548: Road390
+    401550: Road391
+    401552: Road392
+    401554: Road393
+    401556: Road394
+    401558: Road395
+    401560: Road396
+    401562: Road397
+    401564: Road398
+    401566: Road399
+    401568: Road400
+    401570: Road401
+    401572: Road402
+    401574: Road403
+    401576: Road404
+    401578: Road405
+    401580: Road406
+    401582: Road407
+    401584: Road408
+    401586: Road409
+    401588: Road410
+    401590: Road411
+    401592: Road413
+    401594: Road414
+    401596: Road415
+    401598: Road416
+    401600: Road417
+    401602: Road418
+    401604: Road419
+    401606: Road420
+    401608: Road421
+    401610: Road422
+    401612: Road423
+    401614: Road424
+    401616: Road425
+    401618: Road426
+    401620: Road427
+    401622: Road428
+    401624: Road429
+    401626: Road430
+    401628: Road431
+    401630: Road432
+    401632: Road433
+    401634: Road434
+    401636: Road435
+    401638: Road436
+    401640: Road437
+    401642: Road439
+    401644: Road440
+    401646: Road441
+    401648: Road442
+    401650: Road443
+    401652: Road444
+    401654: Road445
+    401656: Road446
+    401658: Road447
+    401660: Road448
+    401662: Road449
+    401664: Road450
+    401666: Road451
+    401668: Road452
+    401670: Road453
+    401672: Road454
+    401674: Road459
+    401676: Road460
+    401678: Road461
+    401680: Road462
+    401682: Road463
+    401684: Road464
+    401686: Road465
+    401688: RoadArea Marktplatz
+    401690: RoadConnector133
+    401692: RoadConnector139
+    401694: RoadConnector199
+    401696: RoadConnector31
+    401698: RoadConnector91
+    401700: RoadConnector92
+    401702: RoadConnector98
+    401704: RoadConnector99
+    401706: RoadJunction0
+    401708: RoadJunction1
+    401710: RoadJunction100
+    401712: RoadJunction101
+    401714: RoadJunction102
+    401716: RoadJunction104
+    401718: RoadJunction105
+    401720: RoadJunction106
+    401722: RoadJunction107
+    401724: RoadJunction108
+    401726: RoadJunction109
+    401728: RoadJunction110
+    401730: RoadJunction111
+    401732: RoadJunction112
+    401734: RoadJunction113
+    401736: RoadJunction114
+    401738: RoadJunction115
+    401740: RoadJunction116
+    401742: RoadJunction117
+    401744: RoadJunction118
+    401746: RoadJunction119
+    401748: RoadJunction120
+    401750: RoadJunction121
+    401752: RoadJunction122
+    401754: RoadJunction123
+    401756: RoadJunction124
+    401758: RoadJunction125
+    401760: RoadJunction126
+    401762: RoadJunction127
+    401764: RoadJunction128
+    401766: RoadJunction129
+    401768: RoadJunction130
+    401770: RoadJunction131
+    401772: RoadJunction132
+    401774: RoadJunction134
+    401776: RoadJunction135
+    401778: RoadJunction137
+    401780: RoadJunction138
+    401782: RoadJunction140
+    401784: RoadJunction141
+    401786: RoadJunction144
+    401788: RoadJunction145
+    401790: RoadJunction146
+    401792: RoadJunction147
+    401794: RoadJunction149
+    401796: RoadJunction159
+    401798: RoadJunction16
+    401800: RoadJunction169
+    401802: RoadJunction174
+    401804: RoadJunction175
+    401806: RoadJunction181
+    401808: RoadJunction188
+    401810: RoadJunction198
+    401812: RoadJunction2
+    401814: RoadJunction20
+    401816: RoadJunction200
+    401818: RoadJunction202
+    401820: RoadJunction203
+    401822: RoadJunction204
+    401824: RoadJunction205
+    401826: RoadJunction206
+    401828: RoadJunction207
+    401830: RoadJunction208
+    401832: RoadJunction209
+    401834: RoadJunction210
+    401836: RoadJunction215
+    401838: RoadJunction217
+    401840: RoadJunction220
+    401842: RoadJunction222
+    401844: RoadJunction223
+    401846: RoadJunction229
+    401848: RoadJunction234
+    401850: RoadJunction235
+    401852: RoadJunction248
+    401854: RoadJunction249
+    401856: RoadJunction250
+    401858: RoadJunction251
+    401860: RoadJunction252
+    401862: RoadJunction256
+    401864: RoadJunction257
+    401866: RoadJunction258
+    401868: RoadJunction259
+    401870: RoadJunction260
+    401872: RoadJunction261
+    401874: RoadJunction263
+    401876: RoadJunction29
+    401878: RoadJunction3
+    401880: RoadJunction32
+    401882: RoadJunction33
+    401884: RoadJunction35
+    401886: RoadJunction4
+    401888: RoadJunction40
+    401890: RoadJunction41
+    401892: RoadJunction43
+    401894: RoadJunction45
+    401896: RoadJunction48
+    401898: RoadJunction5
+    401900: RoadJunction56
+    401902: RoadJunction6
+    401904: RoadJunction63
+    401906: RoadJunction64
+    401908: RoadJunction72
+    401910: RoadJunction82
+    401912: RoadJunction86
+    401914: RoadJunction88
+    401916: RoadJunction93
+    401918: RoadJunction94
+    401920: StreetLamp225
+    401922: StreetLamp28
+    401924: StreetLamp47
+    401926: SurfaceArea558
+    401928: SurfaceArea656
+    401930: SurfaceArea658
+    401932: SurfaceParking Freiherr-von-Brutscherstra___e
+    401934: SurfaceParking Sachsenweg
+    401936: SurfaceParking474
+    401938: SurfaceParking505
+    401940: SurfaceParking573
+    401942: SurfaceParking574
+    401944: SurfaceParking578
+    401946: TennisPitch550
+    401948: TennisPitch551
+    401950: Tree Einigkeitseiche
+    401952: Tree Friedenslinde
+    401954: Tree13
+    401956: Tree18
+    401958: Tree21
+    401960: Tree216
+    401962: Tree224
+    401964: Tree24
+    401966: Tree26
+    401968: Tree27
+    401970: Tree38
+    401972: Tree39
+    401974: Tree87
+    401976: Tree89
+    401978: Tree90
+    401980: Tunnel458
+    401982: VendingMachineVice148
+    401984: VendingMachineVice42
+    401986: WasteBasket142
+    401988: WasteBasket143
+    401990: WasteBasket214
+    401992: WasteBasket233
+    401994: WasteBasket245
+    401996: WasteBasket30
+    401998: WasteBasket37
+    402000: WasteBasket51
+    402002: Water533
+    402004: Waterway328
+    402006: Waterway329
+    402008: Waterway330
+    402010: Waterway331
+    402012: Waterway349
+    402014: Waterway350
+    402016: Waterway351
+    402018: Waterway352
+    402020: Waterway353
+    402022: Waterway455
+    402024: Waterway456
+    402026: Waterway457
+    2000000: Camera
+    2100000: Material
+    2100002: ASPHALT_0
+    2100004: MAT_0_0
+    2100006: WOOD_0
+    2100008: MAT_1_0
+    2100010: PLASTIC_0
+    2100012: MAT_2_0
+    2100014: STEEL_0
+    2100016: ENTRANCE_DEFAULT_0
+    2100018: MAT_3_0
+    2100020: MAT_4_0
+    2100022: MAT_5_0
+    2100024: MAT_6_0
+    2100026: FIREHYDRANT_0
+    2100028: GLASS_0
+    2100030: TELEKOM_MANGENTA_0
+    2100032: KERB_0
+    2100034: MAT_7_0
+    2100036: MAT_8_0
+    2100038: MAT_9_0
+    2100040: MAT_10_0
+    2100042: BUS_STOP_SIGN_0
+    2100044: PAVING_STONE_0
+    2100046: GRAVEL_0
+    2100048: POSTBOX_DEUTSCHEPOST_0
+    2100050: HEDGE_0
+    2100052: TERRAIN_DEFAULT_0
+    2100054: WATER_0
+    2100056: STEPS_DEFAULT_0
+    2100058: BRIDGE_DEFAULT_0
+    2100060: MAT_11_0
+    2100062: TUNNEL_DEFAULT_0
+    2100064: BUILDING_DEFAULT_0
+    2100066: ROOF_DEFAULT_0
+    2100068: PITCH_TENNIS_CLAY_0
+    2100070: MAT_12_0
+    2100072: TENNIS_NET_0
+    2100074: EARTH_0
+    2100076: CONCRETE_0
+    2300000: AdvertisingColumn44
+    2300002: Bench10
+    2300004: Bench11
+    2300006: Bench12
+    2300008: Bench14
+    2300010: Bench15
+    2300012: Bench150
+    2300014: Bench151
+    2300016: Bench152
+    2300018: Bench153
+    2300020: Bench154
+    2300022: Bench155
+    2300024: Bench156
+    2300026: Bench157
+    2300028: Bench158
+    2300030: Bench160
+    2300032: Bench163
+    2300034: Bench164
+    2300036: Bench165
+    2300038: Bench166
+    2300040: Bench167
+    2300042: Bench168
+    2300044: Bench17
+    2300046: Bench170
+    2300048: Bench171
+    2300050: Bench172
+    2300052: Bench173
+    2300054: Bench177
+    2300056: Bench179
+    2300058: Bench180
+    2300060: Bench182
+    2300062: Bench183
+    2300064: Bench184
+    2300066: Bench185
+    2300068: Bench186
+    2300070: Bench187
+    2300072: Bench189
+    2300074: Bench19
+    2300076: Bench190
+    2300078: Bench191
+    2300080: Bench192
+    2300082: Bench193
+    2300084: Bench194
+    2300086: Bench195
+    2300088: Bench196
+    2300090: Bench211
+    2300092: Bench212
+    2300094: Bench213
+    2300096: Bench218
+    2300098: Bench219
+    2300100: Bench22
+    2300102: Bench221
+    2300104: Bench226
+    2300106: Bench227
+    2300108: Bench228
+    2300110: Bench23
+    2300112: Bench230
+    2300114: Bench232
+    2300116: Bench236
+    2300118: Bench237
+    2300120: Bench238
+    2300122: Bench240
+    2300124: Bench241
+    2300126: Bench243
+    2300128: Bench246
+    2300130: Bench25
+    2300132: Bench253
+    2300134: Bench254
+    2300136: Bench255
+    2300138: Bench262
+    2300140: Bench34
+    2300142: Bench49
+    2300144: Bench50
+    2300146: Bench52
+    2300148: Bench53
+    2300150: Bench54
+    2300152: Bench55
+    2300154: Bench57
+    2300156: Bench65
+    2300158: Bench67
+    2300160: Bench68
+    2300162: Bench69
+    2300164: Bench7
+    2300166: Bench70
+    2300168: Bench71
+    2300170: Bench73
+    2300172: Bench74
+    2300174: Bench75
+    2300176: Bench76
+    2300178: Bench77
+    2300180: Bench78
+    2300182: Bench79
+    2300184: Bench8
+    2300186: Bench81
+    2300188: Bench83
+    2300190: Bench84
+    2300192: Bench9
+    2300194: Bench95
+    2300196: Bench96
+    2300198: Board 16 Feuerspritzen
+    2300200: Board Brunnen mit Widder und Deichel
+    2300202: Board Evangelische Christus-Kirche
+    2300204: Board Friedenslinde
+    2300206: Board Kreuzwegstation am Weg nach Loretto
+    2300208: Board Pr___zisions-Sonnenuhr
+    2300210: Board Prinzregenten-Denkmal
+    2300212: Board Pumptrack Oberstdorf
+    2300214: Board58
+    2300216: Board59
+    2300218: Board60
+    2300220: Board61
+    2300222: Board62
+    2300224: Bridge438
+    2300226: Building Adler
+    2300228: Building Alpine Dreams
+    2300230: Building Altes Rathaus
+    2300232: Building Bacchus-Stuben
+    2300234: Building Haus Fichtel
+    2300236: Building Haus im Gr___nen
+    2300238: Building Haus Nandl
+    2300240: Building Johannisheim
+    2300242: Building Kath. Kindergarten St. Martin
+    2300244: Building Konzertmuschel
+    2300246: Building LOFT Oberstdorf
+    2300248: Building Maxheim
+    2300250: Building Oberstdorf Haus
+    2300252: Building Pfarrhof
+    2300254: Building Rathaus
+    2300256: Building Rosenhof
+    2300258: Building Seelenkapelle
+    2300260: Building St. Johannes Baptist
+    2300262: Building Villa Jauss
+    2300264: Building466
+    2300266: Building467
+    2300268: Building468
+    2300270: Building469
+    2300272: Building470
+    2300274: Building472
+    2300276: Building473
+    2300278: Building475
+    2300280: Building476
+    2300282: Building477
+    2300284: Building478
+    2300286: Building479
+    2300288: Building480
+    2300290: Building481
+    2300292: Building482
+    2300294: Building483
+    2300296: Building484
+    2300298: Building485
+    2300300: Building486
+    2300302: Building487
+    2300304: Building488
+    2300306: Building489
+    2300308: Building490
+    2300310: Building491
+    2300312: Building492
+    2300314: Building493
+    2300316: Building494
+    2300318: Building495
+    2300320: Building496
+    2300322: Building497
+    2300324: Building498
+    2300326: Building499
+    2300328: Building500
+    2300330: Building501
+    2300332: Building502
+    2300334: Building504
+    2300336: Building506
+    2300338: Building507
+    2300340: Building508
+    2300342: Building509
+    2300344: Building510
+    2300346: Building511
+    2300348: Building512
+    2300350: Building513
+    2300352: Building514
+    2300354: Building515
+    2300356: Building516
+    2300358: Building517
+    2300360: Building518
+    2300362: Building519
+    2300364: Building520
+    2300366: Building521
+    2300368: Building522
+    2300370: Building523
+    2300372: Building524
+    2300374: Building525
+    2300376: Building526
+    2300378: Building527
+    2300380: Building528
+    2300382: Building529
+    2300384: Building530
+    2300386: Building531
+    2300388: Building532
+    2300390: Building534
+    2300392: Building535
+    2300394: Building536
+    2300396: Building537
+    2300398: Building538
+    2300400: Building539
+    2300402: Building540
+    2300404: Building541
+    2300406: Building542
+    2300408: Building543
+    2300410: Building544
+    2300412: Building545
+    2300414: Building546
+    2300416: Building547
+    2300418: Building548
+    2300420: Building549
+    2300422: Building552
+    2300424: Building553
+    2300426: Building554
+    2300428: Building555
+    2300430: Building556
+    2300432: Building557
+    2300434: Building559
+    2300436: Building560
+    2300438: Building561
+    2300440: Building562
+    2300442: Building563
+    2300444: Building564
+    2300446: Building565
+    2300448: Building566
+    2300450: Building567
+    2300452: Building568
+    2300454: Building569
+    2300456: Building570
+    2300458: Building571
+    2300460: Building572
+    2300462: Building575
+    2300464: Building576
+    2300466: Building577
+    2300468: Building579
+    2300470: Building580
+    2300472: Building581
+    2300474: Building582
+    2300476: Building583
+    2300478: Building584
+    2300480: Building585
+    2300482: Building586
+    2300484: Building587
+    2300486: Building588
+    2300488: Building589
+    2300490: Building590
+    2300492: Building591
+    2300494: Building592
+    2300496: Building593
+    2300498: Building594
+    2300500: Building595
+    2300502: Building596
+    2300504: Building597
+    2300506: Building598
+    2300508: Building599
+    2300510: Building600
+    2300512: Building601
+    2300514: Building602
+    2300516: Building603
+    2300518: Building604
+    2300520: Building605
+    2300522: Building606
+    2300524: Building607
+    2300526: Building608
+    2300528: Building609
+    2300530: Building610
+    2300532: Building611
+    2300534: Building612
+    2300536: Building613
+    2300538: Building614
+    2300540: Building615
+    2300542: Building616
+    2300544: Building617
+    2300546: Building618
+    2300548: Building619
+    2300550: Building620
+    2300552: Building621
+    2300554: Building622
+    2300556: Building623
+    2300558: Building624
+    2300560: Building625
+    2300562: Building626
+    2300564: Building627
+    2300566: Building628
+    2300568: Building629
+    2300570: Building630
+    2300572: Building631
+    2300574: Building632
+    2300576: Building633
+    2300578: Building634
+    2300580: Building635
+    2300582: Building636
+    2300584: Building637
+    2300586: Building638
+    2300588: Building639
+    2300590: Building640
+    2300592: Building641
+    2300594: Building642
+    2300596: Building643
+    2300598: Building644
+    2300600: Building645
+    2300602: Building646
+    2300604: Building647
+    2300606: Building648
+    2300608: Building649
+    2300610: Building650
+    2300612: Building651
+    2300614: Building652
+    2300616: Building653
+    2300618: Building654
+    2300620: Building655
+    2300622: Building657
+    2300624: Building659
+    2300626: Building660
+    2300628: Building661
+    2300630: Building662
+    2300632: Building663
+    2300634: Building664
+    2300636: Building665
+    2300638: Building666
+    2300640: Building667
+    2300642: BuildingEntrance103
+    2300644: BuildingEntrance136
+    2300646: BuildingEntrance36
+    2300648: BusStop Oberstdorfer Marktb___hnle
+    2300650: Cube
+    2300652: FireHydrant161
+    2300654: FireHydrant162
+    2300656: FireHydrant197
+    2300658: FireHydrant201
+    2300660: FireHydrant46
+    2300662: Flagpole176
+    2300664: Flagpole178
+    2300666: Flagpole231
+    2300668: Flagpole239
+    2300670: Flagpole242
+    2300672: Flagpole247
+    2300674: Flagpole66
+    2300676: Flagpole80
+    2300678: Flagpole85
+    2300680: Hedge276
+    2300682: Hedge277
+    2300684: Hedge278
+    2300686: Hedge279
+    2300688: Hedge280
+    2300690: Phone 08322/80822
+    2300692: Phone 832209875939
+    2300694: PostBox Ludwigstra___e 4, 87561 Oberstdorf
+    2300696: RecyclingContainer244
+    2300698: RecyclingContainer97
+    2300700: Road Bachstra___e
+    2300702: Road Bachstra___e.000
+    2300704: Road Bachstra___e.001
+    2300706: Road Bachstra___e.002
+    2300708: Road Bachstra___e.003
+    2300710: Road Bachstra___e.004
+    2300712: Road Clemens-Wenzeslaus-Stra___e
+    2300714: Road F___rsterstra___e
+    2300716: Road F___rsterstra___e.000
+    2300718: Road F___rsterstra___e.001
+    2300720: Road Finkenstra___e
+    2300722: Road Finkenstra___e.000
+    2300724: Road Finkenstra___e.001
+    2300726: Road Finkenstra___e.002
+    2300728: Road Finkenstra___e.003
+    2300730: Road Finkenstra___e.004
+    2300732: Road Finkenstra___e.005
+    2300734: Road Finkenstra___e.006
+    2300736: Road Finkenstra___e.007
+    2300738: Road Finkenstra___e.008
+    2300740: Road Finkenstra___e.009
+    2300742: Road Finkenstra___e.010
+    2300744: Road Fischerstra___e
+    2300746: Road Fischerstra___e.000
+    2300748: Road Freibergstra___e
+    2300750: Road Freibergstra___e.000
+    2300752: Road Freibergstra___e.001
+    2300754: Road Freibergstra___e.002
+    2300756: Road Freibergstra___e.003
+    2300758: Road Freibergstra___e.004
+    2300760: Road Freibergstra___e.005
+    2300762: Road Freibergstra___e.006
+    2300764: Road Freibergstra___e.007
+    2300766: Road Freibergstra___e.008
+    2300768: Road Freibergstra___e.009
+    2300770: Road Freibergstra___e.010
+    2300772: Road Freibergstra___e.011
+    2300774: Road Freibergstra___e.012
+    2300776: Road Freibergstra___e.013
+    2300778: Road Freibergstra___e.014
+    2300780: Road Freibergstra___e.015
+    2300782: Road Freibergstra___e.016
+    2300784: Road Freibergstra___e.018
+    2300786: Road Freibergstra___e.019
+    2300788: Road Freibergstra___e.020
+    2300790: Road Freibergstra___e.021
+    2300792: Road Freibergstra___e.022
+    2300794: Road Freiherr-von-Brutscher-Stra___e
+    2300796: Road Freiherr-von-Brutscher-Stra___e.001
+    2300798: Road Freiherr-von-Brutscher-Stra___e.003
+    2300800: Road Freiherr-von-Brutscher-Stra___e.004
+    2300802: Road Freiherr-von-Brutscher-Stra___e.005
+    2300804: Road Freiherr-von-Brutscher-Stra___e.006
+    2300806: Road Freiherr-von-Brutscher-Stra___e.007
+    2300808: Road Frohmarkt
+    2300810: Road Frohmarkt.000
+    2300812: Road Frohmarkt.001
+    2300814: Road Frohmarkt.002
+    2300816: Road Frohmarkt.003
+    2300818: Road Fuggerstra___e
+    2300820: Road Fuggerstra___e.000
+    2300822: Road Fuggerstra___e.001
+    2300824: Road Fuggerstra___e.002
+    2300826: Road Fuggerstra___e.003
+    2300828: Road Fuggerstra___e.004
+    2300830: Road Fuggerstra___e.005
+    2300832: Road Fuggerstra___e.006
+    2300834: Road Fuggerstra___e.007
+    2300836: Road Fuggerstra___e.008
+    2300838: Road Fuggerstra___e.009
+    2300840: Road Fuggerstra___e.010
+    2300842: Road Fuggerstra___e.011
+    2300844: Road Fuggerstra___e.012
+    2300846: Road Fuggerstra___e.013
+    2300848: Road Fuggerstra___e.014
+    2300850: Road Fuggerstra___e.015
+    2300852: Road Fuggerstra___e.016
+    2300854: Road Fuggerstra___e.017
+    2300856: Road Fuggerstra___e.018
+    2300858: Road Hauptstra___e
+    2300860: Road Hauptstra___e.000
+    2300862: Road Hauptstra___e.001
+    2300864: Road Kirchstra___e
+    2300866: Road Kirchstra___e.000
+    2300868: Road Kirchstra___e.001
+    2300870: Road Kirchstra___e.002
+    2300872: Road Ludwigstra___e
+    2300874: Road Ludwigstra___e.000
+    2300876: Road Ludwigstra___e.001
+    2300878: Road Ludwigstra___e.002
+    2300880: Road Ludwigstra___e.003
+    2300882: Road Ludwigstra___e.004
+    2300884: Road Ludwigstra___e.005
+    2300886: Road Ludwigstra___e.006
+    2300888: Road Ludwigstra___e.007
+    2300890: Road Ludwigstra___e.008
+    2300892: Road Ludwigstra___e.009
+    2300894: Road Ludwigstra___e.010
+    2300896: Road Luitpoldstra___e
+    2300898: Road Luitpoldstra___e.000
+    2300900: Road Luitpoldstra___e.001
+    2300902: Road Luitpoldstra___e.002
+    2300904: Road M___hlenweg
+    2300906: Road M___hlenweg.000
+    2300908: Road M___hlenweg.001
+    2300910: Road M___hlenweg.002
+    2300912: Road M___hlenweg.003
+    2300914: Road M___hlenweg.004
+    2300916: Road M___hlenweg.005
+    2300918: Road M___hlenweg.006
+    2300920: Road M___hlenweg.007
+    2300922: Road M___hlenweg.008
+    2300924: Road M___hlenweg.009
+    2300926: Road M___hlenweg.010
+    2300928: Road M___hlenweg.011
+    2300930: Road Marktplatz
+    2300932: Road Marktplatz.000
+    2300934: Road Marktplatz.001
+    2300936: Road Marktplatz.002
+    2300938: Road Marktplatz.003
+    2300940: Road Marktplatz.004
+    2300942: Road Marktplatz.005
+    2300944: Road Marktplatz.006
+    2300946: Road Marktplatz.008
+    2300948: Road Marktplatz.009
+    2300950: Road Marktplatz.010
+    2300952: Road Marktplatz.011
+    2300954: Road Metzgerstra___e
+    2300956: Road Metzgerstra___e.000
+    2300958: Road Metzgerstra___e.001
+    2300960: Road Metzgerstra___e.002
+    2300962: Road Metzgerstra___e.003
+    2300964: Road Metzgerstra___e.004
+    2300966: Road Metzgerstra___e.005
+    2300968: Road Metzgerstra___e.006
+    2300970: Road Metzgerstra___e.007
+    2300972: Road Metzgerstra___e.008
+    2300974: Road Metzgerstra___e.009
+    2300976: Road Metzgerstra___e.010
+    2300978: Road Metzgerstra___e.011
+    2300980: Road Metzgerstra___e.012
+    2300982: Road Metzgerstra___e.013
+    2300984: Road Metzgerstra___e.014
+    2300986: Road Oststra___e
+    2300988: Road Oststra___e.000
+    2300990: Road Oststra___e.001
+    2300992: Road Oststra___e.002
+    2300994: Road Oststra___e.003
+    2300996: Road Oststra___e.004
+    2300998: Road Oststra___e.005
+    2301000: Road Oststra___e.006
+    2301002: Road Oststra___e.007
+    2301004: Road Oststra___e.008
+    2301006: Road Oststra___e.009
+    2301008: Road Oststra___e.010
+    2301010: Road Oststra___e.011
+    2301012: Road Oststra___e.012
+    2301014: Road Oststra___e.013
+    2301016: Road Oststra___e.014
+    2301018: Road Oststra___e.015
+    2301020: Road Oststra___e.016
+    2301022: Road Oststra___e.017
+    2301024: Road Oststra___e.018
+    2301026: Road Oststra___e.019
+    2301028: Road Oststra___e.020
+    2301030: Road Oststra___e.021
+    2301032: Road Oststra___e.022
+    2301034: Road Oststra___e.023
+    2301036: Road Oststra___e.024
+    2301038: Road Oststra___e.025
+    2301040: Road Oststra___e.026
+    2301042: Road Oststra___e.027
+    2301044: Road Paul-Gerhardt-Stra___e
+    2301046: Road Paul-Gerhardt-Stra___e.000
+    2301048: Road Paul-Gerhardt-Stra___e.001
+    2301050: Road Paul-Gerhardt-Stra___e.002
+    2301052: Road Paul-Gerhardt-Stra___e.003
+    2301054: Road Paul-Gerhardt-Stra___e.004
+    2301056: Road Paul-Gerhardt-Stra___e.005
+    2301058: Road Paul-Gerhardt-Stra___e.006
+    2301060: Road Paul-Gerhardt-Stra___e.007
+    2301062: Road Paul-Gerhardt-Stra___e.008
+    2301064: Road Paul-Gerhardt-Stra___e.009
+    2301066: Road Paul-Gerhardt-Stra___e.010
+    2301068: Road Paul-Gerhardt-Stra___e.011
+    2301070: Road Paul-Gerhardt-Stra___e.012
+    2301072: Road Paul-Gerhardt-Stra___e.013
+    2301074: Road Pfarrstra___e
+    2301076: Road Pfarrstra___e.000
+    2301078: Road Pfarrstra___e.001
+    2301080: Road Pfarrstra___e.002
+    2301082: Road Prinzenstra___e
+    2301084: Road Prinzenstra___e.000
+    2301086: Road Prinzenstra___e.001
+    2301088: Road Prinzenstra___e.002
+    2301090: Road Prinzenstra___e.003
+    2301092: Road Prinzenstra___e.004
+    2301094: Road Prinzenstra___e.005
+    2301096: Road Prinzenstra___e.006
+    2301098: Road Prinzenstra___e.007
+    2301100: Road Prinzenstra___e.008
+    2301102: Road Prinzenstra___e.009
+    2301104: Road Prinzenstra___e.010
+    2301106: Road Prinzenstra___e.011
+    2301108: Road Prinzenstra___e.012
+    2301110: Road Prinzenstra___e.013
+    2301112: Road Prinzenstra___e.014
+    2301114: Road Prinzenstra___e.015
+    2301116: Road Prinzenstra___e.016
+    2301118: Road Prinzenstra___e.017
+    2301120: Road Prinzregenten-Platz
+    2301122: Road Prinzregenten-Platz.000
+    2301124: Road Prinzregenten-Platz.001
+    2301126: Road Prinzregenten-Platz.002
+    2301128: Road Prinzregenten-Platz.003
+    2301130: Road Prinzregenten-Platz.004
+    2301132: Road Prinzregenten-Platz.005
+    2301134: Road Prinzregenten-Platz.006
+    2301136: Road Pumptrack Oberstdorf
+    2301138: Road Pumptrack Oberstdorf.000
+    2301140: Road Pumptrack Oberstdorf.001
+    2301142: Road Pumptrack Oberstdorf.002
+    2301144: Road Pumptrack Oberstdorf.003
+    2301146: Road Pumptrack Oberstdorf.004
+    2301148: Road Pumptrack Oberstdorf.005
+    2301150: Road Pumptrack Oberstdorf.006
+    2301152: Road Pumptrack Oberstdorf.007
+    2301154: Road Pumptrack Oberstdorf.008
+    2301156: Road Pumptrack Oberstdorf.009
+    2301158: Road Pumptrack Oberstdorf.010
+    2301160: Road Pumptrack Oberstdorf.011
+    2301162: Road Pumptrack Oberstdorf.012
+    2301164: Road Pumptrack Oberstdorf.013
+    2301166: Road Pumptrack Oberstdorf.014
+    2301168: Road Pumptrack Oberstdorf.016
+    2301170: Road Pumptrack Oberstdorf.017
+    2301172: Road Pumptrack Oberstdorf.018
+    2301174: Road Pumptrack Oberstdorf.019
+    2301176: Road Rankgasse
+    2301178: Road Rankgasse.000
+    2301180: Road Rankgasse.001
+    2301182: Road Rankgasse.002
+    2301184: Road Rankgasse.003
+    2301186: Road Rankgasse.004
+    2301188: Road Rankgasse.005
+    2301190: Road Rankgasse.006
+    2301192: Road Reithallenweg
+    2301194: Road Reithallenweg.000
+    2301196: Road Sachsenweg
+    2301198: Road Sachsenweg.000
+    2301200: Road Schustergasse
+    2301202: Road Sebastian-Kneipp-Weg
+    2301204: Road Sebastian-Kneipp-Weg.000
+    2301206: Road Sebastian-Kneipp-Weg.001
+    2301208: Road Sebastian-Kneipp-Weg.002
+    2301210: Road Sebastian-Kneipp-Weg.003
+    2301212: Road Sebastian-Kneipp-Weg.004
+    2301214: Road Sebastian-Kneipp-Weg.005
+    2301216: Road Sebastian-Kneipp-Weg.006
+    2301218: Road Sebastian-Kneipp-Weg.007
+    2301220: Road Sebastian-Kneipp-Weg.008
+    2301222: Road Sebastian-Kneipp-Weg.009
+    2301224: Road Sebastian-Kneipp-Weg.010
+    2301226: Road Sebastian-Kneipp-Weg.011
+    2301228: Road Sebastian-Kneipp-Weg.012
+    2301230: Road Sebastian-Kneipp-Weg.013
+    2301232: Road Sebastian-Kneipp-Weg.014
+    2301234: Road Sebastian-Kneipp-Weg.015
+    2301236: Road Sebastian-Kneipp-Weg.016
+    2301238: Road Sebastian-Kneipp-Weg.017
+    2301240: Road Sebastian-Kneipp-Weg.018
+    2301242: Road Sigismundstra___e
+    2301244: Road Sonnenstra___e
+    2301246: Road Sonnenstra___e.000
+    2301248: Road Sonnenstra___e.002
+    2301250: Road Sonnenstra___e.003
+    2301252: Road Sonnenstra___e.004
+    2301254: Road Sonnenstra___e.005
+    2301256: Road Sonnenstra___e.006
+    2301258: Road Sonnenstra___e.007
+    2301260: Road Weststra___e
+    2301262: Road Weststra___e.000
+    2301264: Road Weststra___e.001
+    2301266: Road Weststra___e.002
+    2301268: Road Weststra___e.003
+    2301270: Road Weststra___e.004
+    2301272: Road Weststra___e.005
+    2301274: Road Weststra___e.006
+    2301276: Road Weststra___e.007
+    2301278: Road Weststra___e.008
+    2301280: Road Weststra___e.009
+    2301282: Road Weststra___e.010
+    2301284: Road Weststra___e.011
+    2301286: Road Weststra___e.012
+    2301288: Road Weststra___e.013
+    2301290: Road Weststra___e.014
+    2301292: Road Weststra___e.015
+    2301294: Road Weststra___e.016
+    2301296: Road Weststra___e.017
+    2301298: Road Weststra___e.018
+    2301300: Road Weststra___e.019
+    2301302: Road Weststra___e.020
+    2301304: Road Weststra___e.021
+    2301306: Road Weststra___e.022
+    2301308: Road Weststra___e.023
+    2301310: Road Weststra___e.024
+    2301312: Road Weststra___e.025
+    2301314: Road Weststra___e.026
+    2301316: Road Weststra___e.027
+    2301318: Road264
+    2301320: Road265
+    2301322: Road266
+    2301324: Road267
+    2301326: Road268
+    2301328: Road269
+    2301330: Road270
+    2301332: Road271
+    2301334: Road272
+    2301336: Road273
+    2301338: Road274
+    2301340: Road275
+    2301342: Road281
+    2301344: Road282
+    2301346: Road283
+    2301348: Road284
+    2301350: Road285
+    2301352: Road286
+    2301354: Road287
+    2301356: Road288
+    2301358: Road289
+    2301360: Road290
+    2301362: Road291
+    2301364: Road292
+    2301366: Road293
+    2301368: Road294
+    2301370: Road295
+    2301372: Road296
+    2301374: Road297
+    2301376: Road298
+    2301378: Road299
+    2301380: Road300
+    2301382: Road301
+    2301384: Road302
+    2301386: Road303
+    2301388: Road304
+    2301390: Road305
+    2301392: Road306
+    2301394: Road307
+    2301396: Road308
+    2301398: Road309
+    2301400: Road310
+    2301402: Road311
+    2301404: Road312
+    2301406: Road313
+    2301408: Road314
+    2301410: Road315
+    2301412: Road316
+    2301414: Road317
+    2301416: Road318
+    2301418: Road319
+    2301420: Road320
+    2301422: Road321
+    2301424: Road322
+    2301426: Road323
+    2301428: Road324
+    2301430: Road325
+    2301432: Road326
+    2301434: Road327
+    2301436: Road332
+    2301438: Road333
+    2301440: Road334
+    2301442: Road335
+    2301444: Road336
+    2301446: Road337
+    2301448: Road338
+    2301450: Road339
+    2301452: Road340
+    2301454: Road341
+    2301456: Road342
+    2301458: Road343
+    2301460: Road344
+    2301462: Road345
+    2301464: Road346
+    2301466: Road347
+    2301468: Road348
+    2301470: Road354
+    2301472: Road355
+    2301474: Road356
+    2301476: Road357
+    2301478: Road358
+    2301480: Road359
+    2301482: Road360
+    2301484: Road361
+    2301486: Road362
+    2301488: Road363
+    2301490: Road364
+    2301492: Road365
+    2301494: Road366
+    2301496: Road367
+    2301498: Road368
+    2301500: Road369
+    2301502: Road370
+    2301504: Road371
+    2301506: Road372
+    2301508: Road373
+    2301510: Road374
+    2301512: Road375
+    2301514: Road376
+    2301516: Road377
+    2301518: Road378
+    2301520: Road379
+    2301522: Road380
+    2301524: Road381
+    2301526: Road382
+    2301528: Road383
+    2301530: Road384
+    2301532: Road385
+    2301534: Road386
+    2301536: Road387
+    2301538: Road388
+    2301540: Road389
+    2301542: Road390
+    2301544: Road391
+    2301546: Road392
+    2301548: Road393
+    2301550: Road394
+    2301552: Road395
+    2301554: Road396
+    2301556: Road397
+    2301558: Road398
+    2301560: Road399
+    2301562: Road400
+    2301564: Road401
+    2301566: Road402
+    2301568: Road403
+    2301570: Road404
+    2301572: Road405
+    2301574: Road406
+    2301576: Road407
+    2301578: Road408
+    2301580: Road409
+    2301582: Road410
+    2301584: Road411
+    2301586: Road413
+    2301588: Road414
+    2301590: Road415
+    2301592: Road416
+    2301594: Road417
+    2301596: Road418
+    2301598: Road419
+    2301600: Road420
+    2301602: Road421
+    2301604: Road422
+    2301606: Road423
+    2301608: Road424
+    2301610: Road425
+    2301612: Road426
+    2301614: Road427
+    2301616: Road428
+    2301618: Road429
+    2301620: Road430
+    2301622: Road431
+    2301624: Road432
+    2301626: Road433
+    2301628: Road434
+    2301630: Road435
+    2301632: Road436
+    2301634: Road437
+    2301636: Road439
+    2301638: Road440
+    2301640: Road441
+    2301642: Road442
+    2301644: Road443
+    2301646: Road444
+    2301648: Road445
+    2301650: Road446
+    2301652: Road447
+    2301654: Road448
+    2301656: Road449
+    2301658: Road450
+    2301660: Road451
+    2301662: Road452
+    2301664: Road453
+    2301666: Road454
+    2301668: Road459
+    2301670: Road460
+    2301672: Road461
+    2301674: Road462
+    2301676: Road463
+    2301678: Road464
+    2301680: Road465
+    2301682: RoadArea Marktplatz
+    2301684: RoadConnector133
+    2301686: RoadConnector139
+    2301688: RoadConnector199
+    2301690: RoadConnector31
+    2301692: RoadConnector91
+    2301694: RoadConnector92
+    2301696: RoadConnector98
+    2301698: RoadConnector99
+    2301700: RoadJunction0
+    2301702: RoadJunction1
+    2301704: RoadJunction100
+    2301706: RoadJunction101
+    2301708: RoadJunction102
+    2301710: RoadJunction104
+    2301712: RoadJunction105
+    2301714: RoadJunction106
+    2301716: RoadJunction107
+    2301718: RoadJunction108
+    2301720: RoadJunction109
+    2301722: RoadJunction110
+    2301724: RoadJunction111
+    2301726: RoadJunction112
+    2301728: RoadJunction113
+    2301730: RoadJunction114
+    2301732: RoadJunction115
+    2301734: RoadJunction116
+    2301736: RoadJunction117
+    2301738: RoadJunction118
+    2301740: RoadJunction119
+    2301742: RoadJunction120
+    2301744: RoadJunction121
+    2301746: RoadJunction122
+    2301748: RoadJunction123
+    2301750: RoadJunction124
+    2301752: RoadJunction125
+    2301754: RoadJunction126
+    2301756: RoadJunction127
+    2301758: RoadJunction128
+    2301760: RoadJunction129
+    2301762: RoadJunction130
+    2301764: RoadJunction131
+    2301766: RoadJunction132
+    2301768: RoadJunction134
+    2301770: RoadJunction135
+    2301772: RoadJunction137
+    2301774: RoadJunction138
+    2301776: RoadJunction140
+    2301778: RoadJunction141
+    2301780: RoadJunction144
+    2301782: RoadJunction145
+    2301784: RoadJunction146
+    2301786: RoadJunction147
+    2301788: RoadJunction149
+    2301790: RoadJunction159
+    2301792: RoadJunction16
+    2301794: RoadJunction169
+    2301796: RoadJunction174
+    2301798: RoadJunction175
+    2301800: RoadJunction181
+    2301802: RoadJunction188
+    2301804: RoadJunction198
+    2301806: RoadJunction2
+    2301808: RoadJunction20
+    2301810: RoadJunction200
+    2301812: RoadJunction202
+    2301814: RoadJunction203
+    2301816: RoadJunction204
+    2301818: RoadJunction205
+    2301820: RoadJunction206
+    2301822: RoadJunction207
+    2301824: RoadJunction208
+    2301826: RoadJunction209
+    2301828: RoadJunction210
+    2301830: RoadJunction215
+    2301832: RoadJunction217
+    2301834: RoadJunction220
+    2301836: RoadJunction222
+    2301838: RoadJunction223
+    2301840: RoadJunction229
+    2301842: RoadJunction234
+    2301844: RoadJunction235
+    2301846: RoadJunction248
+    2301848: RoadJunction249
+    2301850: RoadJunction250
+    2301852: RoadJunction251
+    2301854: RoadJunction252
+    2301856: RoadJunction256
+    2301858: RoadJunction257
+    2301860: RoadJunction258
+    2301862: RoadJunction259
+    2301864: RoadJunction260
+    2301866: RoadJunction261
+    2301868: RoadJunction263
+    2301870: RoadJunction29
+    2301872: RoadJunction3
+    2301874: RoadJunction32
+    2301876: RoadJunction33
+    2301878: RoadJunction35
+    2301880: RoadJunction4
+    2301882: RoadJunction40
+    2301884: RoadJunction41
+    2301886: RoadJunction43
+    2301888: RoadJunction45
+    2301890: RoadJunction48
+    2301892: RoadJunction5
+    2301894: RoadJunction56
+    2301896: RoadJunction6
+    2301898: RoadJunction63
+    2301900: RoadJunction64
+    2301902: RoadJunction72
+    2301904: RoadJunction82
+    2301906: RoadJunction86
+    2301908: RoadJunction88
+    2301910: RoadJunction93
+    2301912: RoadJunction94
+    2301914: StreetLamp225
+    2301916: StreetLamp28
+    2301918: StreetLamp47
+    2301920: SurfaceArea558
+    2301922: SurfaceArea656
+    2301924: SurfaceArea658
+    2301926: SurfaceParking Freiherr-von-Brutscherstra___e
+    2301928: SurfaceParking Sachsenweg
+    2301930: SurfaceParking474
+    2301932: SurfaceParking505
+    2301934: SurfaceParking573
+    2301936: SurfaceParking574
+    2301938: SurfaceParking578
+    2301940: TennisPitch550
+    2301942: TennisPitch551
+    2301944: Tree Einigkeitseiche
+    2301946: Tree Friedenslinde
+    2301948: Tree13
+    2301950: Tree18
+    2301952: Tree21
+    2301954: Tree216
+    2301956: Tree224
+    2301958: Tree24
+    2301960: Tree26
+    2301962: Tree27
+    2301964: Tree38
+    2301966: Tree39
+    2301968: Tree87
+    2301970: Tree89
+    2301972: Tree90
+    2301974: Tunnel458
+    2301976: VendingMachineVice148
+    2301978: VendingMachineVice42
+    2301980: WasteBasket142
+    2301982: WasteBasket143
+    2301984: WasteBasket214
+    2301986: WasteBasket233
+    2301988: WasteBasket245
+    2301990: WasteBasket30
+    2301992: WasteBasket37
+    2301994: WasteBasket51
+    2301996: Water533
+    2301998: Waterway328
+    2302000: Waterway329
+    2302002: Waterway330
+    2302004: Waterway331
+    2302006: Waterway349
+    2302008: Waterway350
+    2302010: Waterway351
+    2302012: Waterway352
+    2302014: Waterway353
+    2302016: Waterway455
+    2302018: Waterway456
+    2302020: Waterway457
+    3300000: AdvertisingColumn44
+    3300002: Bench10
+    3300004: Bench11
+    3300006: Bench12
+    3300008: Bench14
+    3300010: Bench15
+    3300012: Bench150
+    3300014: Bench151
+    3300016: Bench152
+    3300018: Bench153
+    3300020: Bench154
+    3300022: Bench155
+    3300024: Bench156
+    3300026: Bench157
+    3300028: Bench158
+    3300030: Bench160
+    3300032: Bench163
+    3300034: Bench164
+    3300036: Bench165
+    3300038: Bench166
+    3300040: Bench167
+    3300042: Bench168
+    3300044: Bench17
+    3300046: Bench170
+    3300048: Bench171
+    3300050: Bench172
+    3300052: Bench173
+    3300054: Bench177
+    3300056: Bench179
+    3300058: Bench180
+    3300060: Bench182
+    3300062: Bench183
+    3300064: Bench184
+    3300066: Bench185
+    3300068: Bench186
+    3300070: Bench187
+    3300072: Bench189
+    3300074: Bench19
+    3300076: Bench190
+    3300078: Bench191
+    3300080: Bench192
+    3300082: Bench193
+    3300084: Bench194
+    3300086: Bench195
+    3300088: Bench196
+    3300090: Bench211
+    3300092: Bench212
+    3300094: Bench213
+    3300096: Bench218
+    3300098: Bench219
+    3300100: Bench22
+    3300102: Bench221
+    3300104: Bench226
+    3300106: Bench227
+    3300108: Bench228
+    3300110: Bench23
+    3300112: Bench230
+    3300114: Bench232
+    3300116: Bench236
+    3300118: Bench237
+    3300120: Bench238
+    3300122: Bench240
+    3300124: Bench241
+    3300126: Bench243
+    3300128: Bench246
+    3300130: Bench25
+    3300132: Bench253
+    3300134: Bench254
+    3300136: Bench255
+    3300138: Bench262
+    3300140: Bench34
+    3300142: Bench49
+    3300144: Bench50
+    3300146: Bench52
+    3300148: Bench53
+    3300150: Bench54
+    3300152: Bench55
+    3300154: Bench57
+    3300156: Bench65
+    3300158: Bench67
+    3300160: Bench68
+    3300162: Bench69
+    3300164: Bench7
+    3300166: Bench70
+    3300168: Bench71
+    3300170: Bench73
+    3300172: Bench74
+    3300174: Bench75
+    3300176: Bench76
+    3300178: Bench77
+    3300180: Bench78
+    3300182: Bench79
+    3300184: Bench8
+    3300186: Bench81
+    3300188: Bench83
+    3300190: Bench84
+    3300192: Bench9
+    3300194: Bench95
+    3300196: Bench96
+    3300198: Board 16 Feuerspritzen
+    3300200: Board Brunnen mit Widder und Deichel
+    3300202: Board Evangelische Christus-Kirche
+    3300204: Board Friedenslinde
+    3300206: Board Kreuzwegstation am Weg nach Loretto
+    3300208: Board Pr___zisions-Sonnenuhr
+    3300210: Board Prinzregenten-Denkmal
+    3300212: Board Pumptrack Oberstdorf
+    3300214: Board58
+    3300216: Board59
+    3300218: Board60
+    3300220: Board61
+    3300222: Board62
+    3300224: Bridge438
+    3300226: Building Adler
+    3300228: Building Alpine Dreams
+    3300230: Building Altes Rathaus
+    3300232: Building Bacchus-Stuben
+    3300234: Building Haus Fichtel
+    3300236: Building Haus im Gr___nen
+    3300238: Building Haus Nandl
+    3300240: Building Johannisheim
+    3300242: Building Kath. Kindergarten St. Martin
+    3300244: Building Konzertmuschel
+    3300246: Building LOFT Oberstdorf
+    3300248: Building Maxheim
+    3300250: Building Oberstdorf Haus
+    3300252: Building Pfarrhof
+    3300254: Building Rathaus
+    3300256: Building Rosenhof
+    3300258: Building Seelenkapelle
+    3300260: Building St. Johannes Baptist
+    3300262: Building Villa Jauss
+    3300264: Building466
+    3300266: Building467
+    3300268: Building468
+    3300270: Building469
+    3300272: Building470
+    3300274: Building472
+    3300276: Building473
+    3300278: Building475
+    3300280: Building476
+    3300282: Building477
+    3300284: Building478
+    3300286: Building479
+    3300288: Building480
+    3300290: Building481
+    3300292: Building482
+    3300294: Building483
+    3300296: Building484
+    3300298: Building485
+    3300300: Building486
+    3300302: Building487
+    3300304: Building488
+    3300306: Building489
+    3300308: Building490
+    3300310: Building491
+    3300312: Building492
+    3300314: Building493
+    3300316: Building494
+    3300318: Building495
+    3300320: Building496
+    3300322: Building497
+    3300324: Building498
+    3300326: Building499
+    3300328: Building500
+    3300330: Building501
+    3300332: Building502
+    3300334: Building504
+    3300336: Building506
+    3300338: Building507
+    3300340: Building508
+    3300342: Building509
+    3300344: Building510
+    3300346: Building511
+    3300348: Building512
+    3300350: Building513
+    3300352: Building514
+    3300354: Building515
+    3300356: Building516
+    3300358: Building517
+    3300360: Building518
+    3300362: Building519
+    3300364: Building520
+    3300366: Building521
+    3300368: Building522
+    3300370: Building523
+    3300372: Building524
+    3300374: Building525
+    3300376: Building526
+    3300378: Building527
+    3300380: Building528
+    3300382: Building529
+    3300384: Building530
+    3300386: Building531
+    3300388: Building532
+    3300390: Building534
+    3300392: Building535
+    3300394: Building536
+    3300396: Building537
+    3300398: Building538
+    3300400: Building539
+    3300402: Building540
+    3300404: Building541
+    3300406: Building542
+    3300408: Building543
+    3300410: Building544
+    3300412: Building545
+    3300414: Building546
+    3300416: Building547
+    3300418: Building548
+    3300420: Building549
+    3300422: Building552
+    3300424: Building553
+    3300426: Building554
+    3300428: Building555
+    3300430: Building556
+    3300432: Building557
+    3300434: Building559
+    3300436: Building560
+    3300438: Building561
+    3300440: Building562
+    3300442: Building563
+    3300444: Building564
+    3300446: Building565
+    3300448: Building566
+    3300450: Building567
+    3300452: Building568
+    3300454: Building569
+    3300456: Building570
+    3300458: Building571
+    3300460: Building572
+    3300462: Building575
+    3300464: Building576
+    3300466: Building577
+    3300468: Building579
+    3300470: Building580
+    3300472: Building581
+    3300474: Building582
+    3300476: Building583
+    3300478: Building584
+    3300480: Building585
+    3300482: Building586
+    3300484: Building587
+    3300486: Building588
+    3300488: Building589
+    3300490: Building590
+    3300492: Building591
+    3300494: Building592
+    3300496: Building593
+    3300498: Building594
+    3300500: Building595
+    3300502: Building596
+    3300504: Building597
+    3300506: Building598
+    3300508: Building599
+    3300510: Building600
+    3300512: Building601
+    3300514: Building602
+    3300516: Building603
+    3300518: Building604
+    3300520: Building605
+    3300522: Building606
+    3300524: Building607
+    3300526: Building608
+    3300528: Building609
+    3300530: Building610
+    3300532: Building611
+    3300534: Building612
+    3300536: Building613
+    3300538: Building614
+    3300540: Building615
+    3300542: Building616
+    3300544: Building617
+    3300546: Building618
+    3300548: Building619
+    3300550: Building620
+    3300552: Building621
+    3300554: Building622
+    3300556: Building623
+    3300558: Building624
+    3300560: Building625
+    3300562: Building626
+    3300564: Building627
+    3300566: Building628
+    3300568: Building629
+    3300570: Building630
+    3300572: Building631
+    3300574: Building632
+    3300576: Building633
+    3300578: Building634
+    3300580: Building635
+    3300582: Building636
+    3300584: Building637
+    3300586: Building638
+    3300588: Building639
+    3300590: Building640
+    3300592: Building641
+    3300594: Building642
+    3300596: Building643
+    3300598: Building644
+    3300600: Building645
+    3300602: Building646
+    3300604: Building647
+    3300606: Building648
+    3300608: Building649
+    3300610: Building650
+    3300612: Building651
+    3300614: Building652
+    3300616: Building653
+    3300618: Building654
+    3300620: Building655
+    3300622: Building657
+    3300624: Building659
+    3300626: Building660
+    3300628: Building661
+    3300630: Building662
+    3300632: Building663
+    3300634: Building664
+    3300636: Building665
+    3300638: Building666
+    3300640: Building667
+    3300642: BuildingEntrance103
+    3300644: BuildingEntrance136
+    3300646: BuildingEntrance36
+    3300648: BusStop Oberstdorfer Marktb___hnle
+    3300650: Cube
+    3300652: FireHydrant161
+    3300654: FireHydrant162
+    3300656: FireHydrant197
+    3300658: FireHydrant201
+    3300660: FireHydrant46
+    3300662: Flagpole176
+    3300664: Flagpole178
+    3300666: Flagpole231
+    3300668: Flagpole239
+    3300670: Flagpole242
+    3300672: Flagpole247
+    3300674: Flagpole66
+    3300676: Flagpole80
+    3300678: Flagpole85
+    3300680: Hedge276
+    3300682: Hedge277
+    3300684: Hedge278
+    3300686: Hedge279
+    3300688: Hedge280
+    3300690: Phone 08322/80822
+    3300692: Phone 832209875939
+    3300694: PostBox Ludwigstra___e 4, 87561 Oberstdorf
+    3300696: RecyclingContainer244
+    3300698: RecyclingContainer97
+    3300700: Road Bachstra___e
+    3300702: Road Bachstra___e.000
+    3300704: Road Bachstra___e.001
+    3300706: Road Bachstra___e.002
+    3300708: Road Bachstra___e.003
+    3300710: Road Bachstra___e.004
+    3300712: Road Clemens-Wenzeslaus-Stra___e
+    3300714: Road F___rsterstra___e
+    3300716: Road F___rsterstra___e.000
+    3300718: Road F___rsterstra___e.001
+    3300720: Road Finkenstra___e
+    3300722: Road Finkenstra___e.000
+    3300724: Road Finkenstra___e.001
+    3300726: Road Finkenstra___e.002
+    3300728: Road Finkenstra___e.003
+    3300730: Road Finkenstra___e.004
+    3300732: Road Finkenstra___e.005
+    3300734: Road Finkenstra___e.006
+    3300736: Road Finkenstra___e.007
+    3300738: Road Finkenstra___e.008
+    3300740: Road Finkenstra___e.009
+    3300742: Road Finkenstra___e.010
+    3300744: Road Fischerstra___e
+    3300746: Road Fischerstra___e.000
+    3300748: Road Freibergstra___e
+    3300750: Road Freibergstra___e.000
+    3300752: Road Freibergstra___e.001
+    3300754: Road Freibergstra___e.002
+    3300756: Road Freibergstra___e.003
+    3300758: Road Freibergstra___e.004
+    3300760: Road Freibergstra___e.005
+    3300762: Road Freibergstra___e.006
+    3300764: Road Freibergstra___e.007
+    3300766: Road Freibergstra___e.008
+    3300768: Road Freibergstra___e.009
+    3300770: Road Freibergstra___e.010
+    3300772: Road Freibergstra___e.011
+    3300774: Road Freibergstra___e.012
+    3300776: Road Freibergstra___e.013
+    3300778: Road Freibergstra___e.014
+    3300780: Road Freibergstra___e.015
+    3300782: Road Freibergstra___e.016
+    3300784: Road Freibergstra___e.018
+    3300786: Road Freibergstra___e.019
+    3300788: Road Freibergstra___e.020
+    3300790: Road Freibergstra___e.021
+    3300792: Road Freibergstra___e.022
+    3300794: Road Freiherr-von-Brutscher-Stra___e
+    3300796: Road Freiherr-von-Brutscher-Stra___e.001
+    3300798: Road Freiherr-von-Brutscher-Stra___e.003
+    3300800: Road Freiherr-von-Brutscher-Stra___e.004
+    3300802: Road Freiherr-von-Brutscher-Stra___e.005
+    3300804: Road Freiherr-von-Brutscher-Stra___e.006
+    3300806: Road Freiherr-von-Brutscher-Stra___e.007
+    3300808: Road Frohmarkt
+    3300810: Road Frohmarkt.000
+    3300812: Road Frohmarkt.001
+    3300814: Road Frohmarkt.002
+    3300816: Road Frohmarkt.003
+    3300818: Road Fuggerstra___e
+    3300820: Road Fuggerstra___e.000
+    3300822: Road Fuggerstra___e.001
+    3300824: Road Fuggerstra___e.002
+    3300826: Road Fuggerstra___e.003
+    3300828: Road Fuggerstra___e.004
+    3300830: Road Fuggerstra___e.005
+    3300832: Road Fuggerstra___e.006
+    3300834: Road Fuggerstra___e.007
+    3300836: Road Fuggerstra___e.008
+    3300838: Road Fuggerstra___e.009
+    3300840: Road Fuggerstra___e.010
+    3300842: Road Fuggerstra___e.011
+    3300844: Road Fuggerstra___e.012
+    3300846: Road Fuggerstra___e.013
+    3300848: Road Fuggerstra___e.014
+    3300850: Road Fuggerstra___e.015
+    3300852: Road Fuggerstra___e.016
+    3300854: Road Fuggerstra___e.017
+    3300856: Road Fuggerstra___e.018
+    3300858: Road Hauptstra___e
+    3300860: Road Hauptstra___e.000
+    3300862: Road Hauptstra___e.001
+    3300864: Road Kirchstra___e
+    3300866: Road Kirchstra___e.000
+    3300868: Road Kirchstra___e.001
+    3300870: Road Kirchstra___e.002
+    3300872: Road Ludwigstra___e
+    3300874: Road Ludwigstra___e.000
+    3300876: Road Ludwigstra___e.001
+    3300878: Road Ludwigstra___e.002
+    3300880: Road Ludwigstra___e.003
+    3300882: Road Ludwigstra___e.004
+    3300884: Road Ludwigstra___e.005
+    3300886: Road Ludwigstra___e.006
+    3300888: Road Ludwigstra___e.007
+    3300890: Road Ludwigstra___e.008
+    3300892: Road Ludwigstra___e.009
+    3300894: Road Ludwigstra___e.010
+    3300896: Road Luitpoldstra___e
+    3300898: Road Luitpoldstra___e.000
+    3300900: Road Luitpoldstra___e.001
+    3300902: Road Luitpoldstra___e.002
+    3300904: Road M___hlenweg
+    3300906: Road M___hlenweg.000
+    3300908: Road M___hlenweg.001
+    3300910: Road M___hlenweg.002
+    3300912: Road M___hlenweg.003
+    3300914: Road M___hlenweg.004
+    3300916: Road M___hlenweg.005
+    3300918: Road M___hlenweg.006
+    3300920: Road M___hlenweg.007
+    3300922: Road M___hlenweg.008
+    3300924: Road M___hlenweg.009
+    3300926: Road M___hlenweg.010
+    3300928: Road M___hlenweg.011
+    3300930: Road Marktplatz
+    3300932: Road Marktplatz.000
+    3300934: Road Marktplatz.001
+    3300936: Road Marktplatz.002
+    3300938: Road Marktplatz.003
+    3300940: Road Marktplatz.004
+    3300942: Road Marktplatz.005
+    3300944: Road Marktplatz.006
+    3300946: Road Marktplatz.008
+    3300948: Road Marktplatz.009
+    3300950: Road Marktplatz.010
+    3300952: Road Marktplatz.011
+    3300954: Road Metzgerstra___e
+    3300956: Road Metzgerstra___e.000
+    3300958: Road Metzgerstra___e.001
+    3300960: Road Metzgerstra___e.002
+    3300962: Road Metzgerstra___e.003
+    3300964: Road Metzgerstra___e.004
+    3300966: Road Metzgerstra___e.005
+    3300968: Road Metzgerstra___e.006
+    3300970: Road Metzgerstra___e.007
+    3300972: Road Metzgerstra___e.008
+    3300974: Road Metzgerstra___e.009
+    3300976: Road Metzgerstra___e.010
+    3300978: Road Metzgerstra___e.011
+    3300980: Road Metzgerstra___e.012
+    3300982: Road Metzgerstra___e.013
+    3300984: Road Metzgerstra___e.014
+    3300986: Road Oststra___e
+    3300988: Road Oststra___e.000
+    3300990: Road Oststra___e.001
+    3300992: Road Oststra___e.002
+    3300994: Road Oststra___e.003
+    3300996: Road Oststra___e.004
+    3300998: Road Oststra___e.005
+    3301000: Road Oststra___e.006
+    3301002: Road Oststra___e.007
+    3301004: Road Oststra___e.008
+    3301006: Road Oststra___e.009
+    3301008: Road Oststra___e.010
+    3301010: Road Oststra___e.011
+    3301012: Road Oststra___e.012
+    3301014: Road Oststra___e.013
+    3301016: Road Oststra___e.014
+    3301018: Road Oststra___e.015
+    3301020: Road Oststra___e.016
+    3301022: Road Oststra___e.017
+    3301024: Road Oststra___e.018
+    3301026: Road Oststra___e.019
+    3301028: Road Oststra___e.020
+    3301030: Road Oststra___e.021
+    3301032: Road Oststra___e.022
+    3301034: Road Oststra___e.023
+    3301036: Road Oststra___e.024
+    3301038: Road Oststra___e.025
+    3301040: Road Oststra___e.026
+    3301042: Road Oststra___e.027
+    3301044: Road Paul-Gerhardt-Stra___e
+    3301046: Road Paul-Gerhardt-Stra___e.000
+    3301048: Road Paul-Gerhardt-Stra___e.001
+    3301050: Road Paul-Gerhardt-Stra___e.002
+    3301052: Road Paul-Gerhardt-Stra___e.003
+    3301054: Road Paul-Gerhardt-Stra___e.004
+    3301056: Road Paul-Gerhardt-Stra___e.005
+    3301058: Road Paul-Gerhardt-Stra___e.006
+    3301060: Road Paul-Gerhardt-Stra___e.007
+    3301062: Road Paul-Gerhardt-Stra___e.008
+    3301064: Road Paul-Gerhardt-Stra___e.009
+    3301066: Road Paul-Gerhardt-Stra___e.010
+    3301068: Road Paul-Gerhardt-Stra___e.011
+    3301070: Road Paul-Gerhardt-Stra___e.012
+    3301072: Road Paul-Gerhardt-Stra___e.013
+    3301074: Road Pfarrstra___e
+    3301076: Road Pfarrstra___e.000
+    3301078: Road Pfarrstra___e.001
+    3301080: Road Pfarrstra___e.002
+    3301082: Road Prinzenstra___e
+    3301084: Road Prinzenstra___e.000
+    3301086: Road Prinzenstra___e.001
+    3301088: Road Prinzenstra___e.002
+    3301090: Road Prinzenstra___e.003
+    3301092: Road Prinzenstra___e.004
+    3301094: Road Prinzenstra___e.005
+    3301096: Road Prinzenstra___e.006
+    3301098: Road Prinzenstra___e.007
+    3301100: Road Prinzenstra___e.008
+    3301102: Road Prinzenstra___e.009
+    3301104: Road Prinzenstra___e.010
+    3301106: Road Prinzenstra___e.011
+    3301108: Road Prinzenstra___e.012
+    3301110: Road Prinzenstra___e.013
+    3301112: Road Prinzenstra___e.014
+    3301114: Road Prinzenstra___e.015
+    3301116: Road Prinzenstra___e.016
+    3301118: Road Prinzenstra___e.017
+    3301120: Road Prinzregenten-Platz
+    3301122: Road Prinzregenten-Platz.000
+    3301124: Road Prinzregenten-Platz.001
+    3301126: Road Prinzregenten-Platz.002
+    3301128: Road Prinzregenten-Platz.003
+    3301130: Road Prinzregenten-Platz.004
+    3301132: Road Prinzregenten-Platz.005
+    3301134: Road Prinzregenten-Platz.006
+    3301136: Road Pumptrack Oberstdorf
+    3301138: Road Pumptrack Oberstdorf.000
+    3301140: Road Pumptrack Oberstdorf.001
+    3301142: Road Pumptrack Oberstdorf.002
+    3301144: Road Pumptrack Oberstdorf.003
+    3301146: Road Pumptrack Oberstdorf.004
+    3301148: Road Pumptrack Oberstdorf.005
+    3301150: Road Pumptrack Oberstdorf.006
+    3301152: Road Pumptrack Oberstdorf.007
+    3301154: Road Pumptrack Oberstdorf.008
+    3301156: Road Pumptrack Oberstdorf.009
+    3301158: Road Pumptrack Oberstdorf.010
+    3301160: Road Pumptrack Oberstdorf.011
+    3301162: Road Pumptrack Oberstdorf.012
+    3301164: Road Pumptrack Oberstdorf.013
+    3301166: Road Pumptrack Oberstdorf.014
+    3301168: Road Pumptrack Oberstdorf.016
+    3301170: Road Pumptrack Oberstdorf.017
+    3301172: Road Pumptrack Oberstdorf.018
+    3301174: Road Pumptrack Oberstdorf.019
+    3301176: Road Rankgasse
+    3301178: Road Rankgasse.000
+    3301180: Road Rankgasse.001
+    3301182: Road Rankgasse.002
+    3301184: Road Rankgasse.003
+    3301186: Road Rankgasse.004
+    3301188: Road Rankgasse.005
+    3301190: Road Rankgasse.006
+    3301192: Road Reithallenweg
+    3301194: Road Reithallenweg.000
+    3301196: Road Sachsenweg
+    3301198: Road Sachsenweg.000
+    3301200: Road Schustergasse
+    3301202: Road Sebastian-Kneipp-Weg
+    3301204: Road Sebastian-Kneipp-Weg.000
+    3301206: Road Sebastian-Kneipp-Weg.001
+    3301208: Road Sebastian-Kneipp-Weg.002
+    3301210: Road Sebastian-Kneipp-Weg.003
+    3301212: Road Sebastian-Kneipp-Weg.004
+    3301214: Road Sebastian-Kneipp-Weg.005
+    3301216: Road Sebastian-Kneipp-Weg.006
+    3301218: Road Sebastian-Kneipp-Weg.007
+    3301220: Road Sebastian-Kneipp-Weg.008
+    3301222: Road Sebastian-Kneipp-Weg.009
+    3301224: Road Sebastian-Kneipp-Weg.010
+    3301226: Road Sebastian-Kneipp-Weg.011
+    3301228: Road Sebastian-Kneipp-Weg.012
+    3301230: Road Sebastian-Kneipp-Weg.013
+    3301232: Road Sebastian-Kneipp-Weg.014
+    3301234: Road Sebastian-Kneipp-Weg.015
+    3301236: Road Sebastian-Kneipp-Weg.016
+    3301238: Road Sebastian-Kneipp-Weg.017
+    3301240: Road Sebastian-Kneipp-Weg.018
+    3301242: Road Sigismundstra___e
+    3301244: Road Sonnenstra___e
+    3301246: Road Sonnenstra___e.000
+    3301248: Road Sonnenstra___e.002
+    3301250: Road Sonnenstra___e.003
+    3301252: Road Sonnenstra___e.004
+    3301254: Road Sonnenstra___e.005
+    3301256: Road Sonnenstra___e.006
+    3301258: Road Sonnenstra___e.007
+    3301260: Road Weststra___e
+    3301262: Road Weststra___e.000
+    3301264: Road Weststra___e.001
+    3301266: Road Weststra___e.002
+    3301268: Road Weststra___e.003
+    3301270: Road Weststra___e.004
+    3301272: Road Weststra___e.005
+    3301274: Road Weststra___e.006
+    3301276: Road Weststra___e.007
+    3301278: Road Weststra___e.008
+    3301280: Road Weststra___e.009
+    3301282: Road Weststra___e.010
+    3301284: Road Weststra___e.011
+    3301286: Road Weststra___e.012
+    3301288: Road Weststra___e.013
+    3301290: Road Weststra___e.014
+    3301292: Road Weststra___e.015
+    3301294: Road Weststra___e.016
+    3301296: Road Weststra___e.017
+    3301298: Road Weststra___e.018
+    3301300: Road Weststra___e.019
+    3301302: Road Weststra___e.020
+    3301304: Road Weststra___e.021
+    3301306: Road Weststra___e.022
+    3301308: Road Weststra___e.023
+    3301310: Road Weststra___e.024
+    3301312: Road Weststra___e.025
+    3301314: Road Weststra___e.026
+    3301316: Road Weststra___e.027
+    3301318: Road264
+    3301320: Road265
+    3301322: Road266
+    3301324: Road267
+    3301326: Road268
+    3301328: Road269
+    3301330: Road270
+    3301332: Road271
+    3301334: Road272
+    3301336: Road273
+    3301338: Road274
+    3301340: Road275
+    3301342: Road281
+    3301344: Road282
+    3301346: Road283
+    3301348: Road284
+    3301350: Road285
+    3301352: Road286
+    3301354: Road287
+    3301356: Road288
+    3301358: Road289
+    3301360: Road290
+    3301362: Road291
+    3301364: Road292
+    3301366: Road293
+    3301368: Road294
+    3301370: Road295
+    3301372: Road296
+    3301374: Road297
+    3301376: Road298
+    3301378: Road299
+    3301380: Road300
+    3301382: Road301
+    3301384: Road302
+    3301386: Road303
+    3301388: Road304
+    3301390: Road305
+    3301392: Road306
+    3301394: Road307
+    3301396: Road308
+    3301398: Road309
+    3301400: Road310
+    3301402: Road311
+    3301404: Road312
+    3301406: Road313
+    3301408: Road314
+    3301410: Road315
+    3301412: Road316
+    3301414: Road317
+    3301416: Road318
+    3301418: Road319
+    3301420: Road320
+    3301422: Road321
+    3301424: Road322
+    3301426: Road323
+    3301428: Road324
+    3301430: Road325
+    3301432: Road326
+    3301434: Road327
+    3301436: Road332
+    3301438: Road333
+    3301440: Road334
+    3301442: Road335
+    3301444: Road336
+    3301446: Road337
+    3301448: Road338
+    3301450: Road339
+    3301452: Road340
+    3301454: Road341
+    3301456: Road342
+    3301458: Road343
+    3301460: Road344
+    3301462: Road345
+    3301464: Road346
+    3301466: Road347
+    3301468: Road348
+    3301470: Road354
+    3301472: Road355
+    3301474: Road356
+    3301476: Road357
+    3301478: Road358
+    3301480: Road359
+    3301482: Road360
+    3301484: Road361
+    3301486: Road362
+    3301488: Road363
+    3301490: Road364
+    3301492: Road365
+    3301494: Road366
+    3301496: Road367
+    3301498: Road368
+    3301500: Road369
+    3301502: Road370
+    3301504: Road371
+    3301506: Road372
+    3301508: Road373
+    3301510: Road374
+    3301512: Road375
+    3301514: Road376
+    3301516: Road377
+    3301518: Road378
+    3301520: Road379
+    3301522: Road380
+    3301524: Road381
+    3301526: Road382
+    3301528: Road383
+    3301530: Road384
+    3301532: Road385
+    3301534: Road386
+    3301536: Road387
+    3301538: Road388
+    3301540: Road389
+    3301542: Road390
+    3301544: Road391
+    3301546: Road392
+    3301548: Road393
+    3301550: Road394
+    3301552: Road395
+    3301554: Road396
+    3301556: Road397
+    3301558: Road398
+    3301560: Road399
+    3301562: Road400
+    3301564: Road401
+    3301566: Road402
+    3301568: Road403
+    3301570: Road404
+    3301572: Road405
+    3301574: Road406
+    3301576: Road407
+    3301578: Road408
+    3301580: Road409
+    3301582: Road410
+    3301584: Road411
+    3301586: Road413
+    3301588: Road414
+    3301590: Road415
+    3301592: Road416
+    3301594: Road417
+    3301596: Road418
+    3301598: Road419
+    3301600: Road420
+    3301602: Road421
+    3301604: Road422
+    3301606: Road423
+    3301608: Road424
+    3301610: Road425
+    3301612: Road426
+    3301614: Road427
+    3301616: Road428
+    3301618: Road429
+    3301620: Road430
+    3301622: Road431
+    3301624: Road432
+    3301626: Road433
+    3301628: Road434
+    3301630: Road435
+    3301632: Road436
+    3301634: Road437
+    3301636: Road439
+    3301638: Road440
+    3301640: Road441
+    3301642: Road442
+    3301644: Road443
+    3301646: Road444
+    3301648: Road445
+    3301650: Road446
+    3301652: Road447
+    3301654: Road448
+    3301656: Road449
+    3301658: Road450
+    3301660: Road451
+    3301662: Road452
+    3301664: Road453
+    3301666: Road454
+    3301668: Road459
+    3301670: Road460
+    3301672: Road461
+    3301674: Road462
+    3301676: Road463
+    3301678: Road464
+    3301680: Road465
+    3301682: RoadArea Marktplatz
+    3301684: RoadConnector133
+    3301686: RoadConnector139
+    3301688: RoadConnector199
+    3301690: RoadConnector31
+    3301692: RoadConnector91
+    3301694: RoadConnector92
+    3301696: RoadConnector98
+    3301698: RoadConnector99
+    3301700: RoadJunction0
+    3301702: RoadJunction1
+    3301704: RoadJunction100
+    3301706: RoadJunction101
+    3301708: RoadJunction102
+    3301710: RoadJunction104
+    3301712: RoadJunction105
+    3301714: RoadJunction106
+    3301716: RoadJunction107
+    3301718: RoadJunction108
+    3301720: RoadJunction109
+    3301722: RoadJunction110
+    3301724: RoadJunction111
+    3301726: RoadJunction112
+    3301728: RoadJunction113
+    3301730: RoadJunction114
+    3301732: RoadJunction115
+    3301734: RoadJunction116
+    3301736: RoadJunction117
+    3301738: RoadJunction118
+    3301740: RoadJunction119
+    3301742: RoadJunction120
+    3301744: RoadJunction121
+    3301746: RoadJunction122
+    3301748: RoadJunction123
+    3301750: RoadJunction124
+    3301752: RoadJunction125
+    3301754: RoadJunction126
+    3301756: RoadJunction127
+    3301758: RoadJunction128
+    3301760: RoadJunction129
+    3301762: RoadJunction130
+    3301764: RoadJunction131
+    3301766: RoadJunction132
+    3301768: RoadJunction134
+    3301770: RoadJunction135
+    3301772: RoadJunction137
+    3301774: RoadJunction138
+    3301776: RoadJunction140
+    3301778: RoadJunction141
+    3301780: RoadJunction144
+    3301782: RoadJunction145
+    3301784: RoadJunction146
+    3301786: RoadJunction147
+    3301788: RoadJunction149
+    3301790: RoadJunction159
+    3301792: RoadJunction16
+    3301794: RoadJunction169
+    3301796: RoadJunction174
+    3301798: RoadJunction175
+    3301800: RoadJunction181
+    3301802: RoadJunction188
+    3301804: RoadJunction198
+    3301806: RoadJunction2
+    3301808: RoadJunction20
+    3301810: RoadJunction200
+    3301812: RoadJunction202
+    3301814: RoadJunction203
+    3301816: RoadJunction204
+    3301818: RoadJunction205
+    3301820: RoadJunction206
+    3301822: RoadJunction207
+    3301824: RoadJunction208
+    3301826: RoadJunction209
+    3301828: RoadJunction210
+    3301830: RoadJunction215
+    3301832: RoadJunction217
+    3301834: RoadJunction220
+    3301836: RoadJunction222
+    3301838: RoadJunction223
+    3301840: RoadJunction229
+    3301842: RoadJunction234
+    3301844: RoadJunction235
+    3301846: RoadJunction248
+    3301848: RoadJunction249
+    3301850: RoadJunction250
+    3301852: RoadJunction251
+    3301854: RoadJunction252
+    3301856: RoadJunction256
+    3301858: RoadJunction257
+    3301860: RoadJunction258
+    3301862: RoadJunction259
+    3301864: RoadJunction260
+    3301866: RoadJunction261
+    3301868: RoadJunction263
+    3301870: RoadJunction29
+    3301872: RoadJunction3
+    3301874: RoadJunction32
+    3301876: RoadJunction33
+    3301878: RoadJunction35
+    3301880: RoadJunction4
+    3301882: RoadJunction40
+    3301884: RoadJunction41
+    3301886: RoadJunction43
+    3301888: RoadJunction45
+    3301890: RoadJunction48
+    3301892: RoadJunction5
+    3301894: RoadJunction56
+    3301896: RoadJunction6
+    3301898: RoadJunction63
+    3301900: RoadJunction64
+    3301902: RoadJunction72
+    3301904: RoadJunction82
+    3301906: RoadJunction86
+    3301908: RoadJunction88
+    3301910: RoadJunction93
+    3301912: RoadJunction94
+    3301914: StreetLamp225
+    3301916: StreetLamp28
+    3301918: StreetLamp47
+    3301920: SurfaceArea558
+    3301922: SurfaceArea656
+    3301924: SurfaceArea658
+    3301926: SurfaceParking Freiherr-von-Brutscherstra___e
+    3301928: SurfaceParking Sachsenweg
+    3301930: SurfaceParking474
+    3301932: SurfaceParking505
+    3301934: SurfaceParking573
+    3301936: SurfaceParking574
+    3301938: SurfaceParking578
+    3301940: TennisPitch550
+    3301942: TennisPitch551
+    3301944: Tree Einigkeitseiche
+    3301946: Tree Friedenslinde
+    3301948: Tree13
+    3301950: Tree18
+    3301952: Tree21
+    3301954: Tree216
+    3301956: Tree224
+    3301958: Tree24
+    3301960: Tree26
+    3301962: Tree27
+    3301964: Tree38
+    3301966: Tree39
+    3301968: Tree87
+    3301970: Tree89
+    3301972: Tree90
+    3301974: Tunnel458
+    3301976: VendingMachineVice148
+    3301978: VendingMachineVice42
+    3301980: WasteBasket142
+    3301982: WasteBasket143
+    3301984: WasteBasket214
+    3301986: WasteBasket233
+    3301988: WasteBasket245
+    3301990: WasteBasket30
+    3301992: WasteBasket37
+    3301994: WasteBasket51
+    3301996: Water533
+    3301998: Waterway328
+    3302000: Waterway329
+    3302002: Waterway330
+    3302004: Waterway331
+    3302006: Waterway349
+    3302008: Waterway350
+    3302010: Waterway351
+    3302012: Waterway352
+    3302014: Waterway353
+    3302016: Waterway455
+    3302018: Waterway456
+    3302020: Waterway457
+    4300000: Cube
+    4300002: RoadJunction0
+    4300004: RoadJunction1
+    4300006: RoadJunction2
+    4300008: RoadJunction3
+    4300010: Board Kreuzwegstation am Weg nach Loretto
+    4300012: Board 16 Feuerspritzen
+    4300014: RoadJunction4
+    4300016: RoadJunction5
+    4300018: RoadJunction6
+    4300020: Bench7
+    4300022: Tree Einigkeitseiche
+    4300024: Tree Friedenslinde
+    4300026: Board Friedenslinde
+    4300028: Bench8
+    4300030: Bench9
+    4300032: Bench10
+    4300034: Bench11
+    4300036: Bench12
+    4300038: Tree13
+    4300040: Bench14
+    4300042: Bench15
+    4300044: RoadJunction16
+    4300046: Bench17
+    4300048: Tree18
+    4300050: Bench19
+    4300052: RoadJunction20
+    4300054: Tree21
+    4300056: Bench22
+    4300058: Bench23
+    4300060: Tree24
+    4300062: Bench25
+    4300064: Tree26
+    4300066: Tree27
+    4300068: StreetLamp28
+    4300070: RoadJunction29
+    4300072: WasteBasket30
+    4300074: RoadConnector31
+    4300076: RoadJunction32
+    4300078: RoadJunction33
+    4300080: Bench34
+    4300082: RoadJunction35
+    4300084: Board Pumptrack Oberstdorf
+    4300086: BuildingEntrance36
+    4300088: WasteBasket37
+    4300090: Tree38
+    4300092: Tree39
+    4300094: RoadJunction40
+    4300096: RoadJunction41
+    4300098: VendingMachineVice42
+    4300100: RoadJunction43
+    4300102: AdvertisingColumn44
+    4300104: RoadJunction45
+    4300106: FireHydrant46
+    4300108: StreetLamp47
+    4300110: Board Pr___zisions-Sonnenuhr
+    4300112: Board Prinzregenten-Denkmal
+    4300114: RoadJunction48
+    4300116: Bench49
+    4300118: Bench50
+    4300120: WasteBasket51
+    4300122: Bench52
+    4300124: Bench53
+    4300126: Bench54
+    4300128: Bench55
+    4300130: RoadJunction56
+    4300132: Bench57
+    4300134: Board58
+    4300136: Board59
+    4300138: Board60
+    4300140: Board61
+    4300142: Board62
+    4300144: RoadJunction63
+    4300146: RoadJunction64
+    4300148: Bench65
+    4300150: Flagpole66
+    4300152: Bench67
+    4300154: Bench68
+    4300156: Phone 08322/80822
+    4300158: Bench69
+    4300160: Bench70
+    4300162: Bench71
+    4300164: RoadJunction72
+    4300166: Bench73
+    4300168: Bench74
+    4300170: Bench75
+    4300172: Bench76
+    4300174: Bench77
+    4300176: Bench78
+    4300178: Bench79
+    4300180: Flagpole80
+    4300182: Bench81
+    4300184: RoadJunction82
+    4300186: Bench83
+    4300188: Bench84
+    4300190: Flagpole85
+    4300192: RoadJunction86
+    4300194: Tree87
+    4300196: RoadJunction88
+    4300198: Tree89
+    4300200: Tree90
+    4300202: RoadConnector91
+    4300204: RoadConnector92
+    4300206: RoadJunction93
+    4300208: RoadJunction94
+    4300210: Bench95
+    4300212: Bench96
+    4300214: RecyclingContainer97
+    4300216: RoadConnector98
+    4300218: RoadConnector99
+    4300220: RoadJunction100
+    4300222: RoadJunction101
+    4300224: RoadJunction102
+    4300226: Phone 832209875939
+    4300228: BuildingEntrance103
+    4300230: RoadJunction104
+    4300232: RoadJunction105
+    4300234: RoadJunction106
+    4300236: RoadJunction107
+    4300238: BusStop Oberstdorfer Marktb___hnle
+    4300240: RoadJunction108
+    4300242: RoadJunction109
+    4300244: RoadJunction110
+    4300246: RoadJunction111
+    4300248: RoadJunction112
+    4300250: RoadJunction113
+    4300252: RoadJunction114
+    4300254: RoadJunction115
+    4300256: RoadJunction116
+    4300258: RoadJunction117
+    4300260: RoadJunction118
+    4300262: RoadJunction119
+    4300264: RoadJunction120
+    4300266: RoadJunction121
+    4300268: RoadJunction122
+    4300270: RoadJunction123
+    4300272: RoadJunction124
+    4300274: RoadJunction125
+    4300276: RoadJunction126
+    4300278: RoadJunction127
+    4300280: RoadJunction128
+    4300282: RoadJunction129
+    4300284: RoadJunction130
+    4300286: RoadJunction131
+    4300288: RoadJunction132
+    4300290: RoadConnector133
+    4300292: RoadJunction134
+    4300294: RoadJunction135
+    4300296: BuildingEntrance136
+    4300298: Board Evangelische Christus-Kirche
+    4300300: RoadJunction137
+    4300302: RoadJunction138
+    4300304: RoadConnector139
+    4300306: RoadJunction140
+    4300308: RoadJunction141
+    4300310: WasteBasket142
+    4300312: WasteBasket143
+    4300314: RoadJunction144
+    4300316: RoadJunction145
+    4300318: RoadJunction146
+    4300320: RoadJunction147
+    4300322: VendingMachineVice148
+    4300324: RoadJunction149
+    4300326: Bench150
+    4300328: Bench151
+    4300330: Bench152
+    4300332: Bench153
+    4300334: Bench154
+    4300336: Bench155
+    4300338: Bench156
+    4300340: Bench157
+    4300342: Bench158
+    4300344: RoadJunction159
+    4300346: Bench160
+    4300348: FireHydrant161
+    4300350: FireHydrant162
+    4300352: Bench163
+    4300354: Bench164
+    4300356: Bench165
+    4300358: Bench166
+    4300360: Bench167
+    4300362: Bench168
+    4300364: RoadJunction169
+    4300366: Bench170
+    4300368: Bench171
+    4300370: Bench172
+    4300372: Bench173
+    4300374: RoadJunction174
+    4300376: RoadJunction175
+    4300378: Flagpole176
+    4300380: Bench177
+    4300382: Flagpole178
+    4300384: Bench179
+    4300386: Bench180
+    4300388: RoadJunction181
+    4300390: Bench182
+    4300392: Bench183
+    4300394: Bench184
+    4300396: Bench185
+    4300398: Bench186
+    4300400: Bench187
+    4300402: RoadJunction188
+    4300404: Bench189
+    4300406: Bench190
+    4300408: Bench191
+    4300410: Bench192
+    4300412: Bench193
+    4300414: Bench194
+    4300416: Bench195
+    4300418: Bench196
+    4300420: FireHydrant197
+    4300422: RoadJunction198
+    4300424: RoadConnector199
+    4300426: RoadJunction200
+    4300428: FireHydrant201
+    4300430: Board Brunnen mit Widder und Deichel
+    4300432: RoadJunction202
+    4300434: RoadJunction203
+    4300436: RoadJunction204
+    4300438: RoadJunction205
+    4300440: RoadJunction206
+    4300442: RoadJunction207
+    4300444: RoadJunction208
+    4300446: RoadJunction209
+    4300448: RoadJunction210
+    4300450: Bench211
+    4300452: Bench212
+    4300454: Bench213
+    4300456: WasteBasket214
+    4300458: RoadJunction215
+    4300460: Tree216
+    4300462: RoadJunction217
+    4300464: Bench218
+    4300466: Bench219
+    4300468: RoadJunction220
+    4300470: Bench221
+    4300472: RoadJunction222
+    4300474: RoadJunction223
+    4300476: Tree224
+    4300478: StreetLamp225
+    4300480: Bench226
+    4300482: Bench227
+    4300484: Bench228
+    4300486: RoadJunction229
+    4300488: Bench230
+    4300490: Flagpole231
+    4300492: Bench232
+    4300494: WasteBasket233
+    4300496: RoadJunction234
+    4300498: RoadJunction235
+    4300500: Bench236
+    4300502: Bench237
+    4300504: Bench238
+    4300506: Flagpole239
+    4300508: Bench240
+    4300510: Bench241
+    4300512: Flagpole242
+    4300514: Bench243
+    4300516: RecyclingContainer244
+    4300518: WasteBasket245
+    4300520: Bench246
+    4300522: Flagpole247
+    4300524: RoadJunction248
+    4300526: RoadJunction249
+    4300528: RoadJunction250
+    4300530: RoadJunction251
+    4300532: PostBox Ludwigstra___e 4, 87561 Oberstdorf
+    4300534: RoadJunction252
+    4300536: Bench253
+    4300538: Bench254
+    4300540: Bench255
+    4300542: RoadJunction256
+    4300544: RoadJunction257
+    4300546: RoadJunction258
+    4300548: RoadJunction259
+    4300550: RoadJunction260
+    4300552: RoadJunction261
+    4300554: Bench262
+    4300556: RoadJunction263
+    4300558: Road Fischerstra___e
+    4300560: Road Fischerstra___e.000
+    4300562: Road Weststra___e
+    4300564: Road Weststra___e.000
+    4300566: Road Weststra___e.001
+    4300568: Road Weststra___e.002
+    4300570: Road Weststra___e.003
+    4300572: Road Weststra___e.004
+    4300574: Road Weststra___e.005
+    4300576: Road Weststra___e.006
+    4300578: Road Weststra___e.007
+    4300580: Road Weststra___e.008
+    4300582: Road Weststra___e.009
+    4300584: Road Weststra___e.010
+    4300586: Road Weststra___e.011
+    4300588: Road Weststra___e.012
+    4300590: Road Weststra___e.013
+    4300592: Road Weststra___e.014
+    4300594: Road Weststra___e.015
+    4300596: Road Weststra___e.016
+    4300598: Road Weststra___e.017
+    4300600: Road Weststra___e.018
+    4300602: Road Freibergstra___e
+    4300604: Road Freibergstra___e.000
+    4300606: Road Freibergstra___e.001
+    4300608: Road Freibergstra___e.002
+    4300610: Road Freibergstra___e.003
+    4300612: Road Freibergstra___e.004
+    4300614: Road Freibergstra___e.005
+    4300616: Road Freibergstra___e.006
+    4300618: Road Freibergstra___e.007
+    4300620: Road Freibergstra___e.008
+    4300622: Road Freibergstra___e.009
+    4300624: Road Freibergstra___e.010
+    4300626: Road Freibergstra___e.011
+    4300628: Road Freibergstra___e.012
+    4300630: Road Freibergstra___e.013
+    4300632: Road Freibergstra___e.014
+    4300634: Road Prinzenstra___e
+    4300636: Road Prinzenstra___e.000
+    4300638: Road Prinzenstra___e.001
+    4300640: Road Prinzenstra___e.002
+    4300642: Road Prinzenstra___e.003
+    4300644: Road Sebastian-Kneipp-Weg
+    4300646: Road Sebastian-Kneipp-Weg.000
+    4300648: Road Sebastian-Kneipp-Weg.001
+    4300650: Road Sebastian-Kneipp-Weg.002
+    4300652: Road Sebastian-Kneipp-Weg.003
+    4300654: Road Sebastian-Kneipp-Weg.004
+    4300656: Road Sebastian-Kneipp-Weg.005
+    4300658: Road Sebastian-Kneipp-Weg.006
+    4300660: Road Sebastian-Kneipp-Weg.007
+    4300662: Road Sebastian-Kneipp-Weg.008
+    4300664: Road Sebastian-Kneipp-Weg.009
+    4300666: Road Sebastian-Kneipp-Weg.010
+    4300668: Road Sebastian-Kneipp-Weg.011
+    4300670: Road Sebastian-Kneipp-Weg.012
+    4300672: Road Sebastian-Kneipp-Weg.013
+    4300674: Road Sebastian-Kneipp-Weg.014
+    4300676: Road Sebastian-Kneipp-Weg.015
+    4300678: Road Sebastian-Kneipp-Weg.016
+    4300680: Road Sebastian-Kneipp-Weg.017
+    4300682: Road Sebastian-Kneipp-Weg.018
+    4300684: Road Fuggerstra___e
+    4300686: Road Fuggerstra___e.000
+    4300688: Road Fuggerstra___e.001
+    4300690: Road Fuggerstra___e.002
+    4300692: Road Fuggerstra___e.003
+    4300694: Road Fuggerstra___e.004
+    4300696: Road Fuggerstra___e.005
+    4300698: Road Fuggerstra___e.006
+    4300700: Road Fuggerstra___e.007
+    4300702: Road Fuggerstra___e.008
+    4300704: Road Fuggerstra___e.009
+    4300706: Road Fuggerstra___e.010
+    4300708: Road Fuggerstra___e.011
+    4300710: Road M___hlenweg
+    4300712: Road M___hlenweg.000
+    4300714: Road M___hlenweg.001
+    4300716: Road M___hlenweg.002
+    4300718: Road M___hlenweg.003
+    4300720: Road M___hlenweg.004
+    4300722: Road M___hlenweg.005
+    4300724: Road M___hlenweg.006
+    4300726: Road M___hlenweg.007
+    4300728: Road M___hlenweg.008
+    4300730: Road M___hlenweg.009
+    4300732: Road M___hlenweg.010
+    4300734: Road M___hlenweg.011
+    4300736: Road Weststra___e.019
+    4300738: Road Weststra___e.020
+    4300740: Road Metzgerstra___e
+    4300742: Road Metzgerstra___e.000
+    4300744: Road Metzgerstra___e.001
+    4300746: Road Frohmarkt
+    4300748: Road Frohmarkt.000
+    4300750: Road Frohmarkt.001
+    4300752: Road Frohmarkt.002
+    4300754: Road Frohmarkt.003
+    4300756: Road Rankgasse
+    4300758: Road Rankgasse.000
+    4300760: Road Rankgasse.001
+    4300762: Road Rankgasse.002
+    4300764: Road Rankgasse.003
+    4300766: Road Rankgasse.004
+    4300768: Road Rankgasse.005
+    4300770: Road Rankgasse.006
+    4300772: Road Schustergasse
+    4300774: Road Marktplatz
+    4300776: Road Marktplatz.000
+    4300778: Road Marktplatz.001
+    4300780: Road Marktplatz.002
+    4300782: Road Marktplatz.003
+    4300784: Road Marktplatz.004
+    4300786: Road Marktplatz.005
+    4300788: Road Marktplatz.006
+    4300790: Road Marktplatz.008
+    4300792: Road Marktplatz.009
+    4300794: Road Marktplatz.010
+    4300796: Road Marktplatz.011
+    4300798: Road264
+    4300800: Road265
+    4300802: Road Hauptstra___e
+    4300804: Road Hauptstra___e.000
+    4300806: Road Hauptstra___e.001
+    4300808: Road266
+    4300810: Road267
+    4300812: Road268
+    4300814: Road Metzgerstra___e.002
+    4300816: Road Metzgerstra___e.003
+    4300818: Road Metzgerstra___e.004
+    4300820: Road Metzgerstra___e.005
+    4300822: Road Metzgerstra___e.006
+    4300824: Road Metzgerstra___e.007
+    4300826: Road269
+    4300828: Road270
+    4300830: Road271
+    4300832: Road272
+    4300834: Road273
+    4300836: Road274
+    4300838: Road275
+    4300840: Road Prinzenstra___e.004
+    4300842: Road Prinzenstra___e.005
+    4300844: Road Prinzenstra___e.006
+    4300846: Road Prinzenstra___e.007
+    4300848: Road Prinzenstra___e.008
+    4300850: Road Prinzenstra___e.009
+    4300852: Road Prinzenstra___e.010
+    4300854: Road Prinzenstra___e.011
+    4300856: Hedge276
+    4300858: Hedge277
+    4300860: Hedge278
+    4300862: Hedge279
+    4300864: Hedge280
+    4300866: Road Ludwigstra___e
+    4300868: Road Ludwigstra___e.000
+    4300870: Road Ludwigstra___e.001
+    4300872: Road Ludwigstra___e.002
+    4300874: Road Ludwigstra___e.003
+    4300876: Road Ludwigstra___e.004
+    4300878: Road Ludwigstra___e.005
+    4300880: Road Ludwigstra___e.006
+    4300882: Road281
+    4300884: Road282
+    4300886: Road283
+    4300888: Road284
+    4300890: Road285
+    4300892: Road286
+    4300894: Road287
+    4300896: Road288
+    4300898: Road Fuggerstra___e.012
+    4300900: Road Fuggerstra___e.013
+    4300902: Road Fuggerstra___e.014
+    4300904: Road Fuggerstra___e.015
+    4300906: Road Fuggerstra___e.016
+    4300908: Road Fuggerstra___e.017
+    4300910: Road Fuggerstra___e.018
+    4300912: Road Freibergstra___e.015
+    4300914: Road Freibergstra___e.016
+    4300916: Road Freibergstra___e.018
+    4300918: Road Freibergstra___e.019
+    4300920: Road Freibergstra___e.020
+    4300922: Road Freibergstra___e.021
+    4300924: Road Freibergstra___e.022
+    4300926: Road289
+    4300928: Road Paul-Gerhardt-Stra___e
+    4300930: Road Paul-Gerhardt-Stra___e.000
+    4300932: Road Paul-Gerhardt-Stra___e.001
+    4300934: Road Paul-Gerhardt-Stra___e.002
+    4300936: Road Paul-Gerhardt-Stra___e.003
+    4300938: Road Paul-Gerhardt-Stra___e.004
+    4300940: Road Paul-Gerhardt-Stra___e.005
+    4300942: Road Paul-Gerhardt-Stra___e.006
+    4300944: Road Paul-Gerhardt-Stra___e.007
+    4300946: Road Paul-Gerhardt-Stra___e.008
+    4300948: Road Paul-Gerhardt-Stra___e.009
+    4300950: Road Paul-Gerhardt-Stra___e.010
+    4300952: Road Paul-Gerhardt-Stra___e.011
+    4300954: Road Paul-Gerhardt-Stra___e.012
+    4300956: Road Paul-Gerhardt-Stra___e.013
+    4300958: Road290
+    4300960: Road291
+    4300962: Road292
+    4300964: Road293
+    4300966: Road294
+    4300968: Road295
+    4300970: Road296
+    4300972: Road297
+    4300974: Road298
+    4300976: Road299
+    4300978: Road300
+    4300980: Road301
+    4300982: Road302
+    4300984: Road303
+    4300986: Road304
+    4300988: Road305
+    4300990: Road306
+    4300992: Road307
+    4300994: Road308
+    4300996: Road309
+    4300998: Road310
+    4301000: Road311
+    4301002: Road312
+    4301004: Road313
+    4301006: Road314
+    4301008: Road315
+    4301010: Road316
+    4301012: Road317
+    4301014: Road318
+    4301016: Road319
+    4301018: Road320
+    4301020: Road321
+    4301022: Road322
+    4301024: Road Sachsenweg
+    4301026: Road Sachsenweg.000
+    4301028: Road323
+    4301030: Road324
+    4301032: Road325
+    4301034: Road326
+    4301036: Road327
+    4301038: Road Kirchstra___e
+    4301040: Road Kirchstra___e.000
+    4301042: Road Kirchstra___e.001
+    4301044: Road Kirchstra___e.002
+    4301046: Road Sonnenstra___e
+    4301048: Road Sonnenstra___e.000
+    4301050: Road Sonnenstra___e.002
+    4301052: Road Sonnenstra___e.003
+    4301054: Road Sonnenstra___e.004
+    4301056: Road Sonnenstra___e.005
+    4301058: Road Sonnenstra___e.006
+    4301060: Road Sonnenstra___e.007
+    4301062: Road Freiherr-von-Brutscher-Stra___e
+    4301064: Road Freiherr-von-Brutscher-Stra___e.001
+    4301066: Road Freiherr-von-Brutscher-Stra___e.003
+    4301068: Road Freiherr-von-Brutscher-Stra___e.004
+    4301070: Road Freiherr-von-Brutscher-Stra___e.005
+    4301072: Waterway328
+    4301074: Waterway329
+    4301076: Waterway330
+    4301078: Waterway331
+    4301080: Road332
+    4301082: Road333
+    4301084: Road334
+    4301086: Road335
+    4301088: Road336
+    4301090: Road337
+    4301092: Road338
+    4301094: Road339
+    4301096: Road340
+    4301098: Road341
+    4301100: Road342
+    4301102: Road343
+    4301104: Road344
+    4301106: Road345
+    4301108: Road346
+    4301110: Road347
+    4301112: Road348
+    4301114: Waterway349
+    4301116: Waterway350
+    4301118: Waterway351
+    4301120: Waterway352
+    4301122: Waterway353
+    4301124: Road354
+    4301126: Road355
+    4301128: Road356
+    4301130: Road357
+    4301132: Road358
+    4301134: Road359
+    4301136: Road360
+    4301138: Road Prinzregenten-Platz
+    4301140: Road Prinzregenten-Platz.000
+    4301142: Road361
+    4301144: Road362
+    4301146: Road Prinzenstra___e.012
+    4301148: Road Prinzenstra___e.013
+    4301150: Road Prinzenstra___e.014
+    4301152: Road Prinzenstra___e.015
+    4301154: Road Prinzenstra___e.016
+    4301156: Road Prinzenstra___e.017
+    4301158: Road363
+    4301160: Road364
+    4301162: Road365
+    4301164: Road366
+    4301166: Road367
+    4301168: Road Reithallenweg
+    4301170: Road Reithallenweg.000
+    4301172: Road368
+    4301174: Road369
+    4301176: Road370
+    4301178: Road371
+    4301180: Road372
+    4301182: Road373
+    4301184: Road374
+    4301186: Road375
+    4301188: Road376
+    4301190: Road377
+    4301192: Road378
+    4301194: Road379
+    4301196: Road380
+    4301198: Road381
+    4301200: Road382
+    4301202: Road Pfarrstra___e
+    4301204: Road Pfarrstra___e.000
+    4301206: Road Pfarrstra___e.001
+    4301208: Road Pfarrstra___e.002
+    4301210: Road383
+    4301212: Road384
+    4301214: Road385
+    4301216: Road386
+    4301218: Road387
+    4301220: Road388
+    4301222: Road389
+    4301224: Road390
+    4301226: Road391
+    4301228: Road392
+    4301230: Road393
+    4301232: Road394
+    4301234: Road Bachstra___e
+    4301236: Road Bachstra___e.000
+    4301238: Road Bachstra___e.001
+    4301240: Road Bachstra___e.002
+    4301242: Road Bachstra___e.003
+    4301244: Road Bachstra___e.004
+    4301246: Road395
+    4301248: Road396
+    4301250: Road397
+    4301252: Road398
+    4301254: Road Oststra___e
+    4301256: Road Oststra___e.000
+    4301258: Road Oststra___e.001
+    4301260: Road Oststra___e.002
+    4301262: Road Oststra___e.003
+    4301264: Road Oststra___e.004
+    4301266: Road Oststra___e.005
+    4301268: Road Oststra___e.006
+    4301270: Road Oststra___e.007
+    4301272: Road Oststra___e.008
+    4301274: Road Oststra___e.009
+    4301276: Road Oststra___e.010
+    4301278: Road Oststra___e.011
+    4301280: Road Oststra___e.012
+    4301282: Road Oststra___e.013
+    4301284: Road Oststra___e.014
+    4301286: Road Oststra___e.015
+    4301288: Road Oststra___e.016
+    4301290: Road Oststra___e.017
+    4301292: Road Oststra___e.018
+    4301294: Road Oststra___e.019
+    4301296: Road Oststra___e.020
+    4301298: Road399
+    4301300: Road400
+    4301302: Road401
+    4301304: Road402
+    4301306: Road403
+    4301308: Road404
+    4301310: Road405
+    4301312: Road406
+    4301314: Road407
+    4301316: Road408
+    4301318: Road409
+    4301320: Road410
+    4301322: Road411
+    4301324: Road413
+    4301326: Road414
+    4301328: Road415
+    4301330: Road416
+    4301332: Road417
+    4301334: Road418
+    4301336: Road419
+    4301338: Road420
+    4301340: Road421
+    4301342: Road422
+    4301344: Road423
+    4301346: Road424
+    4301348: Road425
+    4301350: Road426
+    4301352: Road Freiherr-von-Brutscher-Stra___e.006
+    4301354: Road427
+    4301356: Road428
+    4301358: Road Finkenstra___e
+    4301360: Road Finkenstra___e.000
+    4301362: Road Finkenstra___e.001
+    4301364: Road Finkenstra___e.002
+    4301366: Road Finkenstra___e.003
+    4301368: Road Finkenstra___e.004
+    4301370: Road Finkenstra___e.005
+    4301372: Road Finkenstra___e.006
+    4301374: Road Finkenstra___e.007
+    4301376: Road Finkenstra___e.008
+    4301378: Road Finkenstra___e.009
+    4301380: Road Finkenstra___e.010
+    4301382: Road Clemens-Wenzeslaus-Stra___e
+    4301384: Road Prinzregenten-Platz.001
+    4301386: Road Prinzregenten-Platz.002
+    4301388: Road Prinzregenten-Platz.003
+    4301390: Road Prinzregenten-Platz.004
+    4301392: Road Prinzregenten-Platz.005
+    4301394: Road Prinzregenten-Platz.006
+    4301396: Road429
+    4301398: Road430
+    4301400: Road431
+    4301402: Road432
+    4301404: Road433
+    4301406: Road434
+    4301408: Road Ludwigstra___e.007
+    4301410: Road Ludwigstra___e.008
+    4301412: Road Ludwigstra___e.009
+    4301414: Road Ludwigstra___e.010
+    4301416: Road Metzgerstra___e.008
+    4301418: Road Weststra___e.021
+    4301420: Road Weststra___e.022
+    4301422: Road Weststra___e.023
+    4301424: Road Weststra___e.024
+    4301426: Road435
+    4301428: Road436
+    4301430: Road437
+    4301432: Bridge438
+    4301434: Road439
+    4301436: Road440
+    4301438: Road441
+    4301440: Road442
+    4301442: Road443
+    4301444: Road444
+    4301446: Road445
+    4301448: Road446
+    4301450: Road447
+    4301452: Road448
+    4301454: Road449
+    4301456: Road450
+    4301458: Road451
+    4301460: Road452
+    4301462: Road453
+    4301464: Road454
+    4301466: Road Sigismundstra___e
+    4301468: Waterway455
+    4301470: Waterway456
+    4301472: Road Luitpoldstra___e
+    4301474: Road Luitpoldstra___e.000
+    4301476: Road Luitpoldstra___e.001
+    4301478: Waterway457
+    4301480: Tunnel458
+    4301482: Road459
+    4301484: Road460
+    4301486: Road461
+    4301488: Road462
+    4301490: Road Pumptrack Oberstdorf
+    4301492: Road Pumptrack Oberstdorf.000
+    4301494: Road Pumptrack Oberstdorf.001
+    4301496: Road Pumptrack Oberstdorf.002
+    4301498: Road Pumptrack Oberstdorf.003
+    4301500: Road Pumptrack Oberstdorf.004
+    4301502: Road Pumptrack Oberstdorf.005
+    4301504: Road Pumptrack Oberstdorf.006
+    4301506: Road Pumptrack Oberstdorf.007
+    4301508: Road Pumptrack Oberstdorf.008
+    4301510: Road Pumptrack Oberstdorf.009
+    4301512: Road Pumptrack Oberstdorf.010
+    4301514: Road Pumptrack Oberstdorf.011
+    4301516: Road Pumptrack Oberstdorf.012
+    4301518: Road Pumptrack Oberstdorf.013
+    4301520: Road Pumptrack Oberstdorf.014
+    4301522: Road Pumptrack Oberstdorf.016
+    4301524: Road Pumptrack Oberstdorf.017
+    4301526: Road Pumptrack Oberstdorf.018
+    4301528: Road Pumptrack Oberstdorf.019
+    4301530: Road Freiherr-von-Brutscher-Stra___e.007
+    4301532: Road463
+    4301534: Road464
+    4301536: Road Weststra___e.025
+    4301538: Road Weststra___e.026
+    4301540: Road Weststra___e.027
+    4301542: Road Luitpoldstra___e.002
+    4301544: Road465
+    4301546: Road F___rsterstra___e
+    4301548: Road F___rsterstra___e.000
+    4301550: Road F___rsterstra___e.001
+    4301552: Road Metzgerstra___e.009
+    4301554: Road Metzgerstra___e.010
+    4301556: Road Metzgerstra___e.011
+    4301558: Road Metzgerstra___e.012
+    4301560: Road Metzgerstra___e.013
+    4301562: Road Metzgerstra___e.014
+    4301564: Road Oststra___e.021
+    4301566: Road Oststra___e.022
+    4301568: Road Oststra___e.023
+    4301570: Road Oststra___e.024
+    4301572: Road Oststra___e.025
+    4301574: Road Oststra___e.026
+    4301576: Road Oststra___e.027
+    4301578: Building466
+    4301580: Building467
+    4301582: Building468
+    4301584: Building469
+    4301586: Building470
+    4301588: SurfaceParking Freiherr-von-Brutscherstra___e
+    4301590: Building472
+    4301592: Building Rosenhof
+    4301594: Building473
+    4301596: SurfaceParking474
+    4301598: Building475
+    4301600: Building Adler
+    4301602: Building476
+    4301604: Building477
+    4301606: Building478
+    4301608: Building479
+    4301610: Building480
+    4301612: Building481
+    4301614: Building482
+    4301616: Building483
+    4301618: Building484
+    4301620: Building485
+    4301622: Building486
+    4301624: Building487
+    4301626: Building488
+    4301628: Building489
+    4301630: Building Altes Rathaus
+    4301632: Building490
+    4301634: Building491
+    4301636: Building492
+    4301638: Building493
+    4301640: Building Johannisheim
+    4301642: Building494
+    4301644: Building Maxheim
+    4301646: Building495
+    4301648: Building496
+    4301650: Building497
+    4301652: Building498
+    4301654: Building499
+    4301656: Building500
+    4301658: Building501
+    4301660: Building502
+    4301662: Building504
+    4301664: SurfaceParking505
+    4301666: Building506
+    4301668: Building507
+    4301670: Building508
+    4301672: Building509
+    4301674: Building510
+    4301676: Building511
+    4301678: Building512
+    4301680: Building513
+    4301682: Building514
+    4301684: Building515
+    4301686: Building516
+    4301688: Building517
+    4301690: Building Villa Jauss
+    4301692: Building518
+    4301694: Building519
+    4301696: Building520
+    4301698: Building521
+    4301700: Building522
+    4301702: Building Alpine Dreams
+    4301704: Building523
+    4301706: Building524
+    4301708: Building Seelenkapelle
+    4301710: Building525
+    4301712: Building526
+    4301714: Building527
+    4301716: Building528
+    4301718: Building529
+    4301720: Building530
+    4301722: Building531
+    4301724: Building532
+    4301726: Water533
+    4301728: Building534
+    4301730: Building535
+    4301732: Building536
+    4301734: Building537
+    4301736: Building538
+    4301738: Building539
+    4301740: Building540
+    4301742: Building541
+    4301744: Building542
+    4301746: Building543
+    4301748: Building544
+    4301750: Building545
+    4301752: Building546
+    4301754: Building547
+    4301756: Building548
+    4301758: Building549
+    4301760: TennisPitch550
+    4301762: TennisPitch551
+    4301764: Building552
+    4301766: Building553
+    4301768: Building554
+    4301770: Building555
+    4301772: Building556
+    4301774: Building557
+    4301776: SurfaceArea558
+    4301778: Building559
+    4301780: Building560
+    4301782: Building561
+    4301784: Building562
+    4301786: Building563
+    4301788: Building564
+    4301790: Building565
+    4301792: Building566
+    4301794: Building567
+    4301796: Building568
+    4301798: Building569
+    4301800: Building570
+    4301802: Building571
+    4301804: Building572
+    4301806: SurfaceParking573
+    4301808: Building Konzertmuschel
+    4301810: SurfaceParking574
+    4301812: Building575
+    4301814: Building576
+    4301816: Building Rathaus
+    4301818: Building577
+    4301820: SurfaceParking578
+    4301822: Building579
+    4301824: Building580
+    4301826: Building581
+    4301828: Building582
+    4301830: Building583
+    4301832: Building584
+    4301834: Building585
+    4301836: Building586
+    4301838: Building587
+    4301840: Building588
+    4301842: Building589
+    4301844: Building590
+    4301846: Building591
+    4301848: Building592
+    4301850: Building593
+    4301852: Building594
+    4301854: Building595
+    4301856: SurfaceParking Sachsenweg
+    4301858: Building Kath. Kindergarten St. Martin
+    4301860: Building596
+    4301862: Building597
+    4301864: Building Oberstdorf Haus
+    4301866: Building598
+    4301868: Building599
+    4301870: Building Pfarrhof
+    4301872: Building600
+    4301874: Building601
+    4301876: Building602
+    4301878: Building603
+    4301880: Building604
+    4301882: Building605
+    4301884: Building606
+    4301886: Building LOFT Oberstdorf
+    4301888: Building607
+    4301890: Building608
+    4301892: Building609
+    4301894: Building610
+    4301896: Building Haus im Gr___nen
+    4301898: Building611
+    4301900: Building612
+    4301902: Building613
+    4301904: Building614
+    4301906: Building615
+    4301908: Building616
+    4301910: Building617
+    4301912: Building Bacchus-Stuben
+    4301914: Building618
+    4301916: Building619
+    4301918: Building620
+    4301920: Building621
+    4301922: Building622
+    4301924: Building623
+    4301926: Building624
+    4301928: Building625
+    4301930: Building626
+    4301932: Building627
+    4301934: Building628
+    4301936: Building629
+    4301938: Building630
+    4301940: Building631
+    4301942: Building632
+    4301944: Building633
+    4301946: Building634
+    4301948: Building635
+    4301950: Building636
+    4301952: Building637
+    4301954: Building638
+    4301956: Building Haus Nandl
+    4301958: Building639
+    4301960: Building640
+    4301962: Building641
+    4301964: Building642
+    4301966: Building643
+    4301968: Building644
+    4301970: Building645
+    4301972: Building646
+    4301974: Building647
+    4301976: Building648
+    4301978: Building649
+    4301980: Building650
+    4301982: Building651
+    4301984: Building652
+    4301986: Building653
+    4301988: Building654
+    4301990: Building655
+    4301992: SurfaceArea656
+    4301994: Building657
+    4301996: SurfaceArea658
+    4301998: Building659
+    4302000: Building660
+    4302002: Building661
+    4302004: Building662
+    4302006: Building Haus Fichtel
+    4302008: Building663
+    4302010: RoadArea Marktplatz
+    4302012: Building664
+    4302014: Building St. Johannes Baptist
+    4302016: Building665
+    4302018: Building666
+    4302020: Building667
+    10800000: Light
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

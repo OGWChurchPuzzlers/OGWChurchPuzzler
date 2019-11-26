@@ -9,6 +9,7 @@ public class CharacterController : MonoBehaviour {
         Direct
     }
 
+    private const float COLLECT_TOLERANCE = 0.01f;
     [SerializeField] private float m_moveSpeed = 2;
     [SerializeField] private float m_turnSpeed = 200;
     [SerializeField] private float m_jumpForce = 4;
@@ -36,31 +37,11 @@ public class CharacterController : MonoBehaviour {
     private bool m_isGrounded;
     private List<Collider> m_collisions = new List<Collider>();
 
-    private bool isCarryingItem;
-    private GameObject availableItem;
-
-    private List<GameObject> ObjectsInRange = new List<GameObject>();
-
-    public void OnTriggerEnter(Collider col)
-    {
-        ObjectsInRange.Add(col.gameObject);
-        Debug.Log("Objects in Range: " + ObjectsInRange.Count);
-    }
-
-    public void OnTriggerExit(Collider col)
-    {
-        ObjectsInRange.Remove(col.gameObject);
-        Debug.Log("Objects in Range: " + ObjectsInRange.Count);
-    }
+    private bool isCarryingItem = false;
+    private GameObject collectableItem;
 
     private void OnCollisionEnter(Collision collision)
     {
-        Rigidbody colRigidbody = collision.gameObject.GetComponent<Rigidbody>();
-        if(colRigidbody != null)
-        {
-            availableItem = collision.gameObject;
-        }
-
         ContactPoint[] contactPoints = collision.contacts;
         for(int i = 0; i < contactPoints.Length; i++)
         {
@@ -135,7 +116,7 @@ public class CharacterController : MonoBehaviour {
 
     private void TankUpdate()
     {
-        GrabOrDrop();
+        CollectOrDrop();
 
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
@@ -163,7 +144,7 @@ public class CharacterController : MonoBehaviour {
 
     private void DirectUpdate()
     {
-        GrabOrDrop();
+        CollectOrDrop();
 
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
@@ -219,13 +200,13 @@ public class CharacterController : MonoBehaviour {
         }
     }
 
-    private void GrabOrDrop()
+    private void CollectOrDrop()
     {
-        if (isCarryingItem == false && availableItem != null)
+        if (isCarryingItem == false && collectableItem != null)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Grab();
+                Collect();
                 isCarryingItem = true;
             }
         }
@@ -239,29 +220,61 @@ public class CharacterController : MonoBehaviour {
         }
     }
 
-    void Grab()
+    void Collect()
     {
-        availableItem.GetComponent<Rigidbody>().useGravity = false;
-        availableItem.GetComponent<Rigidbody>().isKinematic = true;
-        Collider itemCollider = availableItem.GetComponent<Collider>();
-        float offsetZ = itemCollider.bounds.size.z / 2.0f + 0.01f;
-        float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
-        m_itemAnchor.transform.Translate(new Vector3(0, offsetY, offsetZ));
-        availableItem.transform.position = m_itemAnchor.transform.position;
-        availableItem.transform.rotation = m_itemAnchor.transform.rotation;
-        availableItem.transform.parent = m_itemAnchor.transform.transform;
+        AdaptAnchorPointToObjectBounds();
+        AttachObject();
     }
+
 
     void Drop()
     {
-        Collider itemCollider = availableItem.GetComponent<Collider>();
+        DetachObject();
+        ResetAnchorPoint();
+    }
+
+    private void AttachObject()
+    {
+        if (collectableItem != null)
+        {
+            collectableItem.GetComponent<Rigidbody>().useGravity = false;
+            collectableItem.GetComponent<Rigidbody>().isKinematic = true;
+            collectableItem.transform.position = m_itemAnchor.transform.position;
+            collectableItem.transform.rotation = m_itemAnchor.transform.rotation;
+            collectableItem.transform.parent = m_itemAnchor.transform.transform;
+        }
+    }
+
+    private void DetachObject()
+    {
+        if (collectableItem != null)
+        {
+            collectableItem.GetComponent<Rigidbody>().useGravity = true;
+            collectableItem.GetComponent<Rigidbody>().isKinematic = false;
+            collectableItem.transform.parent = null;
+            collectableItem.transform.position = m_itemAnchor.transform.position;
+
+        }
+    }
+
+    private void ResetAnchorPoint()
+    {
+        Collider itemCollider = collectableItem.GetComponent<Collider>();
         float offsetZ = itemCollider.bounds.size.z / 2.0f + 0.01f;
         float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
-        availableItem.GetComponent<Rigidbody>().useGravity = true;
-        availableItem.GetComponent<Rigidbody>().isKinematic = false;
-        availableItem.transform.parent = null;
-        availableItem.transform.position = m_itemAnchor.transform.position;
         m_itemAnchor.transform.Translate(new Vector3(0, -offsetY, -offsetZ));
-        availableItem = null;
+    }
+
+    private void AdaptAnchorPointToObjectBounds()
+    {
+        Collider itemCollider = collectableItem.GetComponent<Collider>();
+        float offsetZ = itemCollider.bounds.size.z / 2.0f + COLLECT_TOLERANCE;
+        float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
+        m_itemAnchor.transform.Translate(new Vector3(0, offsetY, offsetZ));
+    }
+
+    public void SetCollectableItem(GameObject item)
+    {
+        this.collectableItem = item;
     }
 }
