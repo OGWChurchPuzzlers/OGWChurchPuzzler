@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - anchor
+  - PuzzleLabel
+  - CollectTrigger
   layers:
   - Default
   - TransparentFX
