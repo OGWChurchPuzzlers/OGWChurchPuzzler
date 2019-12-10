@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This controller manages collecting items. This includes:
+ * - Highlighting items which are available for pickup
+ * - Telling the character controller which item is currently available for pickup
+ */
 public class CollectController : MonoBehaviour
 {
     private CharacterController characterController;
@@ -10,7 +15,6 @@ public class CollectController : MonoBehaviour
     void Start()
     {
         characterController = transform.parent.gameObject.GetComponent<CharacterController>();
-
     }
 
     // Update is called once per frame
@@ -21,17 +25,17 @@ public class CollectController : MonoBehaviour
 
     public void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Collect Trigger Enter");
-        characterController.SetCollectableItem(col.gameObject);
-        var outline = col.gameObject.GetComponent<Outline>();
-        if(outline != null)
+        Item item = col.gameObject.GetComponent<Item>();
+        if (item != null)
         {
-            outline.OutlineWidth = 5f;
+            Debug.Log("Collect Trigger Enter");
+            characterController.SetCollectableItem(col.gameObject);
+            Outline outline = col.gameObject.GetComponent<Outline>();
+            if (outline != null)
+            {
+                outline.enabled = true;
+            }
         }
-
-    }
-    private void OnTriggerStay(Collider col)
-    {
     }
 
     public void OnTriggerExit(Collider col)
@@ -40,10 +44,10 @@ public class CollectController : MonoBehaviour
         var outline = col.gameObject.GetComponent<Outline>();
         if (outline != null)
         {
-            outline.OutlineWidth = 0f;
+            outline.enabled = false;
         }
         characterController.SetCollectableItem(null);
-    }
 
+    }
 
 }

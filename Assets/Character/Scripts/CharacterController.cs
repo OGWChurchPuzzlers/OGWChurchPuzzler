@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class CharacterController : MonoBehaviour {
+/*
+ * This controller manages character interaction with the environment and character controls. This includes:
+ * - Moving (Walk, Jump, Turn)
+ * - Item pickup
+ */
+public class CharacterController : MonoBehaviour
+{
 
     private enum ControlMode
     {
@@ -38,16 +44,20 @@ public class CharacterController : MonoBehaviour {
     private List<Collider> m_collisions = new List<Collider>();
 
     private bool isCarryingItem = false;
-    private GameObject collectableItem;
+
+    private GameObject carriedItem;
+
+    private GameObject collectedItem;
 
     private void OnCollisionEnter(Collision collision)
     {
         ContactPoint[] contactPoints = collision.contacts;
-        for(int i = 0; i < contactPoints.Length; i++)
+        for (int i = 0; i < contactPoints.Length; i++)
         {
             if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.5f)
             {
-                if (!m_collisions.Contains(collision.collider)) {
+                if (!m_collisions.Contains(collision.collider))
+                {
                     m_collisions.Add(collision.collider);
                 }
                 m_isGrounded = true;
@@ -67,14 +77,15 @@ public class CharacterController : MonoBehaviour {
             }
         }
 
-        if(validSurfaceNormal)
+        if (validSurfaceNormal)
         {
             m_isGrounded = true;
             if (!m_collisions.Contains(collision.collider))
             {
                 m_collisions.Add(collision.collider);
             }
-        } else
+        }
+        else
         {
             if (m_collisions.Contains(collision.collider))
             {
@@ -93,10 +104,11 @@ public class CharacterController : MonoBehaviour {
         if (m_collisions.Count == 0) { m_isGrounded = false; }
     }
 
-	void Update () {
+    void Update()
+    {
         m_animator.SetBool("Grounded", m_isGrounded);
 
-        switch(m_controlMode)
+        switch (m_controlMode)
         {
             case ControlMode.Direct:
                 DirectUpdate();
@@ -123,10 +135,12 @@ public class CharacterController : MonoBehaviour {
 
         bool walk = Input.GetKey(KeyCode.LeftShift);
 
-        if (v < 0) {
+        if (v < 0)
+        {
             if (walk) { v *= m_backwardsWalkScale; }
             else { v *= m_backwardRunScale; }
-        } else if(walk)
+        }
+        else if (walk)
         {
             v *= m_walkScale;
         }
@@ -166,7 +180,7 @@ public class CharacterController : MonoBehaviour {
         direction.y = 0;
         direction = direction.normalized * directionLength;
 
-        if(direction != Vector3.zero)
+        if (direction != Vector3.zero)
         {
             m_currentDirection = Vector3.Slerp(m_currentDirection, direction, Time.deltaTime * m_interpolation);
 
@@ -202,7 +216,7 @@ public class CharacterController : MonoBehaviour {
 
     private void CollectOrDrop()
     {
-        if (isCarryingItem == false && collectableItem != null)
+        if (isCarryingItem == false && carriedItem != null)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -235,39 +249,42 @@ public class CharacterController : MonoBehaviour {
 
     private void AttachObject()
     {
-        if (collectableItem != null)
+        if (carriedItem != null)
         {
-            collectableItem.GetComponent<Rigidbody>().useGravity = false;
-            collectableItem.GetComponent<Rigidbody>().isKinematic = true;
-            collectableItem.transform.position = m_itemAnchor.transform.position;
-            collectableItem.transform.rotation = m_itemAnchor.transform.rotation;
-            collectableItem.transform.parent = m_itemAnchor.transform.transform;
+            collectedItem = carriedItem;
+            carriedItem = null;
+            collectedItem.GetComponent<Rigidbody>().useGravity = false;
+            collectedItem.GetComponent<Rigidbody>().isKinematic = true;
+            collectedItem.transform.position = m_itemAnchor.transform.position;
+            collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
+            collectedItem.transform.SetParent(m_itemAnchor.transform.transform);
+
         }
     }
 
     private void DetachObject()
     {
-        if (collectableItem != null)
+        if (collectedItem != null)
         {
-            collectableItem.GetComponent<Rigidbody>().useGravity = true;
-            collectableItem.GetComponent<Rigidbody>().isKinematic = false;
-            collectableItem.transform.parent = null;
-            collectableItem.transform.position = m_itemAnchor.transform.position;
-
+            collectedItem.GetComponent<Rigidbody>().useGravity = true;
+            collectedItem.GetComponent<Rigidbody>().isKinematic = false;
+            collectedItem.transform.SetParent(null);
+            collectedItem.transform.position = m_itemAnchor.transform.position;
         }
     }
 
     private void ResetAnchorPoint()
     {
-        Collider itemCollider = collectableItem.GetComponent<Collider>();
+        Collider itemCollider = collectedItem.GetComponent<Collider>();
         float offsetZ = itemCollider.bounds.size.z / 2.0f + 0.01f;
         float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
         m_itemAnchor.transform.Translate(new Vector3(0, -offsetY, -offsetZ));
+        collectedItem = null;
     }
 
     private void AdaptAnchorPointToObjectBounds()
     {
-        Collider itemCollider = collectableItem.GetComponent<Collider>();
+        Collider itemCollider = carriedItem.GetComponent<Collider>();
         float offsetZ = itemCollider.bounds.size.z / 2.0f + COLLECT_TOLERANCE;
         float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
         m_itemAnchor.transform.Translate(new Vector3(0, offsetY, offsetZ));
@@ -275,6 +292,13 @@ public class CharacterController : MonoBehaviour {
 
     public void SetCollectableItem(GameObject item)
     {
-        this.collectableItem = item;
+        if (!isCarryingItem)
+        {
+            this.carriedItem = item;
+        }
+        else
+        {
+            Debug.Log("Collecting item denied since character is already carrying something.");
+        }
     }
 }

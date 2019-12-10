@@ -6,6 +6,7 @@ TagManager:
   tags:
   - anchor
   - PuzzleLabel
+  - CollectTrigger
   layers:
   - Default
   - TransparentFX

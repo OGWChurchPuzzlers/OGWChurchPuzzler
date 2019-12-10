@@ -4,12 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
-{    
+{
     // The currently played puzzle
-    private Puzzle activePuzzle = new Puzzle();
+    public Puzzle activePuzzle;
 
-    // There is a set of Puzzles to complete
-    private Puzzle[] puzzles;
+    public List<Puzzle> puzzles;
 
     /*
      * TODO:
@@ -20,14 +19,39 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Text puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleLabel").GetComponent<Text>();
-        Debug.Log(GameObject.FindGameObjectWithTag("PuzzleLabel"));
-        puzzleLabel.text += activePuzzle.puzzleName;
+        CreatePuzzles();
+        SetActivePuzzle();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateUI();
+    }
+
+    void CreatePuzzles()
+    {
+        //TODO: build a list of all puzzles which should be displayed in UI and playable
+    }
+
+    void SetActivePuzzle()
+    {
+        Text puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleLabel").GetComponent<Text>();
+        Debug.Log("Set active puzzle to: " + activePuzzle.name);
+        puzzleLabel.text += activePuzzle.name;
+    }
+
+    void UpdateUI()
+    {
+        if (activePuzzle != null && activePuzzle.IsSolved())
+        {
+            Text puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleLabel").GetComponent<Text>();
+            puzzleLabel.color = Color.green;
+        }
+    }
+
+    public List<Puzzle> GetSolvedPuzzles()
+    {
+        return puzzles.FindAll(puzzle => puzzle.IsSolved());
     }
 }
