@@ -30,11 +30,16 @@ public class CollectController : MonoBehaviour
         {
             Debug.Log("Collect Trigger Enter");
             characterController.SetCollectableItem(col.gameObject);
-            Outline outline = col.gameObject.GetComponent<Outline>();
-            if (outline != null)
-            {
-                outline.enabled = true;
-            }
+            outlineItem(col);
+        }
+    }
+
+    private static void outlineItem(Collider col)
+    {
+        Outline outline = col.gameObject.GetComponent<Outline>();
+        if (outline != null)
+        {
+            outline.enabled = true;
         }
     }
 

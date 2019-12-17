@@ -4,12 +4,15 @@ using UnityEngine;
 public enum ItemType
 {
     CryptKey, // Used to unlock the crypt
+    Torch
 }
 
 public class Item : MonoBehaviour
 {
 
     [SerializeField] private ItemType m_itemType;
+
+    [SerializeField] private Vector3 m_anchorPosition;
 
     // Start is called before the first frame update
     void Start()

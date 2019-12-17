@@ -45,9 +45,13 @@ public class CharacterController : MonoBehaviour
 
     private bool isCarryingItem = false;
 
-    private GameObject carriedItem;
+    private GameObject collectableItem;
 
     private GameObject collectedItem;
+
+    private Quaternion collectedItemSavedRotation;
+
+    private Vector3 anchorAdaption;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -216,7 +220,7 @@ public class CharacterController : MonoBehaviour
 
     private void CollectOrDrop()
     {
-        if (isCarryingItem == false && carriedItem != null)
+        if (isCarryingItem == false && collectableItem != null)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -249,14 +253,17 @@ public class CharacterController : MonoBehaviour
 
     private void AttachObject()
     {
-        if (carriedItem != null)
+        if (collectableItem != null)
         {
-            collectedItem = carriedItem;
-            carriedItem = null;
+            collectedItem = collectableItem;
+            collectableItem = null;
             collectedItem.GetComponent<Rigidbody>().useGravity = false;
             collectedItem.GetComponent<Rigidbody>().isKinematic = true;
             collectedItem.transform.position = m_itemAnchor.transform.position;
-            collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
+
+            this.collectedItemSavedRotation = this.collectedItem.transform.rotation;
+
+            //collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
             collectedItem.transform.SetParent(m_itemAnchor.transform.transform);
 
         }
@@ -270,31 +277,46 @@ public class CharacterController : MonoBehaviour
             collectedItem.GetComponent<Rigidbody>().isKinematic = false;
             collectedItem.transform.SetParent(null);
             collectedItem.transform.position = m_itemAnchor.transform.position;
+            //collectedItem.transform.rotation = this.collectedItemSavedRotation;
         }
     }
 
     private void ResetAnchorPoint()
     {
-        Collider itemCollider = collectedItem.GetComponent<Collider>();
-        float offsetZ = itemCollider.bounds.size.z / 2.0f + 0.01f;
-        float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
-        m_itemAnchor.transform.Translate(new Vector3(0, -offsetY, -offsetZ));
+        m_itemAnchor.transform.Translate(-this.anchorAdaption);
         collectedItem = null;
     }
 
     private void AdaptAnchorPointToObjectBounds()
     {
-        Collider itemCollider = carriedItem.GetComponent<Collider>();
+        Collider itemCollider = collectableItem.GetComponent<Collider>();
         float offsetZ = itemCollider.bounds.size.z / 2.0f + COLLECT_TOLERANCE;
         float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
-        m_itemAnchor.transform.Translate(new Vector3(0, offsetY, offsetZ));
+        this.anchorAdaption = new Vector3(0, offsetY, offsetZ);
+
+        m_itemAnchor.transform.Translate(anchorAdaption);
+    }
+
+    public bool IsItemInHands(GameObject gameObject)
+    {
+        return this.collectedItem != null ? this.collectedItem.Equals(gameObject) : false;
+    }
+
+    public bool IsCarryingItem()
+    {
+        return this.isCarryingItem;
+    }
+
+    public GameObject GetCollectedItem()
+    {
+        return this.collectedItem;
     }
 
     public void SetCollectableItem(GameObject item)
     {
         if (!isCarryingItem)
         {
-            this.carriedItem = item;
+            this.collectableItem = item;
         }
         else
         {

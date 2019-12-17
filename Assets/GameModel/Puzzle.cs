@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PuzzleType
+public enum Puzzles
 {
     OpenCrypt, // Transport one item(key) to another(lock)
     RingBell, // Interactions between items(take bell hammer an move it)
@@ -11,7 +11,7 @@ public enum PuzzleType
 
 public class Puzzle
 {
-    public PuzzleType type;
+    public Puzzles type;
 
     public string name = "Test";
 
