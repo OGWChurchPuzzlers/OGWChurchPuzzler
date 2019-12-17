@@ -18,6 +18,16 @@ ModelImporter:
     100024: Kirche_Hauptschiff_Dach
     100026: Kirchenanbau
     100028: Kirchenanbau_Dach
+    100030: Anbau_Decke_Stockwerk
+    100032: Anbau_Treppe
+    100034: Turm_Glocke_gross
+    100036: Turm_Glocke_gross_Kloeppel
+    100038: Turm_Glocke_gross_Seil
+    100040: Turm_Glocke_klein
+    100042: Turm_Glocke_klein_Kloeppel
+    100044: Turm_Glocke_klein_Seil
+    100046: Turm_Glockenhalterung
+    100048: Turm_Leiter
     400000: Altarraum
     400002: //RootNode
     400004: Eingang_Front_Detail
@@ -33,6 +43,16 @@ ModelImporter:
     400024: Kirche_Hauptschiff_Dach
     400026: Kirchenanbau
     400028: Kirchenanbau_Dach
+    400030: Anbau_Decke_Stockwerk
+    400032: Anbau_Treppe
+    400034: Turm_Glocke_gross
+    400036: Turm_Glocke_gross_Kloeppel
+    400038: Turm_Glocke_gross_Seil
+    400040: Turm_Glocke_klein
+    400042: Turm_Glocke_klein_Kloeppel
+    400044: Turm_Glocke_klein_Seil
+    400046: Turm_Glockenhalterung
+    400048: Turm_Leiter
     2100000: mat_wall_white.001
     2100002: mat_roof.001
     2100004: mat_wall_white.002
@@ -46,6 +66,8 @@ ModelImporter:
     2100020: Gold
     2100022: mat_wall_white.004
     2100024: mat_roof.002
+    2100026: Glocke
+    2100028: Seil
     2300000: Altarraum
     2300002: Eingang_Front_Detail
     2300004: Gelaender
@@ -60,6 +82,16 @@ ModelImporter:
     2300022: Kirche_Hauptschiff_Dach
     2300024: Kirchenanbau
     2300026: Kirchenanbau_Dach
+    2300028: Anbau_Decke_Stockwerk
+    2300030: Anbau_Treppe
+    2300032: Turm_Glocke_gross
+    2300034: Turm_Glocke_gross_Kloeppel
+    2300036: Turm_Glocke_gross_Seil
+    2300038: Turm_Glocke_klein
+    2300040: Turm_Glocke_klein_Kloeppel
+    2300042: Turm_Glocke_klein_Seil
+    2300044: Turm_Glockenhalterung
+    2300046: Turm_Leiter
     3300000: Altarraum
     3300002: Eingang_Front_Detail
     3300004: Gelaender
@@ -74,6 +106,16 @@ ModelImporter:
     3300022: Kirche_Hauptschiff_Dach
     3300024: Kirchenanbau
     3300026: Kirchenanbau_Dach
+    3300028: Anbau_Decke_Stockwerk
+    3300030: Anbau_Treppe
+    3300032: Turm_Glocke_gross
+    3300034: Turm_Glocke_gross_Kloeppel
+    3300036: Turm_Glocke_gross_Seil
+    3300038: Turm_Glocke_klein
+    3300040: Turm_Glocke_klein_Kloeppel
+    3300042: Turm_Glocke_klein_Seil
+    3300044: Turm_Glockenhalterung
+    3300046: Turm_Leiter
     4300000: Kirche_Hauptschiff_Detail
     4300002: Eingang_Front_Detail
     4300004: Turm_Detail
@@ -88,6 +130,16 @@ ModelImporter:
     4300022: Kirchenanbau
     4300024: Kirchenanbau_Dach
     4300026: Kirche_Hauptschiff_Dach
+    4300028: Anbau_Decke_Stockwerk
+    4300030: Anbau_Treppe
+    4300032: Turm_Leiter
+    4300034: Turm_Glockenhalterung
+    4300036: Turm_Glocke_gross_Kloeppel
+    4300038: Turm_Glocke_gross
+    4300040: Turm_Glocke_klein
+    4300042: Turm_Glocke_klein_Kloeppel
+    4300044: Turm_Glocke_gross_Seil
+    4300046: Turm_Glocke_klein_Seil
     9500000: //RootNode
   externalObjects: {}
   materials:
