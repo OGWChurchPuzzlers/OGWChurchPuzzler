@@ -49,8 +49,6 @@ public class CharacterController : MonoBehaviour
 
     private GameObject collectedItem;
 
-    private Quaternion collectedItemSavedRotation;
-
     private Vector3 anchorAdaption;
 
     private void OnCollisionEnter(Collision collision)
@@ -256,16 +254,11 @@ public class CharacterController : MonoBehaviour
         if (collectableItem != null)
         {
             collectedItem = collectableItem;
-            collectableItem = null;
             collectedItem.GetComponent<Rigidbody>().useGravity = false;
             collectedItem.GetComponent<Rigidbody>().isKinematic = true;
             collectedItem.transform.position = m_itemAnchor.transform.position;
-
-            this.collectedItemSavedRotation = this.collectedItem.transform.rotation;
-
-            //collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
-            collectedItem.transform.SetParent(m_itemAnchor.transform.transform);
-
+            collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
+            collectedItem.transform.SetParent(m_itemAnchor.transform);
         }
     }
 
@@ -277,24 +270,30 @@ public class CharacterController : MonoBehaviour
             collectedItem.GetComponent<Rigidbody>().isKinematic = false;
             collectedItem.transform.SetParent(null);
             collectedItem.transform.position = m_itemAnchor.transform.position;
-            //collectedItem.transform.rotation = this.collectedItemSavedRotation;
+            collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
+            collectableItem = null;
+            collectedItem = null;
         }
     }
 
     private void ResetAnchorPoint()
     {
         m_itemAnchor.transform.Translate(-this.anchorAdaption);
-        collectedItem = null;
     }
 
     private void AdaptAnchorPointToObjectBounds()
     {
+        this.anchorAdaption = this.calculateAnchorAndaptionTranslation();
+        m_itemAnchor.transform.Translate(anchorAdaption);
+    }
+
+    private Vector3 calculateAnchorAndaptionTranslation()
+    {
         Collider itemCollider = collectableItem.GetComponent<Collider>();
         float offsetZ = itemCollider.bounds.size.z / 2.0f + COLLECT_TOLERANCE;
         float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
-        this.anchorAdaption = new Vector3(0, offsetY, offsetZ);
 
-        m_itemAnchor.transform.Translate(anchorAdaption);
+        return new Vector3(0, offsetY, offsetZ);
     }
 
     public bool IsItemInHands(GameObject gameObject)
