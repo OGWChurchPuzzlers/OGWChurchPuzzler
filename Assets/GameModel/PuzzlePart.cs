@@ -15,7 +15,7 @@ public class PuzzlePart : MonoBehaviour
 
     [SerializeField] private string description;
 
-    [SerializeField] private GameObject trigger;
+    [SerializeField] private Item trigger;
 
     [SerializeField] private PuzzleCategorie categorie;
 
@@ -53,7 +53,7 @@ public class PuzzlePart : MonoBehaviour
      */
     private void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Object enters puzzle test.");
+        //Debug.Log("Object enters puzzle test.");
         switch (this.categorie)
         {
             case PuzzleCategorie.Physical:
@@ -63,28 +63,28 @@ public class PuzzlePart : MonoBehaviour
                 HandlePosessionTrigger();
                 break;
             default:
-                Debug.Log("Cannot trigger effect for unknown puzzle categorie");
+                //Debug.Log("Cannot trigger effect for unknown puzzle categorie");
                 break;
         }
     }
 
     private void OnTriggerStay(Collider col)
     {
-        Debug.Log("Object enters puzzle test.");
+        //Debug.Log("Object enters puzzle test.");
         switch (this.categorie)
         {
             case PuzzleCategorie.Interaction:
                 HandleInteractionTrigger(col);
                 break;
             default:
-                Debug.Log("Cannot trigger effect for unknown puzzle categorie");
+                //Debug.Log("Cannot trigger effect for unknown puzzle categorie");
                 break;
         }
     }
 
     private void OnTriggerExit(Collider col)
     {
-        Debug.Log("Object leaves puzzle test.");
+        //Debug.Log("Object leaves puzzle test.");
     }
 
     private void HandlePhyiscalTrigger(Collider col)
@@ -124,7 +124,8 @@ public class PuzzlePart : MonoBehaviour
 
     private bool IsColliderTrigger(Collider col)
     {
-        return col.gameObject.Equals(trigger);
+        Item item = col.gameObject.GetComponent<Item>();
+        return item.gameObject.Equals(trigger.gameObject);
     }
 
     private bool IsTriggerInPossesion()
@@ -132,7 +133,7 @@ public class PuzzlePart : MonoBehaviour
         CharacterController characterController = GameObject.FindObjectOfType<CharacterController>();
         Debug.Log(characterController);
         // Is the currently collected item the trigger?
-        return characterController.GetCollectedItem().Equals(trigger);
+        return characterController.GetCollectedItem().gameObject.Equals(trigger.gameObject);
     }
 
     public bool IsSolved()

@@ -29,7 +29,7 @@ public class CollectController : MonoBehaviour
         if (item != null)
         {
             Debug.Log("Collect Trigger Enter");
-            characterController.SetCollectableItem(col.gameObject);
+            characterController.SetCollectableItem(item);
             OutlineItem(col);
         }
     }
@@ -45,7 +45,8 @@ public class CollectController : MonoBehaviour
 
     public void OnTriggerStay(Collider col)
     {
-        characterController.SetCollectableItem(col.gameObject);
+        Item item = col.gameObject.GetComponent<Item>();
+        characterController.SetCollectableItem(item);
     }
 
     public void OnTriggerExit(Collider col)

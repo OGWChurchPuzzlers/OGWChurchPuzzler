@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour
         Direct
     }
 
-    private const float COLLECT_TOLERANCE = 0.01f;
+    private const float ITEM_ELEVATION = 1.0f;
     [SerializeField] private float m_moveSpeed = 2;
     [SerializeField] private float m_turnSpeed = 200;
     [SerializeField] private float m_jumpForce = 4;
@@ -45,9 +45,9 @@ public class CharacterController : MonoBehaviour
 
     private bool isCarryingItem = false;
 
-    private GameObject collectableItem;
+    private Item collectableItem;
 
-    private GameObject collectedItem;
+    private Item collectedItem;
 
     private Vector3 anchorAdaption;
 
@@ -256,6 +256,7 @@ public class CharacterController : MonoBehaviour
             collectedItem = collectableItem;
             collectedItem.GetComponent<Rigidbody>().useGravity = false;
             collectedItem.GetComponent<Rigidbody>().isKinematic = true;
+            collectedItem.GetComponent<Collider>().enabled = false;
             collectedItem.transform.position = m_itemAnchor.transform.position;
             collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
             collectedItem.transform.SetParent(m_itemAnchor.transform);
@@ -268,6 +269,7 @@ public class CharacterController : MonoBehaviour
         {
             collectedItem.GetComponent<Rigidbody>().useGravity = true;
             collectedItem.GetComponent<Rigidbody>().isKinematic = false;
+            collectedItem.GetComponent<Collider>().enabled = true;
             collectedItem.transform.SetParent(null);
             collectedItem.transform.position = m_itemAnchor.transform.position;
             collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
@@ -278,20 +280,22 @@ public class CharacterController : MonoBehaviour
 
     private void ResetAnchorPoint()
     {
-        m_itemAnchor.transform.Translate(-this.anchorAdaption);
+        //m_itemAnchor.transform.Translate(-this.anchorAdaption);
     }
 
     private void AdaptAnchorPointToObjectBounds()
     {
-        this.anchorAdaption = this.calculateAnchorAndaptionTranslation();
-        m_itemAnchor.transform.Translate(anchorAdaption);
+        this.anchorAdaption = this.CalculateAnchorAndaptionTranslation();
+        //m_itemAnchor.transform.Translate(anchorAdaption);
     }
 
-    private Vector3 calculateAnchorAndaptionTranslation()
+    private Vector3 CalculateAnchorAndaptionTranslation()
     {
         Collider itemCollider = collectableItem.GetComponent<Collider>();
-        float offsetZ = itemCollider.bounds.size.z / 2.0f + COLLECT_TOLERANCE;
-        float offsetY = itemCollider.bounds.size.y / 2.0f + 0.01f;
+        float offsetZ = itemCollider.bounds.size.z / 2.0f;
+        float offsetY = itemCollider.bounds.size.y / 2.0f + ITEM_ELEVATION;
+        Debug.Log(offsetZ);
+        Debug.Log(offsetY);
 
         return new Vector3(0, offsetY, offsetZ);
     }
@@ -306,12 +310,12 @@ public class CharacterController : MonoBehaviour
         return this.isCarryingItem;
     }
 
-    public GameObject GetCollectedItem()
+    public Item GetCollectedItem()
     {
         return this.collectedItem;
     }
 
-    public void SetCollectableItem(GameObject item)
+    public void SetCollectableItem(Item item)
     {
         if (!isCarryingItem)
         {
@@ -319,7 +323,7 @@ public class CharacterController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Collecting item denied since character is already carrying something.");
+            //Debug.Log("Collecting item denied since character is already carrying something.");
         }
     }
 }

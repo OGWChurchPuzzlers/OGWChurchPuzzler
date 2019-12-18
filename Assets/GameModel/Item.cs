@@ -12,13 +12,16 @@ public class Item : MonoBehaviour
 
     [SerializeField] private ItemType m_itemType;
 
-    [SerializeField] private Vector3 m_anchorPosition;
+    [SerializeField] private GameObject m_gripPoint;
+
+    private Quaternion originalRotation;
 
     // Start is called before the first frame update
     void Start()
     {
         Outline outline = gameObject.GetComponent<Outline>();
         outline.enabled = false;
+        this.originalRotation = transform.rotation;
     }
 
     // Update is called once per frame
@@ -39,5 +42,15 @@ public class Item : MonoBehaviour
     private void OnCollisionExit(Collision collision)
     {
         Debug.Log("Collision Exit: " + gameObject.name);
+    }
+
+    public Quaternion GetOrignalRotation()
+    {
+        return this.originalRotation;
+    }
+
+    public GameObject GetGripPoint()
+    {
+        return this.m_gripPoint;
     }
 }
