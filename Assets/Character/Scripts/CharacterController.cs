@@ -222,7 +222,7 @@ public class CharacterController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Collect();
+                AttachObject();
                 isCarryingItem = true;
             }
         }
@@ -230,26 +230,14 @@ public class CharacterController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Drop();
+                DetachObject();
                 isCarryingItem = false;
             }
         }
     }
 
-    void Collect()
-    {
-        AdaptAnchorPointToObjectBounds();
-        AttachObject();
-    }
 
-
-    void Drop()
-    {
-        DetachObject();
-        ResetAnchorPoint();
-    }
-
-    private void AttachObject()
+    public void AttachObject()
     {
         if (collectableItem != null)
         {
@@ -276,28 +264,6 @@ public class CharacterController : MonoBehaviour
             collectableItem = null;
             collectedItem = null;
         }
-    }
-
-    private void ResetAnchorPoint()
-    {
-        //m_itemAnchor.transform.Translate(-this.anchorAdaption);
-    }
-
-    private void AdaptAnchorPointToObjectBounds()
-    {
-        this.anchorAdaption = this.CalculateAnchorAndaptionTranslation();
-        //m_itemAnchor.transform.Translate(anchorAdaption);
-    }
-
-    private Vector3 CalculateAnchorAndaptionTranslation()
-    {
-        Collider itemCollider = collectableItem.GetComponent<Collider>();
-        float offsetZ = itemCollider.bounds.size.z / 2.0f;
-        float offsetY = itemCollider.bounds.size.y / 2.0f + ITEM_ELEVATION;
-        Debug.Log(offsetZ);
-        Debug.Log(offsetY);
-
-        return new Vector3(0, offsetY, offsetZ);
     }
 
     public bool IsItemInHands(GameObject gameObject)
