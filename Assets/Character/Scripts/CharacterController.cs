@@ -130,7 +130,7 @@ public class CharacterController : MonoBehaviour
 
     private void TankUpdate()
     {
-        CollectOrDrop();
+        CollectOrDrop(Input.GetKeyDown(KeyCode.E));
 
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
@@ -160,7 +160,7 @@ public class CharacterController : MonoBehaviour
 
     private void DirectUpdate()
     {
-        CollectOrDrop();
+        CollectOrDrop(Input.GetKeyDown(KeyCode.E));
 
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
@@ -216,23 +216,21 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    private void CollectOrDrop()
+    public void CollectOrDrop(bool eventTriggered)
     {
+        if (!eventTriggered)
+        {
+            return;
+        }
         if (isCarryingItem == false && collectableItem != null)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                AttachObject();
-                isCarryingItem = true;
-            }
+            AttachObject();
+            isCarryingItem = true;
         }
         else if (isCarryingItem == true)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                DetachObject();
-                isCarryingItem = false;
-            }
+            DetachObject();
+            isCarryingItem = false;
         }
     }
 

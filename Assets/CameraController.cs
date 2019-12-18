@@ -13,39 +13,38 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //CollectItemFromTouchRaycast();
+
+        CollectItemFromMouseRaycast();
+
+    }
+
+    private void CollectItemFromMouseRaycast()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+            CollectOnRaycastHit(ray);
+        }
+    }
+
+
+    private static void CollectItemFromTouchRaycast()
+    {
         for (int i = 0; i < Input.touchCount; ++i)
         {
             if (Input.GetTouch(i).phase == TouchPhase.Began)
             {
-                // Construct a ray from the current touch coordinates
                 Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+                CollectOnRaycastHit(ray);
+            }
+        }
+    }
 
-                // Create a particle if hit
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit))
-                {
-                    //                    Instantiate(particle, transform.position, transform.rotation);
-                    // the object identified by hit.transform was clicked
-                    // do whatever you want
-                    Debug.Log("#### object touched + item hit");
-                    Debug.Log(hit.transform.gameObject);
-                    GameObject.FindObjectOfType<CharacterController>().AttachObject();
-                }
-            }
-        }
-        /**
-        if (Input.GetMouseButtonDown(0))
-        { // if left button pressed...
-            Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                // the object identified by hit.transform was clicked
-                // do whatever you want
-                Debug.Log(hit.transform.gameObject);
-                GameObject.FindObjectOfType<CharacterController>().AttachObject();
-            }
-        }
-    **/
+    private static void CollectOnRaycastHit(Ray ray)
+    {
+        RaycastHit hit;
+        bool trigger = Physics.Raycast(ray, out hit);
+        GameObject.FindObjectOfType<CharacterController>().CollectOrDrop(trigger);
     }
 }
