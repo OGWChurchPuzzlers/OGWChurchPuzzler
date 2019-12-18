@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    [SerializeField] public bool Debug_touchModeEnabled = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //CollectItemFromTouchRaycast();
+        CollectItemFromTouchRaycast();
 
         CollectItemFromMouseRaycast();
 
@@ -29,19 +30,20 @@ public class CameraController : MonoBehaviour
     }
 
 
-    private static void CollectItemFromTouchRaycast()
+    private void CollectItemFromTouchRaycast()
     {
+        if (!Debug_touchModeEnabled)
+        {
+            return;
+        }
         for (int i = 0; i < Input.touchCount; ++i)
         {
-            if (Input.GetTouch(i).phase == TouchPhase.Began)
-            {
-                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-                CollectOnRaycastHit(ray);
-            }
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+            CollectOnRaycastHit(ray);
         }
     }
 
-    private static void CollectOnRaycastHit(Ray ray)
+    private void CollectOnRaycastHit(Ray ray)
     {
         RaycastHit hit;
         bool trigger = Physics.Raycast(ray, out hit);
