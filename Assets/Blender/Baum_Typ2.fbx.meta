@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 08e411c92cbcb534a941f73af0f61341
+guid: a5b280d74f1d5794a9be89669b75eac5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Kerze
-    2100002: Docht
+    2100000: Baumstamm_hell
+    2100002: Baumkrone
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Kerze
+    4300000: Baum_Typ_2
   externalObjects: {}
   materials:
     importMaterials: 1

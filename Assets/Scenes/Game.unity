@@ -1879,7 +1879,7 @@ GameObject:
   - component: {fileID: 285848447}
   m_Layer: 5
   m_Name: Item Label
-  m_TagString: PuzzleLabel
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2810,7 +2810,7 @@ GameObject:
   - component: {fileID: 413483833}
   m_Layer: 5
   m_Name: Puzzle Name
-  m_TagString: PuzzleLabel
+  m_TagString: PuzzleName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3476,7 +3476,7 @@ PrefabInstance:
     - target: {fileID: 2300008, guid: 6ecc9ca10446c6044a7b894399cbed05, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 919d67712765bbf488c9860c4ce88062, type: 2}
+      objectReference: {fileID: 2100000, guid: d7ebeb7248d200c479f2d08ac5275df7, type: 2}
     - target: {fileID: 2300008, guid: 6ecc9ca10446c6044a7b894399cbed05, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
@@ -3572,7 +3572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_itemType: 0
-  m_gripPoint: {fileID: 0}
+  m_description: 
 --- !u!114 &524010739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3808,6 +3808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763a9aaceb704ff40a6b510ea9e7f0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Debug_touchModeEnabled: 0
 --- !u!64 &537448087
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3927,6 +3928,76 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4301904, guid: df652c62458f998409914e3b6e4d12ea, type: 3}
+--- !u!1 &571074755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 571074756}
+  - component: {fileID: 571074757}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &571074756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571074755}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 3.203, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1752041374}
+  m_Father: {fileID: 1754547248}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &571074757
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571074755}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!64 &585197682
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4398,7 +4469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_itemType: 0
-  m_gripPoint: {fileID: 0}
+  m_description: 
 --- !u!64 &695697972
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4439,7 +4510,7 @@ GameObject:
   - component: {fileID: 712664174}
   m_Layer: 5
   m_Name: Puzzle Label
-  m_TagString: PuzzleLabel
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6548,7 +6619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_itemType: 0
-  m_gripPoint: {fileID: 0}
+  m_description: "Gruftschl\xFCssel"
 --- !u!114 &1130664294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25248,7 +25319,7 @@ GameObject:
   - component: {fileID: 1432728626}
   m_Layer: 5
   m_Name: Item Name
-  m_TagString: PuzzleLabel
+  m_TagString: ItemName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25319,7 +25390,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Gruftschl\xFCssel"
+  m_Text: 
 --- !u!222 &1432728628
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27000,6 +27071,75 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.018535279, y: 0.01321758, z: 0.02089506}
   m_Center: {x: 0.009267637, y: -0.001598727, z: -0.000000009313226}
+--- !u!1 &1752041373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1752041374}
+  - component: {fileID: 1752041375}
+  m_Layer: 0
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1752041374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752041373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 571074756}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1752041375
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752041373}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.2
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 0.1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!64 &1753303624
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27044,6 +27184,7 @@ Transform:
   - {fileID: 1371056137}
   - {fileID: 133002003}
   - {fileID: 1893171210}
+  - {fileID: 571074756}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27230,7 +27371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_itemType: 0
-  m_gripPoint: {fileID: 0}
+  m_description: 
 --- !u!1001 &1774588748
 PrefabInstance:
   m_ObjectHideFlags: 0

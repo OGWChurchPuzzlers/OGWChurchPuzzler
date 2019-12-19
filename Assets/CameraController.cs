@@ -14,10 +14,14 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CollectItemFromTouchRaycast();
-
-        CollectItemFromMouseRaycast();
-
+        if (Debug_touchModeEnabled)
+        {
+            CollectItemFromTouchRaycast();
+        }
+        else
+        {
+            CollectItemFromMouseRaycast();
+        }
     }
 
     private void CollectItemFromMouseRaycast()
@@ -32,10 +36,6 @@ public class CameraController : MonoBehaviour
 
     private void CollectItemFromTouchRaycast()
     {
-        if (!Debug_touchModeEnabled)
-        {
-            return;
-        }
         for (int i = 0; i < Input.touchCount; ++i)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);

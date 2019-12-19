@@ -1,15 +1,14 @@
 fileFormatVersion: 2
-guid: 08e411c92cbcb534a941f73af0f61341
+guid: 4881de3f13a21234faa9b2d2550af6bc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Kerze
-    2100002: Docht
+    2100000: Material.006
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Kerze
+    4300000: Stein_Klein_Typ_1
   externalObjects: {}
   materials:
     importMaterials: 1

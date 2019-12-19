@@ -12,7 +12,7 @@ public class Item : MonoBehaviour
 
     [SerializeField] private ItemType m_itemType;
 
-    [SerializeField] private GameObject m_gripPoint;
+    [SerializeField] private string m_description;
 
     private Quaternion originalRotation;
 
@@ -48,9 +48,8 @@ public class Item : MonoBehaviour
     {
         return this.originalRotation;
     }
-
-    public GameObject GetGripPoint()
+    public string GetDescription()
     {
-        return this.m_gripPoint;
+        return this.m_description;
     }
 }

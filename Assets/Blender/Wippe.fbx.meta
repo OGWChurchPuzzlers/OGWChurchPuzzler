@@ -1,15 +1,22 @@
 fileFormatVersion: 2
-guid: 08e411c92cbcb534a941f73af0f61341
+guid: c1d75f08db88e9a49a27e32ef4fb6f42
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Wippe_Body
+    100004: Wippe_Planke
     400000: //RootNode
-    2100000: Kerze
-    2100002: Docht
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Kerze
+    400002: Wippe_Body
+    400004: Wippe_Planke
+    2100000: Baumstamm_dunkel
+    2100002: Material.006
+    2300000: Wippe_Body
+    2300002: Wippe_Planke
+    3300000: Wippe_Body
+    3300002: Wippe_Planke
+    4300000: Wippe_Planke
+    4300002: Wippe_Body
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -1,15 +1,14 @@
 fileFormatVersion: 2
-guid: 08e411c92cbcb534a941f73af0f61341
+guid: 5ff022a5c505a854591a863282713298
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Kerze
-    2100002: Docht
+    2100000: Busch
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Kerze
+    4300000: Busch_Lang_Typ_2
   externalObjects: {}
   materials:
     importMaterials: 1
