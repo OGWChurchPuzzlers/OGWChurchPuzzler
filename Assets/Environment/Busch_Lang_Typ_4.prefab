@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1120511955
+--- !u!1 &1941876822265092712
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1120511958}
-  - component: {fileID: 1120511957}
-  - component: {fileID: 1120511956}
+  - component: {fileID: 8915177413711151317}
+  - component: {fileID: 2828258818681625215}
+  - component: {fileID: 3503712205605721117}
   m_Layer: 0
   m_Name: Busch_Lang_Typ_4
   m_TagString: Untagged
@@ -18,13 +18,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1120511958
+--- !u!4 &8915177413711151317
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120511955}
+  m_GameObject: {fileID: 1941876822265092712}
   m_LocalRotation: {x: -0.68796253, y: 0.16342486, z: 0.16342486, w: 0.6879624}
   m_LocalPosition: {x: 14.39, y: 0.35, z: -34.91}
   m_LocalScale: {x: 100, y: 100, z: 100}
@@ -32,21 +32,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 26.726002}
---- !u!33 &1120511957
+--- !u!33 &2828258818681625215
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120511955}
+  m_GameObject: {fileID: 1941876822265092712}
   m_Mesh: {fileID: 4300000, guid: bf16fefd13584ad40857e14804b9332d, type: 3}
---- !u!23 &1120511956
+--- !u!23 &3503712205605721117
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120511955}
+  m_GameObject: {fileID: 1941876822265092712}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0f74119e82d3b3a4d9b2842dbaa2a6ee, type: 2}
+  - {fileID: 2100000, guid: 529069bc6456f9f4dbb4725cbae02b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
