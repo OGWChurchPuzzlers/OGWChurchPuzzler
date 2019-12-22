@@ -149,4 +149,9 @@ public class PuzzlePart : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public string GetDescription()
+    {
+        return this.description;
+    }
 }

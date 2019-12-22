@@ -49,4 +49,8 @@ public class Puzzle: MonoBehaviour
         return this.displayName;
     }
 
+    public List<PuzzlePart> GetParts()
+    {
+        return this.parts;
+    }
 }
