@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public enum PuzzleCategorie
 {
@@ -9,6 +10,7 @@ public enum PuzzleCategorie
     Interaction, // Item needs to be activated by the user directly (press E near it)
 }
 
+[Serializable]
 public class PuzzlePart : MonoBehaviour
 {
     private const KeyCode INTERACTION_KEY = KeyCode.E;

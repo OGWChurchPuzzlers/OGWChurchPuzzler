@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    // The currently played puzzle
     public Puzzle activePuzzle;
 
     public List<Puzzle> puzzles;
@@ -16,46 +15,52 @@ public class GameManager : MonoBehaviour
      * - Wie legen wir fest welches als nächstes kommt?
      */
 
-    // Start is called before the first frame update
     void Start()
     {
-        CreatePuzzles();
+        this.puzzles = new List<Puzzle>(GameObject.FindObjectsOfType<Puzzle>());
         SetActivePuzzle();
     }
 
-    // Update is called once per frame
     void Update()
     {
         UpdateUI();
     }
 
-    void CreatePuzzles()
-    {
-        //TODO: build a list of all puzzles which should be displayed in UI and playable
-    }
 
     void SetActivePuzzle()
     {
-        Text puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleName").GetComponent<Text>();
-        Debug.Log("Set active puzzle to: " + activePuzzle.name);
-        puzzleLabel.text += activePuzzle.name;
+        this.activePuzzle = this.puzzles[0];
+        Debug.Log("Set active puzzle to: " + activePuzzle.GetDisplayName());
     }
 
     void UpdateUI()
     {
+
+        UpdatePuzzleUI();
+
+        UpdateItemUI();
+    }
+
+    private void UpdatePuzzleUI()
+    {
+        Text puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleName").GetComponent<Text>();
+        puzzleLabel.text = activePuzzle.GetDisplayName();
         if (activePuzzle != null && activePuzzle.IsSolved())
         {
-            Text puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleName").GetComponent<Text>();
-            puzzleLabel.color = Color.green;
+            puzzleLabel.color = new Color(47/255f, 145/255f, 22/255f);
         }
+    }
 
+    private static void UpdateItemUI()
+    {
         Text itemLabel = GameObject.FindGameObjectWithTag("ItemName").GetComponent<Text>();
         Item item = GameObject.FindObjectOfType<CharacterController>().GetCollectedItem();
-        if(item != null)
+        if (item != null)
         {
             string itemName = item.GetDescription();
             itemLabel.text = itemName;
-        } else
+        }
+        else
         {
             itemLabel.text = "";
 

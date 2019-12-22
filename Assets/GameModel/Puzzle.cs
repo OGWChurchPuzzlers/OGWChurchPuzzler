@@ -9,37 +9,44 @@ public enum Puzzles
     TurnOnLight, // Interact with an item to activate it
 }
 
-public class Puzzle
+public class Puzzle: MonoBehaviour
 {
-    public Puzzles type;
+    [SerializeField]
+    private Puzzles type;
 
-    public string name = "Test";
+    [SerializeField]
+    private string displayName;
 
-    public string description;
+    [SerializeField]
+    private string description;
 
-    public bool solved;
+    private List<PuzzlePart> parts;
 
-    public List<PuzzlePart> parts = new List<PuzzlePart>();
+    private bool solved;
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        parts = new List<PuzzlePart>(GetComponentsInChildren<PuzzlePart>());
+        Debug.Log("Found parts: "+parts.Count);
     }
 
-    // Update is called once per frame
     void Update()
     {
         solved = parts.TrueForAll(part => part.IsSolved());
         if (solved)
         {
-            Debug.Log("Quest:" + name + " was solved");
+            //Debug.Log("Quest:" + displayName + " was solved");
         }
     }
 
     public bool IsSolved()
     {
         return solved;
+    }
+
+    public string GetDisplayName()
+    {
+        return this.displayName;
     }
 
 }
