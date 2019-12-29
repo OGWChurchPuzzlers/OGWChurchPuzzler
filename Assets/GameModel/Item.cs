@@ -14,7 +14,9 @@ public class Item : MonoBehaviour
 
     [SerializeField] private string m_description;
 
-    private Quaternion originalRotation;
+    [SerializeField] private bool DebugCollisionsLogs = false; 
+
+   private Quaternion originalRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -32,16 +34,20 @@ public class Item : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(DebugCollisionsLogs)
         Debug.Log("Collision Enter: " + gameObject.name);
     }
 
     private void OnCollisionStay(Collision collision)
     {
+        //if (DebugCollisionsLogs)
+        //    Debug.Log("Collision Stay: " + gameObject.name);
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        Debug.Log("Collision Exit: " + gameObject.name);
+        if (DebugCollisionsLogs)
+            Debug.Log("Collision Exit: " + gameObject.name);
     }
 
     public Quaternion GetOrignalRotation()

@@ -10,17 +10,6 @@ public enum PuzzleCategorie
     Posession, // Item needs to be carried/possesed when near the puzzle
     Interaction, // Item needs to be activated by the user directly (press E near it)
 }
-public enum PuzzlePartEffect
-{
-   Despawn, // Puzzlepart will be despawned
-   Spawn, // another object will be spawned, 
-   SetActive, // Object and its children is activated
-   SetInactive, // Object and its its children is deactivated
-}
-
-
-
-
 
 [Serializable]
 public class PuzzlePart : MonoBehaviour
@@ -33,8 +22,10 @@ public class PuzzlePart : MonoBehaviour
 
     [SerializeField] private PuzzleCategorie categorie;
 
-    [SerializeField] private bool deactivatePuzzlePartAfterTrigger = true;
+    [Tooltip("Deactivate with care!")]
+    [SerializeField] private bool deactivatePuzzlepartAfterTrigger = true;
 
+    [Tooltip("0 to execute no effects, one or more to execute actions e.g enable object x")]
     [SerializeField] private EffectAction[] effects = new EffectAction[1];
 
     private bool isSolved = false;
@@ -44,7 +35,7 @@ public class PuzzlePart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -111,7 +102,7 @@ public class PuzzlePart : MonoBehaviour
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
-            ExecuteEffect();
+            ExecuteEffects();
         }
     }
 
@@ -121,7 +112,7 @@ public class PuzzlePart : MonoBehaviour
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
-            ExecuteEffect();
+            ExecuteEffects();
         }
     }
 
@@ -131,7 +122,7 @@ public class PuzzlePart : MonoBehaviour
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
-            ExecuteEffect();
+            ExecuteEffects();
         }
     }
 
@@ -159,32 +150,35 @@ public class PuzzlePart : MonoBehaviour
         return isSolved;
     }
 
-    private void ExecuteEffect()
+    private void ExecuteEffects()
     {
         foreach (var e in effects)
         {
             switch (e.effect)
             {
                 case PuzzlePartEffect.Despawn:
-                    Despawn(e.arg);
+                    if (e.arg != null)
+                        Despawn(e.arg);
                     break;
                 case PuzzlePartEffect.Spawn:
                     //Invoke("SpawnNext", 0.01f);
-                    Spawn(e.arg);
+                    if (e.arg != null)
+                        Spawn(e.arg);
                     break;
                 case PuzzlePartEffect.SetActive:
-                    if (gameObject != null)
+                    if (e.arg != null)
                         e.arg.SetActive(true);
                     break;
                 case PuzzlePartEffect.SetInactive:
-                    if (gameObject != null)
+                    if (e.arg != null)
                         e.arg.SetActive(false);
                     break;
                 default:
                     break;
             }
         }
-        if(deactivatePuzzlePartAfterTrigger)
+
+        if (deactivatePuzzlepartAfterTrigger)
             Despawn(gameObject);
 
     }
@@ -196,7 +190,10 @@ public class PuzzlePart : MonoBehaviour
 
     private void Spawn(GameObject a_gameObject)
     {
-        GameObject newObject = Instantiate(a_gameObject);
+        GameObject newObject = Instantiate(a_gameObject, transform.position, transform.rotation);
+        //newObject.name = "123 Kiste";
+        //Debug.Log("parent Object at: " + transform.position);
+        //Debug.Log("Spawned Object at: " + newObject.transform.position);
     }
 
     public string GetDescription()
