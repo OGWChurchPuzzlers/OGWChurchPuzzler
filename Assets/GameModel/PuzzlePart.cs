@@ -173,6 +173,10 @@ public class PuzzlePart : MonoBehaviour
                     if (e.arg != null)
                         e.arg.SetActive(false);
                     break;
+                case PuzzlePartEffect.ToggleActiveState:
+                    if (e.arg != null)
+                        e.arg.SetActive(!e.arg.activeSelf);
+                    break;
                 default:
                     break;
             }

@@ -22,7 +22,7 @@ public class EffectActionDrawer : PropertyDrawer
 
         // Calculate rects
         float totalWidth = position.width;
-        int widthEffectRect = 80;
+        int widthEffectRect = 90;
         int widthArgRect = 20;
         float widthleft = totalWidth - widthEffectRect - 5;
 

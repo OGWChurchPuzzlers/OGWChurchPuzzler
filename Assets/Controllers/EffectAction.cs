@@ -9,6 +9,7 @@ public enum PuzzlePartEffect
     Spawn, // an object will be spawned, 
     SetActive, // an object and its children is activated
     SetInactive, // an object and its its children is deactivated
+    ToggleActiveState,
 }
 
 [Serializable]

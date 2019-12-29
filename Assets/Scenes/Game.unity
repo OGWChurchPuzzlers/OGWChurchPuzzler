@@ -436,7 +436,7 @@ MonoBehaviour:
   description: Bringe die Kisten zum Spielplatz um ihn aufzubauen.
   trigger: {fileID: 333989115}
   categorie: 1
-  deactivatePuzzlePartAfterTrigger: 1
+  deactivatePuzzlepartAfterTrigger: 1
   effects:
   - effect: 2
     arg: {fileID: 1567021254}
@@ -11529,7 +11529,7 @@ MonoBehaviour:
   description: "\xD6ffne die Gruftt\xFCr mit dem Schl\xFCssel."
   trigger: {fileID: 1130664293}
   categorie: 1
-  deactivatePuzzlePartAfterTrigger: 1
+  deactivatePuzzlepartAfterTrigger: 1
   effects: []
 --- !u!4 &1185666048 stripped
 Transform:
