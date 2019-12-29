@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEditor;
 
 public enum PuzzleCategorie
 {
@@ -9,6 +10,17 @@ public enum PuzzleCategorie
     Posession, // Item needs to be carried/possesed when near the puzzle
     Interaction, // Item needs to be activated by the user directly (press E near it)
 }
+public enum PuzzlePartEffect
+{
+   Despawn, // Puzzlepart will be despawned
+   Spawn, // another object will be spawned, 
+   SetActive, // Object and its children is activated
+   SetInactive, // Object and its its children is deactivated
+}
+
+
+
+
 
 [Serializable]
 public class PuzzlePart : MonoBehaviour
@@ -20,6 +32,10 @@ public class PuzzlePart : MonoBehaviour
     [SerializeField] private Item trigger;
 
     [SerializeField] private PuzzleCategorie categorie;
+
+    [SerializeField] private bool deactivatePuzzlePartAfterTrigger = true;
+
+    [SerializeField] private EffectAction[] effects = new EffectAction[1];
 
     private bool isSolved = false;
 
@@ -95,7 +111,7 @@ public class PuzzlePart : MonoBehaviour
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
-            Despawn(gameObject);
+            ExecuteEffect();
         }
     }
 
@@ -105,7 +121,7 @@ public class PuzzlePart : MonoBehaviour
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
-            Despawn(gameObject);
+            ExecuteEffect();
         }
     }
 
@@ -115,7 +131,7 @@ public class PuzzlePart : MonoBehaviour
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
-            Despawn(gameObject);
+            ExecuteEffect();
         }
     }
 
@@ -143,11 +159,44 @@ public class PuzzlePart : MonoBehaviour
         return isSolved;
     }
 
-
-    // TODO: What should happen after trigger is succesful?
-    private void Despawn(GameObject gameObject)
+    private void ExecuteEffect()
     {
-        Destroy(gameObject);
+        foreach (var e in effects)
+        {
+            switch (e.effect)
+            {
+                case PuzzlePartEffect.Despawn:
+                    Despawn(e.arg);
+                    break;
+                case PuzzlePartEffect.Spawn:
+                    //Invoke("SpawnNext", 0.01f);
+                    Spawn(e.arg);
+                    break;
+                case PuzzlePartEffect.SetActive:
+                    if (gameObject != null)
+                        e.arg.SetActive(true);
+                    break;
+                case PuzzlePartEffect.SetInactive:
+                    if (gameObject != null)
+                        e.arg.SetActive(false);
+                    break;
+                default:
+                    break;
+            }
+        }
+        if(deactivatePuzzlePartAfterTrigger)
+            Despawn(gameObject);
+
+    }
+
+    private void Despawn(GameObject a_gameObject)
+    {
+        Destroy(a_gameObject);
+    }
+
+    private void Spawn(GameObject a_gameObject)
+    {
+        GameObject newObject = Instantiate(a_gameObject);
     }
 
     public string GetDescription()
