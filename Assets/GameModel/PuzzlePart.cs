@@ -26,7 +26,7 @@ public class PuzzlePart : MonoBehaviour
     [SerializeField] private bool deactivatePuzzlepartAfterTrigger = true;
 
     [Tooltip("0 to execute no effects, one or more to execute actions e.g enable object x")]
-    [SerializeField] private EffectAction[] effects = new EffectAction[1];
+    [SerializeField] private EffectAction[] effects = new EffectAction[0];
 
     private bool isSolved = false;
 
