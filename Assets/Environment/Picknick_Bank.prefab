@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1941876822265092712
+--- !u!1 &4303792577312757529
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8915177413711151317}
-  - component: {fileID: 2828258818681625215}
-  - component: {fileID: 3503712205605721117}
-  - component: {fileID: -7153111044241813710}
+  - component: {fileID: 1000218387724789002}
+  - component: {fileID: 8122941131809447740}
+  - component: {fileID: 2560000101319877573}
+  - component: {fileID: 726523900647005708}
+  - component: {fileID: 6248064206583382833}
   m_Layer: 0
-  m_Name: Busch_Lang_Typ_4
+  m_Name: Picknick_Bank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8915177413711151317
+--- !u!4 &1000218387724789002
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941876822265092712}
-  m_LocalRotation: {x: -0.68796253, y: 0.16342486, z: 0.16342486, w: 0.6879624}
-  m_LocalPosition: {x: 14.39, y: 0.35, z: -34.91}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_GameObject: {fileID: 4303792577312757529}
+  m_LocalRotation: {x: -0.6728466, y: 0.21743377, z: 0.21743377, w: 0.6728466}
+  m_LocalPosition: {x: -0.5546799, y: 2.9943287, z: -2.4366598}
+  m_LocalScale: {x: 100, y: 100.00006, z: 100.00006}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 26.726002}
---- !u!33 &2828258818681625215
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 35.817}
+--- !u!33 &8122941131809447740
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941876822265092712}
-  m_Mesh: {fileID: 4300000, guid: bf16fefd13584ad40857e14804b9332d, type: 3}
---- !u!23 &3503712205605721117
+  m_GameObject: {fileID: 4303792577312757529}
+  m_Mesh: {fileID: -6371675405629544433, guid: ed8add89d66b1bd42b1de4226074b7dd, type: 3}
+--- !u!23 &2560000101319877573
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941876822265092712}
+  m_GameObject: {fileID: 4303792577312757529}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 529069bc6456f9f4dbb4725cbae02b1d, type: 2}
+  - {fileID: 2100000, guid: 9d4d67af8b87af74799919c79aff5c1b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70,7 +71,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
+  m_StitchLightmapSeams: 1
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -79,16 +80,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &-7153111044241813710
+--- !u!65 &726523900647005708
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941876822265092712}
+  m_GameObject: {fileID: 4303792577312757529}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06234146, y: 0.010774327, z: 0.012514095}
-  m_Center: {x: 0.0010841759, y: 0.0005368136, z: -0.000081799226}
+  m_Size: {x: 0.008334445, y: 0.02035824, z: 0.0003656038}
+  m_Center: {x: 0.000055640347, y: -0.000019539584, z: 0.0068171974}
+--- !u!65 &6248064206583382833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303792577312757529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01713718, y: 0.02035824, z: 0.00034628419}
+  m_Center: {x: -0.000046698755, y: -0.000019539584, z: 0.004033011}

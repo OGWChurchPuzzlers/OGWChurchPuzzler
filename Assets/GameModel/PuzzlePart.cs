@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEditor;
 
 public enum PuzzleCategorie
 {
@@ -21,6 +22,12 @@ public class PuzzlePart : MonoBehaviour
 
     [SerializeField] private PuzzleCategorie categorie;
 
+    [Tooltip("Deactivate with care!")]
+    [SerializeField] private bool deactivatePuzzlepartAfterTrigger = true;
+
+    [Tooltip("0 to execute no effects, one or more to execute actions e.g enable object x")]
+    [SerializeField] private EffectAction[] effects = new EffectAction[0];
+
     private bool isSolved = false;
 
     private bool isInteractionTriggered = false;
@@ -28,7 +35,7 @@ public class PuzzlePart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -95,7 +102,7 @@ public class PuzzlePart : MonoBehaviour
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
-            Despawn(gameObject);
+            ExecuteEffects();
         }
     }
 
@@ -105,7 +112,7 @@ public class PuzzlePart : MonoBehaviour
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
-            Despawn(gameObject);
+            ExecuteEffects();
         }
     }
 
@@ -115,7 +122,7 @@ public class PuzzlePart : MonoBehaviour
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
-            Despawn(gameObject);
+            ExecuteEffects();
         }
     }
 
@@ -143,11 +150,54 @@ public class PuzzlePart : MonoBehaviour
         return isSolved;
     }
 
-
-    // TODO: What should happen after trigger is succesful?
-    private void Despawn(GameObject gameObject)
+    private void ExecuteEffects()
     {
-        Destroy(gameObject);
+        foreach (var e in effects)
+        {
+            switch (e.effect)
+            {
+                case PuzzlePartEffect.Despawn:
+                    if (e.arg != null)
+                        Despawn(e.arg);
+                    break;
+                case PuzzlePartEffect.Spawn:
+                    //Invoke("SpawnNext", 0.01f);
+                    if (e.arg != null)
+                        Spawn(e.arg);
+                    break;
+                case PuzzlePartEffect.SetActive:
+                    if (e.arg != null)
+                        e.arg.SetActive(true);
+                    break;
+                case PuzzlePartEffect.SetInactive:
+                    if (e.arg != null)
+                        e.arg.SetActive(false);
+                    break;
+                case PuzzlePartEffect.ToggleActiveState:
+                    if (e.arg != null)
+                        e.arg.SetActive(!e.arg.activeSelf);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        if (deactivatePuzzlepartAfterTrigger)
+            Despawn(gameObject);
+
+    }
+
+    private void Despawn(GameObject a_gameObject)
+    {
+        Destroy(a_gameObject);
+    }
+
+    private void Spawn(GameObject a_gameObject)
+    {
+        GameObject newObject = Instantiate(a_gameObject, transform.position, transform.rotation);
+        //newObject.name = "123 Kiste";
+        //Debug.Log("parent Object at: " + transform.position);
+        //Debug.Log("Spawned Object at: " + newObject.transform.position);
     }
 
     public string GetDescription()
