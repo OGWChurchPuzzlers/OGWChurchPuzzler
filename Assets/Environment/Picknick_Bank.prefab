@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1000218387724789002}
   - component: {fileID: 8122941131809447740}
   - component: {fileID: 2560000101319877573}
+  - component: {fileID: 726523900647005708}
+  - component: {fileID: 6248064206583382833}
   m_Layer: 0
   m_Name: Picknick_Bank
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4303792577312757529}
-  m_LocalRotation: {x: -0.67284745, y: 0.21743132, z: 0.21743132, w: 0.67284745}
+  m_LocalRotation: {x: -0.6728466, y: 0.21743377, z: 0.21743377, w: 0.6728466}
   m_LocalPosition: {x: -0.5546799, y: 2.9943287, z: -2.4366598}
   m_LocalScale: {x: 100, y: 100.00006, z: 100.00006}
   m_Children: []
@@ -78,3 +80,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &726523900647005708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303792577312757529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008334445, y: 0.02035824, z: 0.0003656038}
+  m_Center: {x: 0.000055640347, y: -0.000019539584, z: 0.0068171974}
+--- !u!65 &6248064206583382833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303792577312757529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01713718, y: 0.02035824, z: 0.00034628419}
+  m_Center: {x: -0.000046698755, y: -0.000019539584, z: 0.004033011}
