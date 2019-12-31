@@ -4,9 +4,10 @@ using UnityEngine;
 
 public enum Puzzles
 {
-    OpenCrypt, // Transport one item(key) to another(lock)
+    OpenSacristy, // Transport one item(key) to another(lock)
     RingBell, // Interactions between items(take bell hammer an move it)
-    TurnOnLight, // Interact with an item to activate it
+    TurnOnLight, // Interact with an item to activate it,
+    BuildPlayground
 }
 
 public class Puzzle: MonoBehaviour

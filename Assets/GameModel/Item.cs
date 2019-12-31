@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public enum ItemType
 {
-    CryptKey, // Used to unlock the crypt
+    SacristyKey,
     Torch
 }
 

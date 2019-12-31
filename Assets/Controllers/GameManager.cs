@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public Puzzle activePuzzle;
+    private Puzzle activePuzzle;
 
-    public List<Puzzle> puzzles;
+    private List<Puzzle> puzzles;
 
     private Text puzzleLabel;
 
@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     private List<GameObject> descriptionLabels;
 
     private CharacterController characterController;
+
+    private static char check = '\u2713';
+
     /*
      * TODO:
      * - Wie legen wir fest welches puzzle gerade aktiv ist?
@@ -37,21 +40,16 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        UpdateUI();
-    }
-
-
-    void SetActivePuzzle()
-    {
-        this.activePuzzle = this.puzzles[0];
-        Debug.Log("Set active puzzle to: " + activePuzzle.GetDisplayName());
-    }
-
-    void UpdateUI()
-    {
         UpdatePuzzleUI();
 
         UpdateItemUI();
+    }
+
+
+    private void SetActivePuzzle()
+    {
+        this.activePuzzle = this.puzzles[1];
+        Debug.Log("Set active puzzle to: " + activePuzzle.GetDisplayName());
     }
 
     private void UpdatePuzzleUI()
@@ -63,7 +61,17 @@ public class GameManager : MonoBehaviour
         }
 
         List<PuzzlePart> parts = activePuzzle.GetParts();
-        descriptionLabels[0].GetComponent<Text>().text = parts[0].GetDescription();
+        for(int index = 0; index < parts.Count; index++)
+        {
+            var part = parts[index];
+            string label = part.GetDescription();
+            if (part.IsSolved())
+            {
+                label += check;
+            }
+            descriptionLabels[index].GetComponent<Text>().text = label;
+        }
+
 
     }
 
