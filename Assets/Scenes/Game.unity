@@ -3107,7 +3107,7 @@ PrefabInstance:
     - target: {fileID: 7888060555957652429, guid: ebcbc666b37d5424892b990e0e5cdd03,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.01
+      value: 5.579
       objectReference: {fileID: 0}
     - target: {fileID: 7888060555957652429, guid: ebcbc666b37d5424892b990e0e5cdd03,
         type: 3}
@@ -3168,6 +3168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kiste_large_aufbauraetsel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7888060555958147053, guid: ebcbc666b37d5424892b990e0e5cdd03,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebcbc666b37d5424892b990e0e5cdd03, type: 3}
@@ -8729,7 +8734,7 @@ Transform:
   - {fileID: 277228249}
   - {fileID: 1706564268}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &971996507 stripped
 Transform:
@@ -30806,17 +30811,17 @@ PrefabInstance:
     - target: {fileID: 6662241810814687553, guid: a54f63bbb80be1b46989818d0bd1279e,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 4.531852
+      value: 47.775467
       objectReference: {fileID: 0}
     - target: {fileID: 6662241810814687553, guid: a54f63bbb80be1b46989818d0bd1279e,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 3.1948183
+      value: -0.18761873
       objectReference: {fileID: 0}
     - target: {fileID: 6662241810814687553, guid: a54f63bbb80be1b46989818d0bd1279e,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 2.518701
+      value: -5.778923
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a54f63bbb80be1b46989818d0bd1279e, type: 3}
@@ -32050,7 +32055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
