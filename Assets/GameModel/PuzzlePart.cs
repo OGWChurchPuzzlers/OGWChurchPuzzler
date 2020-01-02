@@ -22,7 +22,7 @@ public class PuzzlePart : MonoBehaviour
 
     [SerializeField] private PuzzleCategorie categorie;
 
-    [Tooltip("Deactivate with care!")]
+    [Tooltip("Use deactivate with care!")]
     [SerializeField] private bool deactivatePuzzlepartAfterTrigger = true;
 
     [Tooltip("0 to execute no effects, one or more to execute actions e.g enable object x")]
@@ -176,6 +176,16 @@ public class PuzzlePart : MonoBehaviour
                 case PuzzlePartEffect.ToggleActiveState:
                     if (e.arg != null)
                         e.arg.SetActive(!e.arg.activeSelf);
+                    break;
+                case PuzzlePartEffect.ExecuteScriptEffect:
+                    if (e.arg != null)
+                    {
+                        e.arg.GetComponent<ScriptEffect>().ExecuteScriptedEffect(e.arg2);
+                    }
+                    break;
+                case PuzzlePartEffect.TriggerInteractable:
+                    if (e.arg != null && e.arg != gameObject)
+                        e.arg.GetComponent<Interactable>().TriggerInteractable();
                     break;
                 default:
                     break;
