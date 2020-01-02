@@ -88,12 +88,12 @@ public class Lift : MonoBehaviour, ScriptEffect
         if (top)
         {
             dist = Vector3.Distance(topPosition, platform.transform.position);
-            print("Distance to Top: " + dist);
+          //  print("Distance to Top: " + dist);
         }
         else
         {
             dist = Vector3.Distance(downPosition, platform.transform.position);
-            print("Distance to Bottom: " + dist);
+         //   print("Distance to Bottom: " + dist);
         }
         DBGcurrDistance = dist;
         return dist;

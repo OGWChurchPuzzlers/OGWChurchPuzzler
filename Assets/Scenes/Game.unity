@@ -2141,7 +2141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 1597841833}
   distance: 14.5
-  speed: 0.1
+  speed: 0.04
   inAnimate: 0
   animTime: 0
   moveUp: 0
@@ -11428,7 +11428,7 @@ PrefabInstance:
     - target: {fileID: 4108166236131882288, guid: 9f040b82f66249643862be0cfb123959,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.539
+      value: 14.831
       objectReference: {fileID: 0}
     - target: {fileID: 4108166236131882288, guid: 9f040b82f66249643862be0cfb123959,
         type: 3}
@@ -31027,6 +31027,8 @@ GameObject:
   - component: {fileID: 1597841837}
   - component: {fileID: 1597841836}
   - component: {fileID: 1597841835}
+  - component: {fileID: 1597841839}
+  - component: {fileID: 1597841838}
   m_Layer: 0
   m_Name: TestLiftPlattform
   m_TagString: Untagged
@@ -31107,6 +31109,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597841833}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1597841838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597841833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2f067cce493e746ae047219513f47e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DBG_LastMoveDirection: {x: 0, y: 0, z: 0}
+--- !u!65 &1597841839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597841833}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1.3}
+  m_Center: {x: 0, y: 0, z: -0.3}
 --- !u!1001 &1604116935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32034,6 +32062,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54084939265967506, guid: 0e74cf81e6fd82546b4797f71ceffb81,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 95665039525092722, guid: 0e74cf81e6fd82546b4797f71ceffb81,
