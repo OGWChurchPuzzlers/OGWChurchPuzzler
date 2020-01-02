@@ -398,7 +398,7 @@ BoxCollider:
   m_GameObject: {fileID: 13939826}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -465,7 +465,7 @@ MonoBehaviour:
   categorie: 1
   deactivatePuzzlepartAfterTrigger: 1
   effects:
-  - effect: 5
+  - effect: 2
     arg: {fileID: 1567021254}
     arg2: 
   - effect: 0
@@ -3172,7 +3172,7 @@ PrefabInstance:
     - target: {fileID: 7888060555958147053, guid: ebcbc666b37d5424892b990e0e5cdd03,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebcbc666b37d5424892b990e0e5cdd03, type: 3}
