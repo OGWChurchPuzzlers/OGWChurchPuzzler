@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6662241810664285097}
   - component: {fileID: 6662241810662957963}
   - component: {fileID: 6662241810661990731}
+  - component: {fileID: 8490353014906982575}
+  - component: {fileID: 9216815485233893550}
   m_Layer: 0
   m_Name: Wippe_Body
   m_TagString: Untagged
@@ -78,6 +80,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8490353014906982575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662241810663997321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0020431988, y: 0.0028746915, z: 0.012329997}
+  m_Center: {x: 0.0032581694, y: 0.00013731665, z: 0.00016500098}
+--- !u!65 &9216815485233893550
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662241810663997321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0018969483, y: 0.0028746915, z: 0.012329997}
+  m_Center: {x: -0.0031683263, y: 0.00013731624, z: 0.00016500134}
 --- !u!1 &6662241810663997323
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,7 +129,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6662241810663997323}
-  m_LocalRotation: {x: -0, y: -0.66748065, z: -0, w: 0.74462724}
+  m_LocalRotation: {x: 0, y: -0.6674817, z: 0, w: 0.74462616}
   m_LocalPosition: {x: 9.052742, y: 2.7448184, z: 7.053187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -232,7 +260,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 38.86911, y: -0.12062764, z: -5.724486}
+  m_ConnectedAnchor: {x: 47.775467, y: -0.18761873, z: -5.778923}
   m_UseSpring: 0
   m_Spring:
     spring: 0
