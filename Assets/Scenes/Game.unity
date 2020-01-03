@@ -1545,7 +1545,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.1754945e-38, y: 0, z: 0, w: 1.83672e-40}
+  m_BoundingSphereOverride: {x: 0, y: 3.2144334e-37, z: 0, w: 2.5173122e+13}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -8048,7 +8048,7 @@ PrefabInstance:
     - target: {fileID: 1000218387724789002, guid: 74118a9c5e5672845be9b380db716356,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000218387724789002, guid: 74118a9c5e5672845be9b380db716356,
         type: 3}
@@ -8375,7 +8375,7 @@ PrefabInstance:
     - target: {fileID: 1000218387724789002, guid: 74118a9c5e5672845be9b380db716356,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1000218387724789002, guid: 74118a9c5e5672845be9b380db716356,
         type: 3}
@@ -11258,6 +11258,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Baum
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151800317964512288, guid: 95fd45667478c934b8c74e4ce6c7ea57,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8164672551172845089, guid: 95fd45667478c934b8c74e4ce6c7ea57,
         type: 3}
