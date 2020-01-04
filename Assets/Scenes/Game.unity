@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3628293, g: 0.56615007, b: 0.8437136, a: 1}
+  m_IndirectSpecularColor: {r: 0.3628609, g: 0.566162, b: 0.8437128, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11902,7 +11902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_itemType: 0
-  m_description: "Gruftschl\xFCssel"
+  m_description: "Sakristeischl\xFCssel"
   DebugCollisionsLogs: 0
 --- !u!114 &1130664294
 MonoBehaviour:
@@ -12436,7 +12436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4509044d31b5ea4192f5f10de89abdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: "\xD6ffne die Gruftt\xFCr mit dem Schl\xFCssel."
+  description: "\xD6ffne die Sakristei mit dem Schl\xFCssel. Der Schl\xFCssel befindet
+    sich unter den Neun Vierecken."
   trigger: {fileID: 1130664293}
   categorie: 1
   deactivatePuzzlepartAfterTrigger: 1
@@ -38943,31 +38944,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.809
+      value: 8.568
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.849054
+      value: 6.304
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.5014567
+      value: 23.318
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.6963643
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.12278779
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.12278779
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.6963643
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_RootOrder
@@ -38983,7 +38984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18d7785d5b6119448afad6cf5eea8633, type: 3}
       propertyPath: m_LocalScale.x

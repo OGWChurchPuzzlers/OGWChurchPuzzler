@@ -22,8 +22,12 @@ public class Item : MonoBehaviour
     void Start()
     {
         Outline outline = gameObject.GetComponent<Outline>();
-        outline.enabled = false;
-        this.originalRotation = transform.rotation;
+        if(outline != null)
+        {
+            outline.enabled = false;
+            this.originalRotation = transform.rotation;
+        }
+
     }
 
     // Update is called once per frame
