@@ -180,12 +180,12 @@ public class PuzzlePart : MonoBehaviour
                 case PuzzlePartEffect.ExecuteScriptEffect:
                     if (e.arg != null)
                     {
-                        e.arg.GetComponent<ScriptEffect>().ExecuteScriptedEffect(e.arg2);
+                        e.arg.GetComponent<ScriptEffect>()?.ExecuteScriptedEffect(e.arg2);
                     }
                     break;
                 case PuzzlePartEffect.TriggerInteractable:
                     if (e.arg != null && e.arg != gameObject)
-                        e.arg.GetComponent<Interactable>().TriggerInteractable();
+                        e.arg.GetComponent<Interactable>()?.TriggerInteractable();
                     break;
                 default:
                     break;

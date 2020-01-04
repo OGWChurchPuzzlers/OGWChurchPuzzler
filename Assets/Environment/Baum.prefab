@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 8164672551172845089}
   - component: {fileID: 8742076378565173952}
   - component: {fileID: 1372625424457585899}
-  - component: {fileID: 7035865332311612411}
+  - component: {fileID: 879891329}
   m_Layer: 0
   m_Name: Baum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8164672551172845089
 Transform:
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6151800317964512288}
   m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 8.027681, y: 4.81, z: -16.967466}
-  m_LocalScale: {x: 217.26427, y: 217.26414, z: 217.26414}
+  m_LocalScale: {x: 217.26427, y: 217.2642, z: 217.2642}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -67,6 +67,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79,8 +80,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7035865332311612411
-MeshCollider:
+--- !u!136 &879891329
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,7 +90,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: dafc9a72680df5a45a0b8f5fe1e348f9, type: 3}
+  m_Radius: 0.0025
+  m_Height: 0.030443486
+  m_Direction: 2
+  m_Center: {x: 0, y: 4.1504278e-13, z: -0.011112042}
