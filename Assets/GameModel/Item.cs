@@ -4,7 +4,9 @@ using UnityEngine;
 public enum ItemType
 {
     SacristyKey,
-    Torch
+    Torch,
+    Button,
+    Lever
 }
 
 public class Item : MonoBehaviour

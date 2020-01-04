@@ -89,6 +89,8 @@ GameObject:
   - component: {fileID: 4108166236131882288}
   - component: {fileID: 8969366856145492682}
   - component: {fileID: 8969366856145492683}
+  - component: {fileID: 6462634619119508321}
+  - component: {fileID: 2836771493045352010}
   m_Layer: 0
   m_Name: Button_small
   m_TagString: Untagged
@@ -146,6 +148,39 @@ MonoBehaviour:
   piston: {fileID: 650756417176150653}
   pushDepth: 0.05
   pushDuration: 0.5
+--- !u!114 &6462634619119508321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105768622324844323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &2836771493045352010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105768622324844323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5fdd0d8ec9f8b4583a67b40701cd83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_itemType: 2
+  m_description: 
+  DebugCollisionsLogs: 0
 --- !u!1 &3368975436832812348
 GameObject:
   m_ObjectHideFlags: 0
