@@ -19,9 +19,9 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
+  - Collector
+  - Item
+  - PuzzlePart
   - 
   - 
   - 

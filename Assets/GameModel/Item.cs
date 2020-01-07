@@ -27,9 +27,8 @@ public class Item : MonoBehaviour
         if(outline != null)
         {
             outline.enabled = false;
-            this.originalRotation = transform.rotation;
         }
-
+        this.originalRotation = transform.rotation;
     }
 
     // Update is called once per frame
@@ -41,7 +40,7 @@ public class Item : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if(DebugCollisionsLogs)
-        Debug.Log("Collision Enter: " + gameObject.name);
+            Debug.Log("Collision Enter: " + gameObject.name);
     }
 
     private void OnCollisionStay(Collision collision)
@@ -60,6 +59,7 @@ public class Item : MonoBehaviour
     {
         return this.originalRotation;
     }
+
     public string GetDescription()
     {
         return this.m_description;

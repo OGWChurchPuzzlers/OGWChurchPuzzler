@@ -240,12 +240,18 @@ public class CharacterController : MonoBehaviour
         if (collectableItem != null)
         {
             collectedItem = collectableItem;
-            collectedItem.GetComponent<Rigidbody>().useGravity = false;
-            collectedItem.GetComponent<Rigidbody>().isKinematic = true;
-            collectedItem.GetComponent<Collider>().enabled = false;
-            collectedItem.transform.position = m_itemAnchor.transform.position;
-            collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
-            collectedItem.transform.SetParent(m_itemAnchor.transform);
+            Rigidbody rigid = collectedItem.GetComponent<Rigidbody>();
+            Collider col = collectedItem.GetComponent<Collider>();
+            if (rigid != null && col != null)
+            {
+                rigid.useGravity = false;
+                rigid.isKinematic = true;
+                col.enabled = false;
+                collectedItem.transform.position = m_itemAnchor.transform.position;
+                collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
+                collectedItem.transform.SetParent(m_itemAnchor.transform);
+            }
+
         }
     }
 
@@ -253,14 +259,19 @@ public class CharacterController : MonoBehaviour
     {
         if (collectedItem != null)
         {
-            collectedItem.GetComponent<Rigidbody>().useGravity = true;
-            collectedItem.GetComponent<Rigidbody>().isKinematic = false;
-            collectedItem.GetComponent<Collider>().enabled = true;
-            collectedItem.transform.SetParent(null);
-            collectedItem.transform.position = m_itemAnchor.transform.position;
-            collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
-            collectableItem = null;
-            collectedItem = null;
+            Rigidbody rigid = collectedItem.GetComponent<Rigidbody>();
+            Collider col = collectedItem.GetComponent<Collider>();
+            if(rigid != null && col != null)
+            {
+                rigid.useGravity = true;
+                rigid.isKinematic = false;
+                col.enabled = true;
+                collectedItem.transform.SetParent(null);
+                collectedItem.transform.position = m_itemAnchor.transform.position;
+                collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
+                collectableItem = null;
+                collectedItem = null;
+            }
         }
     }
 
