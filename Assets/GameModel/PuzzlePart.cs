@@ -118,7 +118,7 @@ public class PuzzlePart : MonoBehaviour
 
     private void HandleInteractionTrigger(Collider col)
     {
-        if (IsTriggerInteractedWith(col)) // Test if the character is carrying the trigger (f.e. the key is carried when near the crypt door)
+        if (IsTriggerInteractedWith(col)) // Test if the character is interacting the trigger (f.e.presses E on an item)
         {
             Debug.Log("Object solved the puzzle part.");
             this.isSolved = true;
