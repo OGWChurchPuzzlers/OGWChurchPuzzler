@@ -9,6 +9,7 @@ TagManager:
   - PuzzleName
   - ItemName
   - PuzzlePartDescription
+  - DropTrigger
   layers:
   - Default
   - TransparentFX
@@ -22,8 +23,8 @@ TagManager:
   - Collector
   - Item
   - PuzzlePart
-  - 
-  - 
+  - Player
+  - DropTrigger
   - 
   - 
   - 

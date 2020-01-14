@@ -134,7 +134,7 @@ public abstract class Interactable : MonoBehaviour
 
     private void ExecuteEffects()
     {
-        Debug.Log("##INTERACTABLE: ExecuteEffects");
+        //Debug.Log("##INTERACTABLE: ExecuteEffects");
 
         foreach (var e in effects)
         {

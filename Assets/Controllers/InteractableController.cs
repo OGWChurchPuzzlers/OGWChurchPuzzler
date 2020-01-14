@@ -6,7 +6,7 @@ public class InteractableController : MonoBehaviour
 {
     //private CharacterController characterController;
     [SerializeField] private DecoupledInputManager inputManager;
-    private List<Interactable> nearbyInteractables = new List<Interactable>();
+    private Dictionary<int, Interactable> nearbyInteractables = new Dictionary<int, Interactable>();
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,7 @@ public class InteractableController : MonoBehaviour
             foreach (var interactable in nearbyInteractables)
             {
                 //Debug.Log("Interactable Triggering");
-                interactable.TriggerInteractable();
+                interactable.Value.TriggerInteractable();
             }
         }
     }
@@ -33,8 +33,9 @@ public class InteractableController : MonoBehaviour
         Interactable interactable = col.gameObject.GetComponent<Interactable>();
         if (interactable != null)
         {
-            //Debug.Log("Interactable Trigger Enter");
-            nearbyInteractables.Add(interactable);
+            //Debug.Log("## Interactable Trigger Enter");
+            if (!nearbyInteractables.ContainsKey(interactable.GetInstanceID()))
+                nearbyInteractables.Add(interactable.GetInstanceID(), interactable);
             OutlineItem(col);
         }
     }
@@ -58,7 +59,7 @@ public class InteractableController : MonoBehaviour
         if (interactable != null)
         {
             //Debug.Log("Interactable Trigger Exit");
-            nearbyInteractables.Remove(interactable);
+            nearbyInteractables.Remove(interactable.GetInstanceID());
             OutlineItem(col);
             var outline = col.gameObject.GetComponent<Outline>();
             if (outline != null)

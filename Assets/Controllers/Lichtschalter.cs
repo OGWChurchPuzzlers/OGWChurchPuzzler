@@ -12,14 +12,14 @@ public class Lichtschalter : Interactable
     {
         if (inOnPosition)
         {
-            Debug.Log("## Lichtschalter On");
+            //Debug.Log("## Lichtschalter On");
             hebel.transform.Rotate(0, 90, 0, Space.Self);
             //hebel.transform.localRotation = intialRoation;
             inOnPosition = false;
         }
         else
         {
-            Debug.Log("## Lichtschalter Off");
+            //Debug.Log("## Lichtschalter Off");
             hebel.transform.Rotate(0, -90, 0,Space.Self);
             inOnPosition = true;
         }

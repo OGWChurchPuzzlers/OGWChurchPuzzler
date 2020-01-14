@@ -25,6 +25,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private ControlMode m_controlMode = ControlMode.Direct;
     [SerializeField] public GameObject m_item;
     [SerializeField] public GameObject m_itemAnchor;
+    [SerializeField] public GameObject m_collectTrigger;
 
     private float m_currentV = 0;
     private float m_currentH = 0;
@@ -130,7 +131,7 @@ public class CharacterController : MonoBehaviour
 
     private void TankUpdate()
     {
-        CollectOrDrop(inputManager.IsInteractionKeyPressed());
+        CollectOrDropNearestItem(inputManager.IsInteractionKeyPressed());
 
         float v = inputManager.GetAxis("Vertical");
         float h = inputManager.GetAxis("Horizontal");
@@ -160,7 +161,7 @@ public class CharacterController : MonoBehaviour
 
     private void DirectUpdate()
     {
-        CollectOrDrop(inputManager.IsInteractionKeyPressed());
+        CollectOrDropNearestItem(inputManager.IsInteractionKeyPressed());
 
         float v = inputManager.GetAxis("Vertical");
         float h = inputManager.GetAxis("Horizontal");
@@ -217,7 +218,7 @@ public class CharacterController : MonoBehaviour
     }
 
 
-    public void CollectOrDrop(bool eventTriggered)
+    public void CollectOrDropNearestItem(bool eventTriggered)
     {
         if (!eventTriggered)
         {
@@ -232,6 +233,44 @@ public class CharacterController : MonoBehaviour
         {
             DetachObject();
             isCarryingItem = false;
+        }
+    }
+
+    public void CollectOrDropFromRaycast(bool eventTriggered, RaycastHit hit)
+    {
+        if (!eventTriggered)
+            return;
+
+        Collider c = hit.collider;
+        Item toCollect = c.gameObject.GetComponent<Item>();
+        bool isItem = toCollect != null;
+        bool isDropTrigger = c.CompareTag("DropTrigger");
+        // TODO is item and near enough?
+        if (isItem)
+        {
+            if (isCarryingItem == false)
+            {
+                // attach
+                collectableItem = toCollect;
+                AttachObject();
+                isCarryingItem = true;
+            }
+            else if (isCarryingItem)
+            {
+                // drop
+                DetachObject();
+                isCarryingItem = false;
+            }
+
+        }
+        else if (isDropTrigger)
+        {
+            if (isCarryingItem)
+            {
+                // drop
+                DetachObject();
+                isCarryingItem = false;
+            }
         }
     }
 
@@ -252,7 +291,7 @@ public class CharacterController : MonoBehaviour
                 collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
                 collectedItem.transform.SetParent(m_itemAnchor.transform);
             }
-
+            m_collectTrigger?.SetActive(true);
         }
     }
 
@@ -273,6 +312,7 @@ public class CharacterController : MonoBehaviour
                 collectableItem = null;
                 collectedItem = null;
             }
+            m_collectTrigger?.SetActive(false);
         }
     }
 
