@@ -6,8 +6,8 @@ using System;
 public enum InteractionTrigger
 {
     None,
-    OnPresence,
-    OnKeyPress,
+    OnPresence, // TODO rename to passive_presence
+    OnKeyPress, // TODO rename to active_interact
 }
 
 
@@ -27,8 +27,8 @@ public abstract class Interactable : MonoBehaviour
 
     [Tooltip("0 to execute no effects, one or more to execute actions e.g enable object x")]
     [SerializeField] private EffectAction[] effects = new EffectAction[0];
-    private const KeyCode INTERACTION_KEY = KeyCode.E;
-    private bool isInteractionKeyCurrentlyTriggered = false;
+    //private const KeyCode INTERACTION_KEY = KeyCode.E;
+    //private bool isInteractionKeyCurrentlyTriggered = false;
     private bool currentlyInRange = false;
 
     // Start is called before the first frame update
@@ -48,17 +48,6 @@ public abstract class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(INTERACTION_KEY))
-        {
-            this.isInteractionKeyCurrentlyTriggered = true;
-
-            // Trigger in update behandeln, da Update und Triggerloop nicht in sync -> Key-Event könnte sonst übersehen werden
-            UpdateTriggerState();
-        }
-        else
-        {
-            this.isInteractionKeyCurrentlyTriggered = false;
-        }
         UpdateInteractable();
     }
 
@@ -70,7 +59,7 @@ public abstract class Interactable : MonoBehaviour
 
         if (currentlyInRange && triggerType == InteractionTrigger.OnPresence)
         {
-            Debug.Log("##INTERACTABLE: PresenceTrigger");
+            //Debug.Log("##INTERACTABLE: PresenceTrigger");
             TriggerInteractable();
         }
 
@@ -94,15 +83,12 @@ public abstract class Interactable : MonoBehaviour
         {
             case InteractionTrigger.None:
                 break;
-            case InteractionTrigger.OnPresence:
+            case InteractionTrigger.OnPresence: // passive
                 // already handled in OnTriggerEnter()
                 break;
-            case InteractionTrigger.OnKeyPress:
-                if (currentlyInRange && isInteractionKeyCurrentlyTriggered)
-                {
-                    Debug.Log("##INTERACTABLE: KeyTrigger");
-                    TriggerInteractable();
-                }
+            case InteractionTrigger.OnKeyPress: // active
+                // handled by "IntactableController"
+                // when player enters the collider of an interactable and presses a button -> the "InteractableController" will call TriggerInteractable()
                 break;
             default:
                 break;
@@ -127,7 +113,7 @@ public abstract class Interactable : MonoBehaviour
     // ## Interaction
     public void HandleInteraction()
     {
-        Debug.Log("##INTERACTABLE: HandleInteraction");
+        //Debug.Log("##INTERACTABLE: HandleInteraction");
         if (triggerable)
         {
             if (onlyTriggerableOnce && hasBeenTriggeredAtLeastOnce)
