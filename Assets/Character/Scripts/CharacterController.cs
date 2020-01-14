@@ -236,7 +236,7 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    public void CollectOrDropFromRaycast(bool eventTriggered, RaycastHit hit)
+    public void CollectOrDropFromRaycast(bool eventTriggered, RaycastHit hit) 
     {
         if (!eventTriggered)
             return;
@@ -245,7 +245,8 @@ public class CharacterController : MonoBehaviour
         Item toCollect = c.gameObject.GetComponent<Item>();
         bool isItem = toCollect != null;
         bool isDropTrigger = c.CompareTag("DropTrigger");
-        // TODO is item and near enough?
+        
+        // TODO FIXME is item and near enough?
         if (isItem)
         {
             if (isCarryingItem == false)

@@ -1,17 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class CameraController : MonoBehaviour
+[System.Serializable] public class _UnityEventRayCastHit : UnityEvent<bool, RaycastHit> { }
+
+/// <summary>
+/// Immer wenn User auf Bildschirm klickt wird per Raycast das angeklickte objekt bestimmt.
+/// </summary>
+public class ObjectTouchController : MonoBehaviour
 {
     //[SerializeField] public bool Debug_touchModeEnabled = false;
     [SerializeField] public DecoupledInputManager inputManager;
-    LayerMask mask;
+    [SerializeField] string[] ignoredLayers;
+
+    [Header("Is invoked when user Touches an object")]
+    public _UnityEventRayCastHit ObjectTouched;
+
+    public ObjectTouchController()
+    {
+        ignoredLayers = new string[] { "Player", "Collector" };
+    }
     // Start is called before the first frame update
     void Start()
     {
-        mask = LayerMask.GetMask("Item");
-
     }
 
     // Update is called once per frame
@@ -54,11 +66,14 @@ public class CameraController : MonoBehaviour
     private void CollectOnRaycastHit(Ray ray)
     {
         RaycastHit hit;
-        int layer_mask = LayerMask.GetMask("Player","Collector");
-        int layer_mask_inv = ~layer_mask;
+        
+        int layer_mask_inv = ~LayerMask.GetMask(ignoredLayers);
         float distance = Mathf.Infinity;
         bool trigger = Physics.Raycast(ray, out hit, distance, layer_mask_inv);
-            Debug.Log("hit: "+ trigger + " - " + hit.collider?.name);
-        GameObject.FindObjectOfType<CharacterController>().CollectOrDropFromRaycast(trigger, hit);
+
+            //Debug.Log("hit: "+ trigger + " - " + hit.collider?.name);
+
+        ObjectTouched.Invoke(trigger, hit);
+        //GameObject.FindObjectOfType<CharacterController>().CollectOrDropFromRaycast(trigger, hit);
     }
 }

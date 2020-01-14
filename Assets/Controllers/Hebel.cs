@@ -12,14 +12,14 @@ public class Hebel : Interactable
     {
         if (inOnPosition)
         {
-            Debug.Log("## Hebel On");
+            //Debug.Log("## Hebel On");
             hebel.transform.Rotate(0, -45, 0, Space.Self);
             //hebel.transform.localRotation = intialRoation;
             inOnPosition = false;
         }
         else
         {
-            Debug.Log("## Hebel Off");
+            //Debug.Log("## Hebel Off");
             hebel.transform.Rotate(0,45, 0, Space.Self);
             //hebel.transform.localRotation = Quaternion.Euler(0,45,0);
             inOnPosition = true;

@@ -28,6 +28,20 @@ public class InteractableController : MonoBehaviour
         }
     }
 
+    public void InteractFromRaycast(bool eventTriggered, RaycastHit hit) 
+    {
+        if (!eventTriggered)
+            return;
+
+        Collider c = hit.collider;
+        Interactable toInteract = c.gameObject.GetComponent<Interactable>();
+
+        if (toInteract != null && nearbyInteractables.ContainsKey(toInteract.GetInstanceID()))
+        {
+            nearbyInteractables[toInteract.GetInstanceID()]?.TriggerInteractable();
+        }
+    }
+
     public void OnTriggerEnter(Collider col)
     {
         Interactable interactable = col.gameObject.GetComponent<Interactable>();
