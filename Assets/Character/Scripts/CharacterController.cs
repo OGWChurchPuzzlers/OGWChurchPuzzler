@@ -8,7 +8,7 @@ using System.Collections.Generic;
  */
 public class CharacterController : MonoBehaviour
 {
-
+    [SerializeField] DecoupledInputManager inputManager;
     private enum ControlMode
     {
         Tank,
@@ -130,10 +130,10 @@ public class CharacterController : MonoBehaviour
 
     private void TankUpdate()
     {
-        CollectOrDrop(Input.GetKeyDown(KeyCode.E));
+        CollectOrDrop(inputManager.IsInteractionKeyPressed());
 
-        float v = Input.GetAxis("Vertical");
-        float h = Input.GetAxis("Horizontal");
+        float v = inputManager.GetAxis("Vertical");
+        float h = inputManager.GetAxis("Horizontal");
 
         bool walk = Input.GetKey(KeyCode.LeftShift);
 
@@ -160,10 +160,10 @@ public class CharacterController : MonoBehaviour
 
     private void DirectUpdate()
     {
-        CollectOrDrop(Input.GetKeyDown(KeyCode.E));
+        CollectOrDrop(inputManager.IsInteractionKeyPressed());
 
-        float v = Input.GetAxis("Vertical");
-        float h = Input.GetAxis("Horizontal");
+        float v = inputManager.GetAxis("Vertical");
+        float h = inputManager.GetAxis("Horizontal");
 
         Transform camera = Camera.main.transform;
 
@@ -199,7 +199,7 @@ public class CharacterController : MonoBehaviour
     {
         bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
 
-        if (jumpCooldownOver && m_isGrounded && Input.GetKey(KeyCode.Space))
+        if (jumpCooldownOver && m_isGrounded && inputManager.IsJumpKeyPressed())
         {
             m_jumpTimeStamp = Time.time;
             m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
@@ -215,6 +215,7 @@ public class CharacterController : MonoBehaviour
             m_animator.SetTrigger("Jump");
         }
     }
+
 
     public void CollectOrDrop(bool eventTriggered)
     {
@@ -261,7 +262,7 @@ public class CharacterController : MonoBehaviour
         {
             Rigidbody rigid = collectedItem.GetComponent<Rigidbody>();
             Collider col = collectedItem.GetComponent<Collider>();
-            if(rigid != null && col != null)
+            if (rigid != null && col != null)
             {
                 rigid.useGravity = true;
                 rigid.isKinematic = false;

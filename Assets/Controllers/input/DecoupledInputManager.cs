@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-enum GameInputMode
+public enum GameInputMode
 {
     Keyboard,
     Touch_1,
@@ -11,8 +11,8 @@ enum GameInputMode
 
 public class DecoupledInputManager : MonoBehaviour
 {
-    [SerializeField] bool blockControl = false;
-    [SerializeField] GameInputMode Mode = GameInputMode.Keyboard;
+    [SerializeField] public bool blockControl = false;
+    [SerializeField] public GameInputMode Mode = GameInputMode.Keyboard;
     [SerializeField] KeyCode interact_key = KeyCode.E;
     [SerializeField] KeyCode jump_key = KeyCode.Space;
 

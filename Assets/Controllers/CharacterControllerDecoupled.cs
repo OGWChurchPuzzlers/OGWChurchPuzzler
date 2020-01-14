@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 /*
  * This controller manages character interaction with the environment and character controls. This includes:
  * - Moving (Walk, Jump, Turn)
  * - Item pickup
  */
+[Obsolete]
 public class CharacterControllerDecoupled : MonoBehaviour
 {
     [SerializeField] DecoupledInputManager inputManager;
