@@ -199,7 +199,7 @@ public class CharacterControllerDecoupled : MonoBehaviour
     {
         bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
 
-        if (jumpCooldownOver && m_isGrounded && Input.GetKey(KeyCode.Space))
+        if (jumpCooldownOver && m_isGrounded && inputManager.IsJumpKeyPressed())
         {
             m_jumpTimeStamp = Time.time;
             m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
@@ -215,6 +215,7 @@ public class CharacterControllerDecoupled : MonoBehaviour
             m_animator.SetTrigger("Jump");
         }
     }
+
 
     public void CollectOrDrop(bool eventTriggered)
     {

@@ -6,7 +6,7 @@ using System.Collections.Generic;
  * - Moving (Walk, Jump, Turn)
  * - Item pickup
  */
-public class CharacterControllerTouch : MonoBehaviour
+public class CharacterControllerTouchTest : MonoBehaviour
 {
 
     private enum ControlMode
@@ -14,7 +14,7 @@ public class CharacterControllerTouch : MonoBehaviour
         Tank,
         Direct
     }
-    [SerializeField] private DecoupledControllerInput decoupledInput;
+    [SerializeField] private DecoupledControllerInputTest decoupledInput;
     private const float ITEM_ELEVATION = 1.0f;
     [SerializeField] private float m_moveSpeed = 2;
     [SerializeField] private float m_turnSpeed = 200;

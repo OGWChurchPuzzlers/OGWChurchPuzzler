@@ -13,7 +13,7 @@ enum DecoupledInputMode
     Joystick_default = 16,
 
 }
-public class DecoupledControllerInput : MonoBehaviour
+public class DecoupledControllerInputTest : MonoBehaviour
 {
     [SerializeField] DecoupledInputMode mode = DecoupledInputMode.Keyboard;
     [SerializeField] GameObject AssetJoystick;
