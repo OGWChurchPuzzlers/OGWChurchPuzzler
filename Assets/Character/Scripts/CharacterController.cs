@@ -26,6 +26,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] public GameObject m_item;
     [SerializeField] public GameObject m_itemAnchor;
     [SerializeField] public GameObject m_collectTrigger;
+    [SerializeField] TouchItemRangeWatcher itemRangeWatcher;
 
     private float m_currentV = 0;
     private float m_currentH = 0;
@@ -236,7 +237,7 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    public void CollectOrDropFromRaycast(bool eventTriggered, RaycastHit hit) 
+    public void CollectOrDropFromRaycast(bool eventTriggered, RaycastHit hit)
     {
         if (!eventTriggered)
             return;
@@ -245,9 +246,12 @@ public class CharacterController : MonoBehaviour
         Item toCollect = c.gameObject.GetComponent<Item>();
         bool isItem = toCollect != null;
         bool isDropTrigger = c.CompareTag("DropTrigger");
-        
-        // TODO FIXME is item and near enough?
-        if (isItem)
+
+        bool nearEnough = true; // infinity
+        if (itemRangeWatcher != null)
+            nearEnough = itemRangeWatcher.IsItemNearby(toCollect);
+
+        if (isItem && nearEnough)
         {
             if (isCarryingItem == false)
             {
