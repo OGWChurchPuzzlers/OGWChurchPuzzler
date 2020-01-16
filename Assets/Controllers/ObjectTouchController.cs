@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 [System.Serializable] public class _UnityEventRayCastHit : UnityEvent<bool, RaycastHit> { }
 
@@ -55,25 +56,34 @@ public class ObjectTouchController : MonoBehaviour
 
     private void CollectItemFromTouchRaycast()
     {
-        Debug.Log("CollectItemFromTouchRaycast()");
+        //Debug.Log("CollectItemFromTouchRaycast()");
         for (int i = 0; i < Input.touchCount; ++i)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-            CollectOnRaycastHit(ray);
+            var touch = Input.GetTouch(i);
+            if (touch.phase == TouchPhase.Began)
+            {
+                Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                CollectOnRaycastHit(ray);
+            }
+            //else
+            //{
+            //    Debug.Log("CollectItemFromTouchRaycast cancel: " + touch.phase);
+            //}
         }
     }
 
     private void CollectOnRaycastHit(Ray ray)
     {
-        RaycastHit hit;
-        
-        int layer_mask_inv = ~LayerMask.GetMask(ignoredLayers);
-        float distance = Mathf.Infinity;
-        bool trigger = Physics.Raycast(ray, out hit, distance, layer_mask_inv);
+        if (!EventSystem.current.IsPointerOverGameObject()) // verhindere klick durch UI
+        {
+            RaycastHit hit;
 
-            //Debug.Log("hit: "+ trigger + " - " + hit.collider?.name);
+            int layer_mask_inv = ~LayerMask.GetMask(ignoredLayers);
+            float distance = Mathf.Infinity;
+            bool trigger = Physics.Raycast(ray, out hit, distance, layer_mask_inv);
 
-        ObjectTouched.Invoke(trigger, hit);
-        //GameObject.FindObjectOfType<CharacterController>().CollectOrDropFromRaycast(trigger, hit);
+            Debug.Log("hit: " + trigger + " - " + hit.collider?.name);
+            ObjectTouched.Invoke(trigger, hit);
+        }
     }
 }
