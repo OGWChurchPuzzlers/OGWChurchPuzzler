@@ -25,6 +25,9 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private ControlMode m_controlMode = ControlMode.Direct;
     [SerializeField] public GameObject m_item;
     [SerializeField] public GameObject m_itemAnchor;
+    [SerializeField] public GameObject m_itemAnchor_front;
+    [SerializeField] public string anim_trigger_carry_hand = "CarryingHand";
+    [SerializeField] public string anim_trigger_carry_front = "CarryingHeavy";
     [SerializeField] public GameObject m_collectTrigger;
     [SerializeField] TouchItemRangeWatcher itemRangeWatcher;
 
@@ -279,7 +282,33 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-
+    private GameObject getItemAnchor(ItemCarryLocation a_carryLocation)
+    {
+        switch (a_carryLocation)
+        {
+            case ItemCarryLocation.Hand:
+                return m_itemAnchor;
+            case ItemCarryLocation.In_Front:
+                return m_itemAnchor_front;
+            default:
+                break;
+        }
+        return null;
+    }
+    private void UpdateCarryAnimation(ItemCarryLocation a_location, bool a_carrrying)
+    {
+        switch (a_location)
+        {
+            case ItemCarryLocation.Hand:
+                m_animator.SetBool(anim_trigger_carry_hand, a_carrrying);
+                break;
+            case ItemCarryLocation.In_Front:
+                m_animator.SetBool(anim_trigger_carry_front, a_carrrying);
+                break;
+            default:
+                break;
+        }
+    }
     public void AttachObject()
     {
         if (collectableItem != null)
@@ -289,12 +318,14 @@ public class CharacterController : MonoBehaviour
             Collider col = collectedItem.GetComponent<Collider>();
             if (rigid != null && col != null)
             {
+                GameObject anchor = getItemAnchor(collectableItem.GetCarryLocation());
+                UpdateCarryAnimation(collectableItem.GetCarryLocation(), true);
                 rigid.useGravity = false;
                 rigid.isKinematic = true;
                 col.enabled = false;
-                collectedItem.transform.position = m_itemAnchor.transform.position;
-                collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
-                collectedItem.transform.SetParent(m_itemAnchor.transform);
+                collectedItem.transform.position = anchor.transform.position;
+                collectedItem.transform.rotation = anchor.transform.rotation;
+                collectedItem.transform.SetParent(anchor.transform);
             }
             m_collectTrigger?.SetActive(true);
         }
@@ -308,14 +339,17 @@ public class CharacterController : MonoBehaviour
             Collider col = collectedItem.GetComponent<Collider>();
             if (rigid != null && col != null)
             {
+                GameObject anchor = getItemAnchor(collectedItem.GetCarryLocation());
+                UpdateCarryAnimation(collectedItem.GetCarryLocation(), false);
                 rigid.useGravity = true;
                 rigid.isKinematic = false;
                 col.enabled = true;
                 collectedItem.transform.SetParent(null);
-                collectedItem.transform.position = m_itemAnchor.transform.position;
-                collectedItem.transform.rotation = m_itemAnchor.transform.rotation;
+                collectedItem.transform.position = anchor.transform.position;
+                collectedItem.transform.rotation = anchor.transform.rotation;
                 collectableItem = null;
                 collectedItem = null;
+
             }
             m_collectTrigger?.SetActive(false);
         }
