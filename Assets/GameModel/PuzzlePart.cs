@@ -110,7 +110,7 @@ public class PuzzlePart : MonoBehaviour
     {
         if (IsTriggerInPossesion()) // Test if the character is carrying the trigger (f.e. the key is carried when near the crypt door)
         {
-            Debug.Log("Object solved the puzzle part.");
+            Debug.Log("Possession solved the puzzle part.");
             this.isSolved = true;
             ExecuteEffects();
         }
@@ -120,10 +120,17 @@ public class PuzzlePart : MonoBehaviour
     {
         if (IsTriggerInteractedWith(col)) // Test if the character is carrying the trigger (f.e. the key is carried when near the crypt door)
         {
-            Debug.Log("Object solved the puzzle part.");
+            Debug.Log("Interaction solved the puzzle part.");
             this.isSolved = true;
             ExecuteEffects();
         }
+    }
+
+    public void SolvePuzzlePart(bool a_executeEffects)
+    {
+        Debug.Log("Script solved the puzzle part.");
+        this.isSolved = true;
+        ExecuteEffects();
     }
 
     private bool IsTriggerInteractedWith(Collider col)

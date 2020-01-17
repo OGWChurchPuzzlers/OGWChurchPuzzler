@@ -8,7 +8,7 @@ public class Hebel : Interactable
     [SerializeField] private GameObject hebel;
     //private Quaternion intialRoation;
 
-    public override void ExecuteInteractionAnimation()
+    public override void ExecuteInteractionAnimation() // TODO FIXME zu animation wechseln
     {
         if (inOnPosition)
         {

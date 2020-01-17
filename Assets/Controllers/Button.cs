@@ -18,7 +18,7 @@ public class Button : Interactable
     }
     public override void UpdateInteractable()
     {
-        float step = pushDepth*2/pushDuration;
+        float step = pushDepth*2/pushDuration; // TODO zu animation wechseln
         if (inPushAnimation)
         {
             if (animTime >= pushDuration)
