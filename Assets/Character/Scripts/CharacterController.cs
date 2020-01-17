@@ -318,12 +318,15 @@ public class CharacterController : MonoBehaviour
             Collider col = collectedItem.GetComponent<Collider>();
             if (rigid != null && col != null)
             {
-                GameObject anchor = getItemAnchor(collectableItem.GetCarryLocation());
-                UpdateCarryAnimation(collectableItem.GetCarryLocation(), true);
+                GameObject anchor = getItemAnchor(collectedItem.GetCarryLocation());
+                UpdateCarryAnimation(collectedItem.GetCarryLocation(), true);
                 rigid.useGravity = false;
                 rigid.isKinematic = true;
                 col.enabled = false;
-                collectedItem.transform.position = anchor.transform.position;
+
+                Vector4 offsetInWorldSpace = anchor.transform.localToWorldMatrix * collectedItem.GetCarryOffset();
+                Vector3 pos_w_offset = new Vector3(offsetInWorldSpace.x, offsetInWorldSpace.y, offsetInWorldSpace.z) + anchor.transform.position;
+                collectedItem.transform.position = pos_w_offset;
                 collectedItem.transform.rotation = anchor.transform.rotation;
                 collectedItem.transform.SetParent(anchor.transform);
             }
