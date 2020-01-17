@@ -2146,7 +2146,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131324028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2804462015887494fbee5e0183c52f8b, type: 3}
   m_Name: 
@@ -4568,7 +4568,10 @@ MonoBehaviour:
   triggerable: 1
   onlyTriggerableOnce: 0
   deactivateObjectAfterTrigger: 0
-  effects: []
+  effects:
+  - effect: 5
+    arg: {fileID: 648429855}
+    arg2: rope_L
   m_animator: {fileID: 133002001}
   m_animationTrigger: rope_small_pull
 --- !u!65 &281797921
@@ -10551,6 +10554,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5434b0bd95f0b4898bee8328abf8bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_anmiatorGlocken: {fileID: 133002001}
+  m_anim_transition_ring_bell_big: bell_big_ringing
+  m_anim_transition_ring_bell_small: bell_small_ringing
+  puzzlepart: {fileID: 1069112523}
 --- !u!64 &649224781
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12340,7 +12347,10 @@ MonoBehaviour:
   triggerable: 1
   onlyTriggerableOnce: 0
   deactivateObjectAfterTrigger: 0
-  effects: []
+  effects:
+  - effect: 5
+    arg: {fileID: 648429855}
+    arg2: rope_R
   m_animator: {fileID: 133002001}
   m_animationTrigger: rope_big_pull
 --- !u!65 &748384493

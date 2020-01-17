@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
     }
     private void UpdatePuzzleUI()
     {
+        var solvedPuzzles = GetSolvedPuzzles();
         puzzleLabel.text = activePuzzle.GetDisplayName();
         if (activePuzzle != null && activePuzzle.IsSolved())
         {
