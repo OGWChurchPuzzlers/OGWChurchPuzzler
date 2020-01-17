@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 619118402503934254}
   - component: {fileID: 5615206048668598337}
   - component: {fileID: 5615206048668598338}
+  - component: {fileID: 1641565433468048518}
   m_Layer: 0
   m_Name: Hebel
   m_TagString: Untagged
@@ -223,3 +224,21 @@ MonoBehaviour:
   effects: []
   inOnPosition: 0
   hebel: {fileID: 4508404883204228127}
+--- !u!114 &1641565433468048518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4525226131102724925}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

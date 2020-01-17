@@ -131,6 +131,10 @@ public class CharacterController : MonoBehaviour
         }
 
         m_wasGrounded = m_isGrounded;
+        if(collectedItem == null)
+        {
+            ResetCarryAnimation();
+        }
     }
 
     private void TankUpdate()
@@ -308,6 +312,13 @@ public class CharacterController : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    private void ResetCarryAnimation()
+    {
+        m_animator.SetBool(anim_trigger_carry_hand, false);
+        m_animator.SetBool(anim_trigger_carry_front, false);
+
     }
     public void AttachObject()
     {
