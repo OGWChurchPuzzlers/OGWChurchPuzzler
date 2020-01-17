@@ -38,8 +38,16 @@ public class GameManager : MonoBehaviour
         SetActivePuzzle();
     }
 
+    private bool hasDescriptionSizeBeenChecked = false;
     void Update()
     {
+        if (!hasDescriptionSizeBeenChecked)
+        {
+            int cnt_puzzleparts = this.activePuzzle.GetParts().Count;
+            if (descriptionLabels.Count < cnt_puzzleparts)
+                Debug.LogError("There are not enough labels to show all parts of current Puzzle (" + cnt_puzzleparts + "/" + descriptionLabels.Count + ")");
+            hasDescriptionSizeBeenChecked = true;
+        }
         UpdatePuzzleUI();
 
         UpdateItemUI();
@@ -50,18 +58,18 @@ public class GameManager : MonoBehaviour
     {
         this.activePuzzle = this.puzzles[1];
         Debug.Log("Set active puzzle to: " + activePuzzle.GetDisplayName());
-    }
 
+    }
     private void UpdatePuzzleUI()
     {
         puzzleLabel.text = activePuzzle.GetDisplayName();
         if (activePuzzle != null && activePuzzle.IsSolved())
         {
-            puzzleLabel.color = new Color(47/255f, 145/255f, 22/255f);
+            puzzleLabel.color = new Color(47 / 255f, 145 / 255f, 22 / 255f);
         }
 
         List<PuzzlePart> parts = activePuzzle.GetParts();
-        for(int index = 0; index < parts.Count; index++)
+        for (int index = 0; index < parts.Count; index++)
         {
             var part = parts[index];
             string label = part.GetDescription();
@@ -69,7 +77,8 @@ public class GameManager : MonoBehaviour
             {
                 label += check;
             }
-            descriptionLabels[index].GetComponent<Text>().text = label;
+            if(index < descriptionLabels.Count)
+                descriptionLabels[index].GetComponent<Text>().text = label;
         }
 
 
