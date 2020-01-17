@@ -126,7 +126,7 @@ public class PuzzlePart : MonoBehaviour
         }
     }
 
-    public void SolvePuzzlePart(bool a_executeEffects)
+    public void SolvePuzzlePart()
     {
         Debug.Log("Script solved the puzzle part.");
         this.isSolved = true;

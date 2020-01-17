@@ -31,8 +31,8 @@ public class Glockenraetsel : MonoBehaviour, ScriptEffect
                 break;
         }
 
-        if (m_anmiatorGlocken.GetBool(m_anim_transition_ring_bell_big) && m_anmiatorGlocken.GetBool(m_anim_transition_ring_bell_small))
-            puzzlepart.SolvePuzzlePart(false);
+        if (!puzzlepart.IsSolved() && m_anmiatorGlocken.GetBool(m_anim_transition_ring_bell_big) && m_anmiatorGlocken.GetBool(m_anim_transition_ring_bell_small))
+            puzzlepart.SolvePuzzlePart();
     }
 
 
