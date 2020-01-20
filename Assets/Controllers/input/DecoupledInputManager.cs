@@ -16,6 +16,12 @@ public class DecoupledInputManager : MonoBehaviour
     [SerializeField] KeyCode interact_key = KeyCode.E;
     [SerializeField] KeyCode jump_key = KeyCode.Space;
 
+    [SerializeField]
+    [Range(0.0f, 1.0f)]
+    public float turnFactorKeyboard = 0.5f;
+    [SerializeField]
+    [Range(0.0f, 1.0f)]
+    public float turnFactorJoystick = 0.4f;
     [SerializeField] GameObject AssetBtnJump;
     TouchButton btn_jump
     {
@@ -52,7 +58,7 @@ public class DecoupledInputManager : MonoBehaviour
     {
         refreshInputVector();
     }
-
+    [SerializeField] Vector2 lastDir = Vector2.zero;
 
     private void refreshInputVector()
     {
@@ -63,11 +69,15 @@ public class DecoupledInputManager : MonoBehaviour
         switch (Mode)
         {
             case GameInputMode.Keyboard:
-                touchInputVector.x = Input.GetAxis("Horizontal");
+                touchInputVector.x = Input.GetAxis("Horizontal") * turnFactorKeyboard;
                 touchInputVector.y = Input.GetAxis("Vertical");
                 break;
             case GameInputMode.Touch_1:
-                touchInputVector = joystick.Direction;
+                var jostickDir = joystick.Direction;
+                lastDir = jostickDir;
+                var y = jostickDir.y;
+                var x = jostickDir.x * ( 0.0f + Mathf.Cos(y)) * turnFactorJoystick;
+                touchInputVector = new Vector2(x,y);
                 break;
             default:
                 break;
