@@ -94,21 +94,20 @@ public class GameManager : MonoBehaviour
         //}
         //var rows = GameObject.FindGameObjectWithTag("PuzzleName").GetComponent<Text>();
 
-
-        //Component[] rows = Helper.FindComponentsInChildrenWithTag<Component>(gameObject, "UI_Puzzle_Row");
+        
         GameObject[] rows = GameObject.FindGameObjectsWithTag("UI_Puzzle_Row");
-        foreach (GameObject row in rows)
+        var rowcount = rows.Length;
+
+        for (int i = 0; i < rows.Length; i++)
         {
-            //puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleName").GetComponent<Text>();
-            //var rownObject = row.gameObject;
-            Component headerComponent = Helper.FindComponentInChildWithTag<Component>(row, "PuzzleName");
-            GameObject head = headerComponent.gameObject;
-            var headertext = head.GetComponent<Text>();
-            //var headertext2 = 
+            var row = rows[i];
 
-            //headertext.text = "fgvbkhnjkml";
-
-            Component listComponent = Helper.FindComponentInChildWithTag<Component>(row, "UI_Puzzle_Parts");
+            if (rowcount < puzzles.Count)
+            {
+                break;
+            }
+            var s = row.GetComponent<UIPuzzleRow>();
+            s.UpdateRow(puzzles[i]);
         }
 
 
