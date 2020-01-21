@@ -47,7 +47,7 @@ public class DecoupledInputManager : MonoBehaviour
         }
     }
 
-    public Vector2 touchInputVector = new Vector2(0, 0);
+    private Vector2 touchInputVector = new Vector2(0, 0);
 
     void Start()
     {
@@ -58,8 +58,6 @@ public class DecoupledInputManager : MonoBehaviour
     {
         refreshInputVector();
     }
-    [SerializeField] Vector2 lastDir = Vector2.zero;
-
     private void refreshInputVector()
     {
         touchInputVector = new Vector2(0, 0);
@@ -74,9 +72,8 @@ public class DecoupledInputManager : MonoBehaviour
                 break;
             case GameInputMode.Touch_1:
                 var jostickDir = joystick.Direction;
-                lastDir = jostickDir;
                 var y = jostickDir.y;
-                var x = jostickDir.x * ( 0.0f + Mathf.Cos(y)) * turnFactorJoystick;
+                var x = jostickDir.x * ( 0.0f + Mathf.Cos(y)) * turnFactorJoystick; // wenn schnell geradeaus -> wenig drehung zulassen
                 touchInputVector = new Vector2(x,y);
                 break;
             default:

@@ -41162,14 +41162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de41a27a51ef004d93a40b925c037eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzle_ui_row_sakristei: {fileID: 0}
-  puzzle_ui_row_Orgel: {fileID: 0}
-  puzzle_ui_row_Spielplatz: {fileID: 0}
-  puzzle_ui_row_Turm: {fileID: 0}
-  puzzle_sakristei: {fileID: 0}
-  puzzle_spielplatz: {fileID: 0}
-  puzzle_turm: {fileID: 0}
-  puzzle_orgel: {fileID: 0}
 --- !u!4 &1058434437
 Transform:
   m_ObjectHideFlags: 0
@@ -41217,8 +41209,6 @@ MonoBehaviour:
   AssetBtnJump: {fileID: 1986070796}
   AssetBtnInteract: {fileID: 1638287563}
   AssetJoystick: {fileID: 1074625992}
-  touchInputVector: {x: 0, y: 0}
-  lastDir: {x: 0, y: 0}
 --- !u!114 &1058434441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47355,6 +47345,19 @@ MonoBehaviour:
   categorie: 1
   deactivatePuzzlepartAfterTrigger: 1
   effects: []
+--- !u!65 &1201879375
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201879370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.0009946509, z: 0.021000005}
+  m_Center: {x: -0.0049740123, y: -0.0004469055, z: 0.00049526436}
 --- !u!1 &1201885081
 GameObject:
   m_ObjectHideFlags: 0

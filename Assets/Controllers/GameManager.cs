@@ -19,27 +19,8 @@ public class GameManager : MonoBehaviour
 
     private static char check = '\u2713';
 
-    [SerializeField] private GameObject puzzle_ui_row_sakristei;
-    [SerializeField] private GameObject puzzle_ui_row_Orgel;
-    [SerializeField] private GameObject puzzle_ui_row_Spielplatz;
-    [SerializeField] private GameObject puzzle_ui_row_Turm;
-
-    [SerializeField] Puzzle puzzle_sakristei;
-    [SerializeField] Puzzle puzzle_spielplatz;
-    [SerializeField] Puzzle puzzle_turm;
-    [SerializeField] Puzzle puzzle_orgel;
-
-    /*
-     * TODO:
-     * - Wie legen wir fest welches puzzle gerade aktiv ist?
-     * - Wie legen wir fest welches als nächstes kommt?
-     */
-
     void Start()
     {
-        //puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleName").GetComponent<Text>();
-        //descriptionLabels = new List<GameObject>(GameObject.FindGameObjectsWithTag("PuzzlePartDescription"));
-
         itemLabel = GameObject.FindGameObjectWithTag("ItemName").GetComponent<Text>();
 
         characterController = GameObject.FindObjectOfType<CharacterController>();
@@ -51,13 +32,6 @@ public class GameManager : MonoBehaviour
     private bool hasDescriptionSizeBeenChecked = false;
     void Update()
     {
-        //if (!hasDescriptionSizeBeenChecked)
-        //{
-        //    int cnt_puzzleparts = this.activePuzzle.GetParts().Count;
-        //    //if (descriptionLabels.Count < cnt_puzzleparts)
-        //    //    Debug.LogError("There are not enough labels to show all parts of current Puzzle (" + cnt_puzzleparts + "/" + descriptionLabels.Count + ")");
-        //    //hasDescriptionSizeBeenChecked = true;
-        //}
         UpdatePuzzleUI();
 
         UpdateItemUI();
@@ -72,29 +46,6 @@ public class GameManager : MonoBehaviour
     }
     private void UpdatePuzzleUI()
     {
-        // old
-        //var solvedPuzzles = GetSolvedPuzzles();
-        //puzzleLabel.text = activePuzzle.GetDisplayName();
-        //if (activePuzzle != null && activePuzzle.IsSolved())
-        //{
-        //    puzzleLabel.color = new Color(47 / 255f, 145 / 255f, 22 / 255f);
-        //}
-
-        //List<PuzzlePart> parts = activePuzzle.GetParts();
-        //for (int index = 0; index < parts.Count; index++)
-        //{
-        //    var part = parts[index];
-        //    string label = part.GetDescription();
-        //    if (part.IsSolved())
-        //    {
-        //        label += check;
-        //    }
-        //    if(index < descriptionLabels.Count)
-        //        descriptionLabels[index].GetComponent<Text>().text = label;
-        //}
-        //var rows = GameObject.FindGameObjectWithTag("PuzzleName").GetComponent<Text>();
-
-        
         GameObject[] rows = GameObject.FindGameObjectsWithTag("UI_Puzzle_Row");
         var rowcount = rows.Length;
 
@@ -109,15 +60,6 @@ public class GameManager : MonoBehaviour
             var s = row.GetComponent<UIPuzzleRow>();
             s.UpdateRow(puzzles[i]);
         }
-
-
-        fillRow(puzzle_ui_row_sakristei, puzzle_sakristei);
-
-        void fillRow(GameObject a_ui_row, Puzzle a_p)
-        {
-
-        }
-
     }
 
     private void UpdateItemUI()
@@ -137,41 +79,5 @@ public class GameManager : MonoBehaviour
     public List<Puzzle> GetSolvedPuzzles()
     {
         return puzzles.FindAll(puzzle => puzzle.IsSolved());
-    }
-}
-
-public static class Helper
-{
-    public static T[] FindComponentsInChildrenWithTag<T>(this GameObject parent, string tag, bool forceActive = false) where T : Component
-    {
-        if (parent == null) { throw new System.ArgumentNullException(); }
-        if (string.IsNullOrEmpty(tag) == true) { throw new System.ArgumentNullException(); }
-        List<T> list = new List<T>(parent.GetComponentsInChildren<T>(forceActive));
-        if (list.Count == 0) { return null; }
-
-        for (int i = list.Count - 1; i >= 0; i--)
-        {
-            if (list[i].CompareTag(tag) == false)
-            {
-                list.RemoveAt(i);
-            }
-        }
-        return list.ToArray();
-    }
-
-    public static T FindComponentInChildWithTag<T>(this GameObject parent, string tag, bool forceActive = false) where T : Component
-    {
-        if (parent == null) { throw new System.ArgumentNullException(); }
-        if (string.IsNullOrEmpty(tag) == true) { throw new System.ArgumentNullException(); }
-
-        T[] list = parent.GetComponentsInChildren<T>(forceActive);
-        foreach (T t in list)
-        {
-            if (t.CompareTag(tag) == true)
-            {
-                return list[0];
-            }
-        }
-        return null;
     }
 }
