@@ -4845,9 +4845,10 @@ GameObject:
   - component: {fileID: 166190693}
   - component: {fileID: 166190692}
   - component: {fileID: 166190691}
+  - component: {fileID: 166190695}
   m_Layer: 5
   m_Name: "Sakristeir\xE4tsel"
-  m_TagString: Untagged
+  m_TagString: UI_Puzzle_Row
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4868,10 +4869,10 @@ RectTransform:
   m_Father: {fileID: 1851134015}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 177.1, y: 0}
-  m_SizeDelta: {x: 354.2, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 177.1, y: -10}
+  m_SizeDelta: {x: 354.2, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &166190691
 MonoBehaviour:
@@ -4948,6 +4949,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166190689}
   m_CullTransparentMesh: 0
+--- !u!114 &166190695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166190689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d49aa3bd322148f40a3bbc66225611f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  header: {fileID: 0}
+  part_01: {fileID: 0}
+  part_02: {fileID: 0}
+  part_03: {fileID: 0}
+  part_04: {fileID: 0}
 --- !u!1 &166624451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4380420993382589331, guid: 70a8eb95bdaf9634b9611fe43d0efde1,
@@ -7313,7 +7331,7 @@ GameObject:
   - component: {fileID: 287661456}
   m_Layer: 5
   m_Name: itemcontent
-  m_TagString: Untagged
+  m_TagString: UI_Puzzle_Parts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11937,7 +11955,7 @@ GameObject:
   - component: {fileID: 472420366}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: PuzzleName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14641,7 +14659,7 @@ GameObject:
   - component: {fileID: 602204527}
   m_Layer: 5
   m_Name: "Kerzenr\xE4tsel"
-  m_TagString: Untagged
+  m_TagString: UI_Puzzle_Row
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14662,10 +14680,10 @@ RectTransform:
   m_Father: {fileID: 1851134015}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 177.1, y: 0}
-  m_SizeDelta: {x: 354.2, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 177.1, y: -85}
+  m_SizeDelta: {x: 354.2, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602204527
 MonoBehaviour:
@@ -21317,7 +21335,7 @@ GameObject:
   - component: {fileID: 902853653}
   m_Layer: 5
   m_Name: itemcontent
-  m_TagString: Untagged
+  m_TagString: UI_Puzzle_Parts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21862,7 +21880,7 @@ GameObject:
   - component: {fileID: 920111129}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: PuzzleName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24725,6 +24743,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de41a27a51ef004d93a40b925c037eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzle_ui_row_sakristei: {fileID: 0}
+  puzzle_ui_row_Orgel: {fileID: 0}
+  puzzle_ui_row_Spielplatz: {fileID: 0}
+  puzzle_ui_row_Turm: {fileID: 0}
+  puzzle_sakristei: {fileID: 0}
+  puzzle_spielplatz: {fileID: 0}
+  puzzle_turm: {fileID: 0}
+  puzzle_orgel: {fileID: 0}
 --- !u!4 &1058434437
 Transform:
   m_ObjectHideFlags: 0
@@ -25020,7 +25046,7 @@ GameObject:
   - component: {fileID: 1069597935}
   m_Layer: 5
   m_Name: itemcontent
-  m_TagString: Untagged
+  m_TagString: UI_Puzzle_Parts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32136,7 +32162,7 @@ GameObject:
   - component: {fileID: 1334674214}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: PuzzleName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33216,7 +33242,7 @@ GameObject:
   - component: {fileID: 1373029391}
   m_Layer: 5
   m_Name: itemcontent
-  m_TagString: Untagged
+  m_TagString: UI_Puzzle_Parts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40891,7 +40917,7 @@ GameObject:
   - component: {fileID: 1390787956}
   m_Layer: 5
   m_Name: "Aufzugr\xE4tsel"
-  m_TagString: Untagged
+  m_TagString: UI_Puzzle_Row
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40912,10 +40938,10 @@ RectTransform:
   m_Father: {fileID: 1851134015}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 177.1, y: 0}
-  m_SizeDelta: {x: 354.2, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 177.1, y: -60}
+  m_SizeDelta: {x: 354.2, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390787956
 MonoBehaviour:
@@ -63934,7 +63960,7 @@ GameObject:
   - component: {fileID: 1993307418}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: PuzzleName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64233,7 +64259,7 @@ GameObject:
   - component: {fileID: 1998317917}
   m_Layer: 5
   m_Name: "Spielplatzr\xE4tsel"
-  m_TagString: Untagged
+  m_TagString: UI_Puzzle_Row
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
