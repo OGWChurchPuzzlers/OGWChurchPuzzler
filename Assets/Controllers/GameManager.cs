@@ -27,8 +27,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleName").GetComponent<Text>();
-        descriptionLabels = new List<GameObject>(GameObject.FindGameObjectsWithTag("PuzzlePartDescription"));
+        //puzzleLabel = GameObject.FindGameObjectWithTag("PuzzleName").GetComponent<Text>();
+        //descriptionLabels = new List<GameObject>(GameObject.FindGameObjectsWithTag("PuzzlePartDescription"));
 
         itemLabel = GameObject.FindGameObjectWithTag("ItemName").GetComponent<Text>();
 
@@ -44,11 +44,11 @@ public class GameManager : MonoBehaviour
         if (!hasDescriptionSizeBeenChecked)
         {
             int cnt_puzzleparts = this.activePuzzle.GetParts().Count;
-            if (descriptionLabels.Count < cnt_puzzleparts)
-                Debug.LogError("There are not enough labels to show all parts of current Puzzle (" + cnt_puzzleparts + "/" + descriptionLabels.Count + ")");
-            hasDescriptionSizeBeenChecked = true;
+            //if (descriptionLabels.Count < cnt_puzzleparts)
+            //    Debug.LogError("There are not enough labels to show all parts of current Puzzle (" + cnt_puzzleparts + "/" + descriptionLabels.Count + ")");
+            //hasDescriptionSizeBeenChecked = true;
         }
-        UpdatePuzzleUI();
+        //UpdatePuzzleUI();
 
         UpdateItemUI();
     }
@@ -96,7 +96,6 @@ public class GameManager : MonoBehaviour
         else
         {
             itemLabel.text = "";
-
         }
     }
 
