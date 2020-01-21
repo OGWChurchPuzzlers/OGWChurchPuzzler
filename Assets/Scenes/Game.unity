@@ -5458,7 +5458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   displayName: "Lasse die Glocken l\xE4uten"
-  description: "Gehe in den Turm und l\xE4ute beide Glocken"
+  description: "Es bald Zeit f\xFCr die Messe. Lasse die Glocken l\xE4uten."
 --- !u!1001 &131403296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9535,7 +9535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 592771374}
   distance: 14.5
-  speed: 0.04
+  speed: 3
   inAnimate: 0
   animTime: 0
   moveUp: 0
@@ -51753,7 +51753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   displayName: Spielplatzaufbau
-  description: Baue den Spielplatz auf
+  description: Bei der lieferung des neuen Spielplatz ist etwas scheifgelaufen. Finde
+    die Kisten und baue den Spielplatz auf.
 --- !u!64 &1320344659
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -104,7 +104,10 @@ public class Lift : MonoBehaviour, ScriptEffect
     {
         if (inAnimate)
         {
-            if(distanceToDestination(moveUp) <= speed)
+            float deltaTime = Time.deltaTime;
+            float toMove = deltaTime * speed;
+
+            if (distanceToDestination(moveUp) <= toMove)
             {
                 // destination reached
                 platform.transform.position = moveUp ? topPosition : downPosition;
@@ -113,10 +116,10 @@ public class Lift : MonoBehaviour, ScriptEffect
             }
             else
             {
-                if(moveUp)
-                 platform.transform.position += new Vector3(0, speed, 0);
+                if (moveUp)
+                 platform.transform.position += new Vector3(0, toMove, 0);
                 else
-                 platform.transform.position += new Vector3(0, -speed, 0);
+                 platform.transform.position += new Vector3(0, -toMove, 0);
             }
         }
     }

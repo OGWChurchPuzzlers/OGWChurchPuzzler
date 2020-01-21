@@ -82,7 +82,7 @@ public class ObjectTouchController : MonoBehaviour
             float distance = Mathf.Infinity;
             bool trigger = Physics.Raycast(ray, out hit, distance, layer_mask_inv);
 
-            Debug.Log("hit: " + trigger + " - " + hit.collider?.name);
+            //Debug.Log("hit: " + trigger + " - " + hit.collider?.name);
             ObjectTouched.Invoke(trigger, hit);
         }
     }
