@@ -36,7 +36,7 @@ public class UIPuzzleRow : MonoBehaviour
             if (partSolved)
             {
                 part_s[i].color = new Color(47 / 255f, 145 / 255f, 22 / 255f);
-                textToset += textToset + check;
+                textToset += check;
             }
 
             part_s[i].text = textToset;
