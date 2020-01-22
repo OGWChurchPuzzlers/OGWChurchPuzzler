@@ -52,11 +52,13 @@ public class DecoupledInputManager : MonoBehaviour
     [SerializeField] bool InCheatMode = false;
     [SerializeField] bool MapKeyboardToTouchUI = false;
     [SerializeField] KeyCode Key_CheatMode = KeyCode.P;
+    [SerializeField] KeyCode Key_ToggleUI= KeyCode.K;
     [SerializeField] KeyCode Key_TouchMapping = KeyCode.O;
     [SerializeField] KeyCode Key_ToggleInputMode = KeyCode.I;
     [SerializeField] KeyCode Key_ToggleFreeFly = KeyCode.L;
     [SerializeField] RectTransform debug_override_joystick_handle;
     [SerializeField] MouseLook debug_freeflyScript;
+    [SerializeField] GameObject debug_UI;
 
 
     void Start()
@@ -75,6 +77,11 @@ public class DecoupledInputManager : MonoBehaviour
         {
             Debug.Log("Map Keyboard to Touch");
             MapKeyboardToTouchUI = !MapKeyboardToTouchUI;
+        }
+        if (InCheatMode && Input.GetKeyDown(Key_ToggleUI))
+        {
+            Debug.Log("Toggle UI");
+            debug_UI.SetActive(!debug_UI.activeSelf);
         }
         if (InCheatMode && Input.GetKeyDown(Key_ToggleFreeFly) && debug_freeflyScript != null)
         {
