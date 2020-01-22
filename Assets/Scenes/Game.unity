@@ -22342,6 +22342,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -22455,6 +22456,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c35ff0327c8f90f429a6c0d12117ab0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clampInDegrees: {x: 360, y: 180}
+  sensitivity: {x: 2, y: 2}
+  smoothing: {x: 3, y: 3}
+  targetDirection: {x: 0, y: 0}
+  targetCharacterDirection: {x: 0, y: 0}
+  characterBody: {fileID: 0}
+  flySpeed: 0.5
+  defaultCamera: {fileID: 534669902}
 --- !u!1001 &534713871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43708,7 +43729,9 @@ MonoBehaviour:
   Key_CheatMode: 112
   Key_TouchMapping: 111
   Key_ToggleInputMode: 105
+  Key_ToggleFreeFly: 108
   debug_override_joystick_handle: {fileID: 925757781}
+  debug_freeflyScript: {fileID: 534669907}
 --- !u!114 &1058434441
 MonoBehaviour:
   m_ObjectHideFlags: 0
