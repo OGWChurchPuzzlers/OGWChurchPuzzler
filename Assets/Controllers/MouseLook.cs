@@ -29,7 +29,7 @@ public class MouseLook : MonoBehaviour
     private UnityEngine.UIElements.Background _background;
     private bool _mouselookEnabled = false;
     private bool _shifted = false;
-    public float flySpeed = 0.5f;
+    public float flySpeed = 0.2f;
     public GameObject defaultCamera;
 
 
@@ -140,7 +140,15 @@ public class MouseLook : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(-Vector3.up * flySpeed * 0.5f, Space.World);
+            transform.Translate(Vector3.forward * flySpeed * 0.5f, Space.Self);
+        }
+        else if (Input.GetKeyDown(KeyCode.N))
+        {
+            flySpeed += 0.01f;
+        }
+        else if (Input.GetKeyDown(KeyCode.M))
+        {
+            flySpeed -= 0.01f;
         }
     }
 }
