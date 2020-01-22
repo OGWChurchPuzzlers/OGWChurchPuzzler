@@ -34985,9 +34985,6 @@ MonoBehaviour:
   - effect: 0
     arg: {fileID: 1677177389}
     arg2: 
-  - effect: 5
-    arg: {fileID: 1106165458}
-    arg2: tuer
 --- !u!65 &837050182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45203,23 +45200,6 @@ Transform:
   m_PrefabInstance: {fileID: 972402528}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1106165460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106165458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2804462015887494fbee5e0183c52f8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  solvedSound: {fileID: 0}
-  audiosrc: {fileID: 0}
-  type: 0
-  displayName: Orgel
-  description: Finde die fehlenden Orgelpfeifen
---- !u!114 &1106165461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100161,6 +100141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2073376926}
+  - component: {fileID: 2073376927}
   m_Layer: 0
   m_Name: OrgelRaetsel
   m_TagString: Untagged
@@ -100185,6 +100166,23 @@ Transform:
   m_Father: {fileID: 515205084}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2073376927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073376925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2804462015887494fbee5e0183c52f8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solvedSound: {fileID: 8300000, guid: 3c9f4069b63a7514081558c8bd936f67, type: 3}
+  audiosrc: {fileID: 1106165462}
+  type: 0
+  displayName: Orgel
+  description: Finde die fehlenden Orgelpfeifen
 --- !u!1 &2074899827
 GameObject:
   m_ObjectHideFlags: 0
@@ -102495,9 +102493,6 @@ MonoBehaviour:
   - effect: 0
     arg: {fileID: 1950482621}
     arg2: 
-  - effect: 5
-    arg: {fileID: 1106165458}
-    arg2: tuer
 --- !u!65 &2134983915
 BoxCollider:
   m_ObjectHideFlags: 0
