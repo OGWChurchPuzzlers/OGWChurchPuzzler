@@ -15,10 +15,10 @@ public class UIPuzzleRow : MonoBehaviour
     {
         ClearTexts();
         bool isPuzzleSolved = a_p.IsSolved();
-        header.text = a_p.name;
+        header.text = a_p.GetDisplayName();
         if (isPuzzleSolved)
         {
-            header.text = a_p.name + check;
+            header.text = a_p.GetDisplayName() + check;
             header.color = new Color(47 / 255f, 145 / 255f, 22 / 255f);
         }
 
