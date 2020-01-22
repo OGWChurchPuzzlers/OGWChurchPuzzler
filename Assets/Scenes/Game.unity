@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.29684296, g: 0.6337676, b: 0.9937157, a: 1}
+  m_IndirectSpecularColor: {r: 0.29684302, g: 0.6337671, b: 0.9937157, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -43727,11 +43727,13 @@ MonoBehaviour:
   InCheatMode: 0
   MapKeyboardToTouchUI: 0
   Key_CheatMode: 112
+  Key_ToggleUI: 107
   Key_TouchMapping: 111
   Key_ToggleInputMode: 105
   Key_ToggleFreeFly: 108
   debug_override_joystick_handle: {fileID: 925757781}
   debug_freeflyScript: {fileID: 534669907}
+  debug_UI: {fileID: 903522628}
 --- !u!114 &1058434441
 MonoBehaviour:
   m_ObjectHideFlags: 0
