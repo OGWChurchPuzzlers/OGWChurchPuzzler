@@ -33,19 +33,17 @@ public class SoundManagerScript : MonoBehaviour, ScriptEffect
 
     public void PlaySound (string clip)
     {
-        Debug.Log("Play Sound Test");
+        Debug.Log("Play Sound Test: " + clip);
         switch (clip)
         {
             case "tuer":
-                Debug.Log("Test Tuer Sound");
                 audiosrc.PlayOneShot(tueroeffnenSound);
                 break;
             case "organ":
-                Debug.Log("TestSoundGlocke");
-                audiosrc.PlayOneShot(applauseSound);
+                audiosrc.PlayOneShot(organSound);
                 break;
             case "applause":
-                audiosrc.PlayOneShot(organSound);
+                audiosrc.PlayOneShot(applauseSound);
                 break;
             case "glocke":
                 audiosrc.PlayOneShot(glockeSound);
