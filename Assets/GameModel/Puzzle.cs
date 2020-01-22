@@ -13,6 +13,14 @@ public enum Puzzles
 public class Puzzle: MonoBehaviour
 {
     [SerializeField]
+    AudioClip solvedSound;
+
+    [SerializeField]
+    AudioSource audiosrc;
+
+    bool hasSolvedSoundPlayed = false;
+
+    [SerializeField]
     private Puzzles type;
 
     [SerializeField]
@@ -34,9 +42,18 @@ public class Puzzle: MonoBehaviour
     void Update()
     {
         solved = parts.TrueForAll(part => part.IsSolved());
-        if (solved)
+        if (solved && !hasSolvedSoundPlayed)
         {
-            //Debug.Log("Quest:" + displayName + " was solved");
+            PlaySolvedSound();
+            hasSolvedSoundPlayed = true;
+            Debug.Log("Quest:" + displayName + " was solved");
+        }
+    }
+
+    public void PlaySolvedSound()
+    {
+        if (audiosrc != null && solvedSound != null) {
+            audiosrc.PlayOneShot(solvedSound);
         }
     }
 
