@@ -18997,6 +18997,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4589891588269681403, guid: 4fad00d64ec7d6843a80b5b183658dab,
+        type: 3}
+      propertyPath: pressedColor.r
+      value: 0.7921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589891588269681403, guid: 4fad00d64ec7d6843a80b5b183658dab,
+        type: 3}
+      propertyPath: pressedColor.g
+      value: 0.7921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589891588269681403, guid: 4fad00d64ec7d6843a80b5b183658dab,
+        type: 3}
+      propertyPath: pressedColor.b
+      value: 0.7921569
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fad00d64ec7d6843a80b5b183658dab, type: 3}
 --- !u!4 &446166270 stripped
@@ -43660,7 +43675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockControl: 0
-  Mode: 0
+  Mode: 1
   interact_key: 101
   jump_key: 32
   turnFactorKeyboard: 0.5
@@ -43672,6 +43687,7 @@ MonoBehaviour:
   MapKeyboardToTouchUI: 0
   Key_CheatMode: 112
   Key_TouchMapping: 111
+  Key_ToggleInputMode: 105
   debug_override_joystick_handle: {fileID: 925757781}
 --- !u!114 &1058434441
 MonoBehaviour:
@@ -103686,6 +103702,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621723902179562570, guid: 79525fd14e68a8d49ade906b4fe99dd6,
+        type: 3}
+      propertyPath: pressedColor.r
+      value: 0.7924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621723902179562570, guid: 79525fd14e68a8d49ade906b4fe99dd6,
+        type: 3}
+      propertyPath: pressedColor.g
+      value: 0.7924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621723902179562570, guid: 79525fd14e68a8d49ade906b4fe99dd6,
+        type: 3}
+      propertyPath: pressedColor.b
+      value: 0.7924528
       objectReference: {fileID: 0}
     - target: {fileID: 2621723903177774593, guid: 79525fd14e68a8d49ade906b4fe99dd6,
         type: 3}

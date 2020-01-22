@@ -53,6 +53,7 @@ public class DecoupledInputManager : MonoBehaviour
     [SerializeField] bool MapKeyboardToTouchUI = false;
     [SerializeField] KeyCode Key_CheatMode = KeyCode.P;
     [SerializeField] KeyCode Key_TouchMapping = KeyCode.O;
+    [SerializeField] KeyCode Key_ToggleInputMode = KeyCode.I;
     [SerializeField] RectTransform debug_override_joystick_handle;
 
 
@@ -63,41 +64,59 @@ public class DecoupledInputManager : MonoBehaviour
 
     void Update()
     {
+        if (!InCheatMode && Input.GetKeyDown(Key_CheatMode))
+        {
+            Debug.Log("In Cheat Mode");
+            InCheatMode = !InCheatMode;
+        }
+        if (InCheatMode && Input.GetKeyDown(Key_TouchMapping))
+        {
+            Debug.Log("Map Keyboard to Touch");
+            MapKeyboardToTouchUI = !MapKeyboardToTouchUI;
+        }
+        if (InCheatMode && Input.GetKeyDown(Key_ToggleInputMode))
+        {
+            if (Mode == GameInputMode.Keyboard)
+                Mode = GameInputMode.Touch_1;
+            else
+                Mode = GameInputMode.Keyboard;
+            Debug.Log("Toggling InputMode to: " + Mode);
+        }
         refreshInputVector();
+        if (InCheatMode && MapKeyboardToTouchUI && Mode == GameInputMode.Keyboard)
+        {
+            if (joystick is JoystickForwardSnap fwdJoystick && debug_override_joystick_handle != null)
+            {
+                fwdJoystick.DebugOverrideJoystick(touchInputVector, new Vector2(128f, 128f), 1, debug_override_joystick_handle);
+            }
+            if (Input.GetKeyDown(jump_key))
+                btn_jump.DebugOverride_SetPressStatus(true);
+            if (Input.GetKeyUp(jump_key))
+                btn_jump.DebugOverride_SetPressStatus(false);
+            if (Input.GetKeyDown(interact_key))
+                btn_interact.DebugOverride_SetPressStatus(true);
+            if (Input.GetKeyUp(interact_key))
+                btn_interact.DebugOverride_SetPressStatus(false);
+        }
     }
     private void refreshInputVector()
     {
         touchInputVector = new Vector2(0, 0);
         if (blockControl)
             return;
-        if (!InCheatMode && Input.GetKeyDown(Key_CheatMode))
-        {
-            Debug.Log("In Cheat Mode");
-            InCheatMode = true;
-        }
-        if (InCheatMode && Input.GetKeyDown(Key_TouchMapping))
-        {
-            Debug.Log("Map Keyboard to Touch");
-            MapKeyboardToTouchUI = true;
-        }
+
         switch (Mode)
         {
             case GameInputMode.Keyboard:
                 touchInputVector.x = Input.GetAxis("Horizontal") * turnFactorKeyboard;
                 touchInputVector.y = Input.GetAxis("Vertical");
-                if(InCheatMode && MapKeyboardToTouchUI)
-                {
-                    if(joystick is JoystickForwardSnap fwdJoystick && debug_override_joystick_handle != null)
-                    {
-                        fwdJoystick.DebugOverrideJoystick(touchInputVector, new Vector2(128f,128f), 1, debug_override_joystick_handle);
-                    }
-                }
+
                 break;
             case GameInputMode.Touch_1:
                 var jostickDir = joystick.Direction;
                 var y = jostickDir.y;
-                var x = jostickDir.x * ( 0.0f + Mathf.Cos(y)) * turnFactorJoystick; // wenn schnell geradeaus -> wenig drehung zulassen
-                touchInputVector = new Vector2(x,y);
+                var x = jostickDir.x * (0.0f + Mathf.Cos(y)) * turnFactorJoystick; // wenn schnell geradeaus -> wenig drehung zulassen
+                touchInputVector = new Vector2(x, y);
                 break;
             default:
                 break;
