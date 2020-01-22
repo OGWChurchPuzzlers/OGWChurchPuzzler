@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.29684302, g: 0.6337671, b: 0.9937157, a: 1}
+  m_IndirectSpecularColor: {r: 0.29684296, g: 0.6337676, b: 0.9937157, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -38397,6 +38397,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 923507877}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &925757781 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1727043864098830015, guid: a6c9a5605906bd44c942e9d48014664f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2011538738}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &932598126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42684,7 +42690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1034196541
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43662,6 +43668,11 @@ MonoBehaviour:
   AssetBtnJump: {fileID: 1986070796}
   AssetBtnInteract: {fileID: 1638287563}
   AssetJoystick: {fileID: 1074625992}
+  InCheatMode: 0
+  MapKeyboardToTouchUI: 0
+  Key_CheatMode: 112
+  Key_TouchMapping: 111
+  debug_override_joystick_handle: {fileID: 925757781}
 --- !u!114 &1058434441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55344,7 +55355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1323591203
 RectTransform:
   m_ObjectHideFlags: 0
@@ -77675,7 +77686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1476356698
 RectTransform:
   m_ObjectHideFlags: 0

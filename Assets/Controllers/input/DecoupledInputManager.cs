@@ -49,6 +49,13 @@ public class DecoupledInputManager : MonoBehaviour
 
     private Vector2 touchInputVector = new Vector2(0, 0);
 
+    [SerializeField] bool InCheatMode = false;
+    [SerializeField] bool MapKeyboardToTouchUI = false;
+    [SerializeField] KeyCode Key_CheatMode = KeyCode.P;
+    [SerializeField] KeyCode Key_TouchMapping = KeyCode.O;
+    [SerializeField] RectTransform debug_override_joystick_handle;
+
+
     void Start()
     {
 
@@ -63,12 +70,28 @@ public class DecoupledInputManager : MonoBehaviour
         touchInputVector = new Vector2(0, 0);
         if (blockControl)
             return;
-
+        if (!InCheatMode && Input.GetKeyDown(Key_CheatMode))
+        {
+            Debug.Log("In Cheat Mode");
+            InCheatMode = true;
+        }
+        if (InCheatMode && Input.GetKeyDown(Key_TouchMapping))
+        {
+            Debug.Log("Map Keyboard to Touch");
+            MapKeyboardToTouchUI = true;
+        }
         switch (Mode)
         {
             case GameInputMode.Keyboard:
                 touchInputVector.x = Input.GetAxis("Horizontal") * turnFactorKeyboard;
                 touchInputVector.y = Input.GetAxis("Vertical");
+                if(InCheatMode && MapKeyboardToTouchUI)
+                {
+                    if(joystick is JoystickForwardSnap fwdJoystick && debug_override_joystick_handle != null)
+                    {
+                        fwdJoystick.DebugOverrideJoystick(touchInputVector, new Vector2(128f,128f), 1, debug_override_joystick_handle);
+                    }
+                }
                 break;
             case GameInputMode.Touch_1:
                 var jostickDir = joystick.Direction;

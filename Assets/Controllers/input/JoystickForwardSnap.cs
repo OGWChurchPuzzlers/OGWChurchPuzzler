@@ -7,9 +7,15 @@ public class JoystickForwardSnap : Joystick
     [SerializeField] private float m_Angle = 0f;
     public SegmentedJoystickMode mode = SegmentedJoystickMode.DPad4;
 
+    public void DebugOverrideJoystick(Vector2 a_fakeInput, Vector2 radius, float a_handle_range, RectTransform a_handle)
+    {
+        a_handle.anchoredPosition = a_fakeInput * radius * a_handle_range;
+    }
+
     // HACK
     protected override void HandleInput(float magnitude, Vector2 normalised, Vector2 radius, Camera cam)
     {
+        Debug.Log(radius);
         m_Angle = Vector2.SignedAngle(normalised, new Vector2(0, 1));
 
                 float forward_lockAngle = 7.5f; // 5
@@ -35,4 +41,5 @@ public class JoystickForwardSnap : Joystick
             return a < max && a > min;
         }
     }
+
 }
