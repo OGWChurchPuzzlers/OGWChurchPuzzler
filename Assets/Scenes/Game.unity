@@ -22474,7 +22474,7 @@ MonoBehaviour:
   targetDirection: {x: 0, y: 0}
   targetCharacterDirection: {x: 0, y: 0}
   characterBody: {fileID: 0}
-  flySpeed: 0.5
+  flySpeed: 0.05
   defaultCamera: {fileID: 534669902}
 --- !u!1001 &534713871
 PrefabInstance:
