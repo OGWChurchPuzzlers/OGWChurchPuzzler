@@ -26,3 +26,9 @@ https://assetstore.unity.com/packages/tools/input-management/joystick-pack-10763
 Skybox - BOXOPHOBIC
 https://assetstore.unity.com/packages/vfx/shaders/free-skybox-cubemap-extended-shader-standard-edition-107400
 
+
+SUPERCYAN - Character Pack: Free Sample
+https://assetstore.unity.com/packages/3d/characters/humanoids/character-pack-free-sample-79870
+
+greyRoad Studio - LowPoly Trees and Rocks
+https://assetstore.unity.com/packages/3d/vegetation/lowpoly-trees-and-rocks-88376
